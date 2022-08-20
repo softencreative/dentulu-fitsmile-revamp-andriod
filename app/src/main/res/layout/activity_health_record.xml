@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/white"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:theme="@style/ToolBarStyle" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/appBar">
+
+        <LinearLayout
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/llStep1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/fab_margin">
+
+                <TextView
+                    style="@style/commonTextView12"
+                    android:text="@string/hr_allergies_head"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/_14sdp"
+                    android:textStyle="bold" />
+
+                <CheckBox
+                    android:id="@+id/switchTouchID1"
+                    style="@style/checkBox"
+                    android:text="@string/hr_allergies_body" />
+
+                <LinearLayout
+                    android:id="@+id/ll_allergies"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/_14sdp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/commonTextView"
+                        android:layout_marginBottom="@dimen/_14sdp"
+                        android:gravity="start"
+                        android:text="@string/hr_allergies_yes"
+                        android:textColor="@color/colorPrimary" />
+
+                    <CheckBox
+                        android:id="@+id/cb_allergies_type1"
+                        style="@style/checkBox"
+                        android:text="@string/hr_allergies_type1" />
+
+                    <CheckBox
+                        android:id="@+id/cb_allergies_type2"
+                        style="@style/checkBox"
+                        android:text="@string/hr_allergies_type2" />
+
+                    <CheckBox
+                        android:id="@+id/cb_allergies_type3"
+                        style="@style/checkBox"
+                        android:text="@string/hr_allergies_type3" />
+
+                    <CheckBox
+                        android:id="@+id/cb_allergies_type4"
+                        style="@style/checkBox"
+                        android:text="@string/hr_allergies_type4" />
+
+                    <CheckBox
+                        android:id="@+id/cb_allergies_type5"
+                        style="@style/checkBox"
+                        android:text="@string/hr_allergies_type5" />
+
+                    <CheckBox
+                        android:id="@+id/cb_allergies_type6"
+                        style="@style/checkBox"
+                        android:text="@string/hr_allergies_type6" />
+
+                    <CheckBox
+                        android:id="@+id/cb_allergies_type7"
+                        style="@style/checkBox"
+                        android:text="@string/hr_allergies_type7" />
+
+                    <CheckBox
+                        android:id="@+id/cb_allergies_type8"
+                        style="@style/checkBox"
+                        android:text="@string/hr_allergies_type8" />
+
+                    <CheckBox
+                        android:id="@+id/cb_allergies_type9"
+                        style="@style/checkBox"
+                        android:text="@string/hr_allergies_type9" />
+
+                    <CheckBox
+                        android:id="@+id/cb_allergies_type10"
+                        style="@style/checkBox"
+                        android:text="@string/hr_allergies_type10" />
+
+                    <CheckBox
+                        android:id="@+id/cb_allergies_type11"
+                        style="@style/checkBox"
+                        android:text="@string/hr_allergies_type11" />
+
+                    <CheckBox
+                        android:id="@+id/cb_allergies_type12"
+                        style="@style/checkBox"
+                        android:text="@string/hr_allergies_type12" />
+
+                    <CheckBox
+                        android:id="@+id/cb_allergies_type13"
+                        style="@style/checkBox"
+                        android:text="@string/hr_allergies_type13" />
+
+                    <CheckBox
+                        android:id="@+id/cb_allergies_type14"
+                        style="@style/checkBox"
+                        android:text="@string/hr_allergies_type14" />
+
+                    <CheckBox
+                        android:id="@+id/cb_allergies_type15"
+                        style="@style/checkBox"
+                        android:text="@string/hr_allergies_type15" />
+
+                    <CheckBox
+                        android:id="@+id/cb_allergies_type16"
+                        style="@style/checkBox"
+                        android:text="@string/hr_allergies_type16" />
+
+                    <CheckBox
+                        android:id="@+id/cb_allergies_type17"
+                        style="@style/checkBox"
+                        android:text="@string/hr_allergies_type17" />
+
+                    <com.google.android.material.textfield.TextInputLayout style="@style/commonTextInputLayout">
+
+                        <EditText
+                            android:id="@+id/et_allergy_other"
+                            style="@style/commonEditText"
+                            android:hint="@string/hr_allergies_type18"
+                            android:inputType="textCapSentences" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <TextView
+                        style="@style/commonTextView"
+                        android:layout_marginTop="@dimen/_14sdp"
+                        android:layout_marginBottom="@dimen/_14sdp"
+                        android:gravity="start"
+                        android:text="@string/hr_allergies_types" />
+
+                    <CheckBox
+                        android:id="@+id/cb_allergies_types1"
+                        style="@style/checkBox"
+                        android:text="@string/hr_allergies_types1" />
+
+                    <CheckBox
+                        android:id="@+id/cb_allergies_types2"
+                        style="@style/checkBox"
+                        android:text="@string/hr_allergies_types2" />
+
+                    <CheckBox
+                        android:id="@+id/cb_allergies_types3"
+                        style="@style/checkBox"
+                        android:text="@string/hr_allergies_types3" />
+
+                    <CheckBox
+                        android:id="@+id/cb_allergies_types4"
+                        style="@style/checkBox"
+                        android:text="@string/hr_allergies_types4" />
+
+                    <CheckBox
+                        android:id="@+id/cb_allergies_types5"
+                        style="@style/checkBox"
+                        android:text="@string/hr_allergies_types5" />
+
+                    <com.google.android.material.textfield.TextInputLayout style="@style/commonTextInputLayout">
+
+                        <EditText
+                            android:id="@+id/et_allergy_others"
+                            style="@style/commonEditText"
+                            android:hint="@string/hr_allergies_types6"
+                            android:inputType="textCapSentences" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/btnBackStep1"
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:background="@drawable/btn_circle_white"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:gravity="center"
+                        android:padding="@dimen/_10sdp"
+                        android:text="@string/back"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorPrimary" />
+
+                    <TextView
+                        android:id="@+id/btnNextStep1"
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:background="@drawable/button_defaults"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:gravity="center"
+                        android:padding="@dimen/_10sdp"
+                        android:text="@string/next"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <include layout="@layout/activity_book_health_record2"/>
+            <include layout="@layout/activity_book_health_record3"/>
+            <include layout="@layout/activity_book_health_record4"/>
+            <include layout="@layout/activity_book_health_record5"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

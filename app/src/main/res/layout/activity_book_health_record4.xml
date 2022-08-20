@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:visibility="gone"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llStep4"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/fab_margin"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <TextView
+        android:textStyle="bold"
+        android:textSize="@dimen/_14sdp"
+        android:textColor="@color/colorPrimary"
+        android:text="@string/hr_medical_procedures_head"
+        style="@style/commonTextView12"/>
+
+    <CheckBox style="@style/checkBox" android:id="@+id/switchTouchID4" android:text="@string/hr_medical_procedures_body"/>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/_14sdp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/ll_medical_procedures"
+        android:orientation="vertical">
+        <TextView style="@style/commonTextView"
+            android:gravity="start"
+            android:layout_marginBottom="@dimen/_14sdp"
+            android:textColor="@color/colorPrimary"
+            android:text="@string/hr_medical_procedures_yes"/>
+        <CheckBox style="@style/checkBox" android:id="@+id/cb_medical_procedures_type1" android:text="@string/hr_medical_procedures_type1"/>
+        <CheckBox style="@style/checkBox" android:id="@+id/cb_medical_procedures_type2" android:text="@string/hr_medical_procedures_type2"/>
+        <CheckBox style="@style/checkBox" android:id="@+id/cb_medical_procedures_type3" android:text="@string/hr_medical_procedures_type3"/>
+        <CheckBox style="@style/checkBox" android:id="@+id/cb_medical_procedures_type4" android:text="@string/hr_medical_procedures_type4"/>
+        <CheckBox style="@style/checkBox" android:id="@+id/cb_medical_procedures_type5" android:text="@string/hr_medical_procedures_type5"/>
+        <CheckBox style="@style/checkBox" android:id="@+id/cb_medical_procedures_type6" android:text="@string/hr_medical_procedures_type6"/>
+        <CheckBox style="@style/checkBox" android:id="@+id/cb_medical_procedures_type7" android:text="@string/hr_medical_procedures_type7"/>
+        <CheckBox style="@style/checkBox" android:id="@+id/cb_medical_procedures_type8" android:text="@string/hr_medical_procedures_type8"/>
+        <CheckBox style="@style/checkBox" android:id="@+id/cb_medical_procedures_type9" android:text="@string/hr_medical_procedures_type9"/>
+        <CheckBox style="@style/checkBox" android:id="@+id/cb_medical_procedures_type10" android:text="@string/hr_medical_procedures_type10"/>
+        <CheckBox style="@style/checkBox" android:id="@+id/cb_medical_procedures_type11" android:text="@string/hr_medical_procedures_type11"/>
+
+        <com.google.android.material.textfield.TextInputLayout style="@style/commonTextInputLayout">
+            <EditText
+                style="@style/commonEditText"
+                android:id="@+id/et_medical_procedures_other"
+                android:hint="@string/hr_medical_procedures_type12"
+                android:inputType="textCapSentences"/>
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnBackStep4"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:textColor="@color/colorPrimary"
+            android:gravity="center"
+            android:padding="@dimen/_10sdp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:background="@drawable/btn_circle_white"
+            android:text="@string/BACK"/>
+        <TextView
+            android:padding="@dimen/_10sdp"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:id="@+id/btnNextStep4"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:background="@drawable/button_defaults"
+            android:text="@string/NEXT" />
+    </LinearLayout>
+
+
+</LinearLayout>

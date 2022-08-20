@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_margin="@dimen/_5sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/textAlignerNumber"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:padding="@dimen/_5sdp"
+        android:textSize="@dimen/_14sp"
+        android:textColor="@color/txt_color_body"
+        android:fontFamily="@font/proxima_nova_bold"
+        android:text="@string/aligner_hash_1"
+        android:visibility="visible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/textAlignerDate"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="@dimen/_5sdp"
+        android:textSize="@dimen/_14sp"
+        android:textColor="@color/txt_color_body"
+        android:fontFamily="@font/proxima_nova_bold"
+        android:text="12/01/2021"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/_5sdp"
+        app:layout_constraintTop_toBottomOf="@+id/textAlignerNumber"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_centerHorizontal="true"
+                android:id="@+id/circleImageFront"
+                android:layout_width="@dimen/_40sdp"
+                android:src="@color/colorPrimaryDark"
+                android:layout_height="@dimen/_40sdp"
+                android:visibility="invisible"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="10dp"
+                android:layout_centerHorizontal="true"
+                app:cardPreventCornerOverlap="false">
+
+                <ImageView
+                    android:id="@+id/imageFront"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:scaleType="fitXY"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/front_teeth" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/circleImageFront"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/proxima_nova_bold"
+                android:text="@string/lbl_front"
+                android:textColor="@color/light_grey_color"
+                android:textSize="@dimen/_12sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_centerHorizontal="true"
+                android:id="@+id/circleImageRight"
+                android:layout_width="@dimen/_40sdp"
+                android:src="@color/colorPrimaryDark"
+                android:layout_height="@dimen/_40sdp"
+                android:visibility="invisible"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="10dp"
+                android:layout_centerHorizontal="true"
+                app:cardPreventCornerOverlap="false">
+
+            <ImageView
+                android:id="@+id/imageRight"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:scaleType="fitXY"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/rightteeth"
+                />
+            </androidx.cardview.widget.CardView>
+            <TextView
+                android:id="@+id/textright"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/circleImageRight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lbl_right"
+                android:textSize="@dimen/_12sp"
+                android:fontFamily="@font/proxima_nova_bold"
+                android:textColor="@color/light_grey_color"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_centerHorizontal="true"
+                android:id="@+id/circleImageLeft"
+                android:layout_width="@dimen/_40sdp"
+                android:src="@color/colorPrimaryDark"
+                android:layout_height="@dimen/_40sdp"
+                android:visibility="invisible"/>
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="10dp"
+                android:layout_centerHorizontal="true"
+                app:cardPreventCornerOverlap="false">
+            <ImageView
+                android:id="@+id/imageLeft"
+                 android:layout_centerHorizontal="true"
+                android:src="@drawable/left_teeth"
+                android:scaleType="fitXY"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp" />
+            </androidx.cardview.widget.CardView>
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/circleImageLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lbl_left"
+                android:textSize="@dimen/_12sp"
+                android:fontFamily="@font/proxima_nova_bold"
+                android:textColor="@color/light_grey_color"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_centerHorizontal="true"
+                android:id="@+id/circleImageUp"
+                android:layout_width="@dimen/_40sdp"
+                android:src="@color/colorPrimaryDark"
+                android:layout_height="@dimen/_40sdp"
+                android:visibility="invisible"/>
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="10dp"
+                android:layout_centerHorizontal="true"
+                app:cardPreventCornerOverlap="false">
+            <ImageView
+                android:id="@+id/imageUp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/up_teeth"
+                android:layout_width="@dimen/_40sdp"
+                android:scaleType="fitXY"
+                android:layout_height="@dimen/_40sdp"
+                android:background="@drawable/bg_circle_dark"/>
+            </androidx.cardview.widget.CardView>
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/circleImageUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lbl_up"
+                android:textSize="@dimen/_12sp"
+                android:fontFamily="@font/proxima_nova_bold"
+                android:textColor="@color/light_grey_color"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_centerHorizontal="true"
+                android:id="@+id/circleImageDown"
+                android:layout_width="@dimen/_40sdp"
+                android:src="@color/colorPrimaryDark"
+                android:layout_height="@dimen/_40sdp"
+                android:visibility="invisible"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="10dp"
+                android:layout_centerHorizontal="true"
+                app:cardPreventCornerOverlap="false">
+            <ImageView
+                android:id="@+id/imageDown"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_centerHorizontal="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/down_teeth" />
+            </androidx.cardview.widget.CardView>
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/circleImageDown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lbl_down"
+                android:textSize="@dimen/_12sp"
+                android:fontFamily="@font/proxima_nova_bold"
+                android:textColor="@color/light_grey_color"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_centerHorizontal="true"
+                android:id="@+id/circleImageAdd"
+                android:layout_width="@dimen/_40sdp"
+                android:src="@color/colorPrimaryDark"
+                android:layout_height="@dimen/_40sdp"
+                android:visibility="invisible"/>
+
+            <ImageView
+                android:id="@+id/img_view"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/bg_progress_view_dark"
+                android:padding="@dimen/_10sdp" />
+            <TextView
+                android:id="@+id/tv_view"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/circleImageAdd"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="wrap_content"
+                android:text="@string/view"
+                android:textSize="@dimen/_12sp"
+                android:gravity="center"
+                android:fontFamily="@font/proxima_nova_bold"
+                android:textColor="@color/light_grey_color"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

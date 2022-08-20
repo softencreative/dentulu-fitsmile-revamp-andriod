@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/tools"
+    android:layout_margin="@dimen/_5sdp"
+    android:foreground="?android:attr/selectableItemBackground"
+    card_view:cardCornerRadius="1dp"
+    app:ignore="NamespaceTypo">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/lin_item"
+        android:padding="@dimen/_5sdp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/_10sdp"
+        android:orientation="vertical">
+
+        <include layout="@layout/common_layout" />
+
+        <ImageView
+            android:id="@+id/product_image"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_150sdp"
+            android:background="@color/image_dummy_color"
+            android:clickable="true"
+            android:scaleType="fitXY"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/textProductName"
+            style="@style/commonTextView12"
+            android:layout_width="0dp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:fontFamily="@font/proxima_nova_light"
+            android:text="@string/order_status"
+            android:textColor="@color/title_text_color"
+            card_view:layout_constraintEnd_toEndOf="@+id/guide_vertical_65"
+            card_view:layout_constraintStart_toEndOf="@+id/product_image"
+            card_view:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textProductNameValue"
+            style="@style/commonTextView12"
+            android:layout_width="0dp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:fontFamily="@font/proxima_nova_regular"
+            android:text="@string/proceed"
+            android:textColor="@color/black"
+            card_view:layout_constraintEnd_toEndOf="@+id/guide_vertical_65"
+            card_view:layout_constraintStart_toEndOf="@+id/product_image"
+            card_view:layout_constraintTop_toBottomOf="@+id/textProductName" />
+
+        <TextView
+            android:id="@+id/textOrderPlaced"
+            style="@style/commonTextView12"
+            android:layout_width="0dp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:fontFamily="@font/proxima_nova_light"
+            android:text="@string/order_placed_on"
+            android:textColor="@color/title_text_color"
+            card_view:layout_constraintStart_toStartOf="@+id/guide_vertical_60"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textOrderPlacedValue"
+            style="@style/commonTextView12"
+            android:layout_width="0dp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:fontFamily="@font/proxima_nova_regular"
+            android:text="12 July 2020"
+            android:textColor="@color/black"
+            card_view:layout_constraintStart_toStartOf="@+id/guide_vertical_60"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintTop_toBottomOf="@+id/textOrderPlaced" />
+
+        <TextView
+            android:id="@+id/textOrderIdHeader"
+            style="@style/commonTextView12"
+            android:layout_width="0dp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:fontFamily="@font/proxima_nova_light"
+            android:text="@string/order_id"
+            android:textColor="@color/title_text_color"
+            card_view:layout_constraintEnd_toEndOf="@+id/guide_vertical_65"
+            card_view:layout_constraintStart_toEndOf="@+id/product_image"
+            card_view:layout_constraintTop_toBottomOf="@+id/textProductNameValue" />
+
+        <TextView
+            android:id="@+id/textOrderIdValue"
+            style="@style/commonTextView12"
+            android:layout_width="0dp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:fontFamily="@font/proxima_nova_regular"
+            android:text="#RYDDD7777"
+            android:textColor="@color/black"
+            card_view:layout_constraintEnd_toEndOf="@+id/guide_vertical_65"
+            card_view:layout_constraintStart_toEndOf="@+id/product_image"
+            card_view:layout_constraintTop_toBottomOf="@+id/textOrderIdHeader" />
+
+
+
+
+
+        <TextView
+            android:id="@+id/textNos"
+            style="@style/commonTextView12"
+            android:layout_width="0dp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:fontFamily="@font/proxima_nova_light"
+            android:text="Total Nos"
+            android:textColor="@color/title_text_color"
+            card_view:layout_constraintStart_toStartOf="@+id/guide_vertical_60"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintTop_toBottomOf="@+id/textOrderPlacedValue" />
+
+        <TextView
+            android:id="@+id/textNosValue"
+            style="@style/commonTextView12"
+            android:layout_width="0dp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:fontFamily="@font/proxima_nova_regular"
+            android:text="@string/nos"
+            android:textColor="@color/black"
+            card_view:layout_constraintStart_toStartOf="@+id/guide_vertical_60"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintTop_toBottomOf="@+id/textOrderIdHeader" />
+
+
+
+
+
+        <TextView
+            android:id="@+id/textDeliveryAddress"
+            style="@style/commonTextView12"
+            android:layout_width="0dp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/proxima_nova_light"
+            android:text="@string/delievery_address"
+            android:textColor="@color/title_text_color"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintStart_toEndOf="@+id/product_image"
+            card_view:layout_constraintTop_toBottomOf="@+id/textOrderIdValue" />
+
+        <TextView
+            android:id="@+id/textDeliveryAddressValue"
+            style="@style/commonTextView12"
+            android:layout_width="0dp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:fontFamily="@font/proxima_nova_regular"
+            android:text="No-82,Chennai"
+            android:textColor="@color/black"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintStart_toEndOf="@+id/product_image"
+            card_view:layout_constraintTop_toBottomOf="@+id/textDeliveryAddress" />
+
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            card_view:layout_constraintTop_toBottomOf="@+id/product_image"
+            android:id="@+id/btnViewOrder"
+            android:background="@drawable/bg_stroke_cart"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_selected_tab"
+            android:text="@string/cancel_order"
+            android:fontFamily="@font/proxima_nova_bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
+

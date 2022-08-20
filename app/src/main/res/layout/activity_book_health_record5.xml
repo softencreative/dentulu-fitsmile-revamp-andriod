@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:visibility="gone"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llStep5"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/fab_margin"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <TextView
+        android:textStyle="bold"
+        android:textSize="@dimen/_14sdp"
+        android:textColor="@color/colorPrimary"
+        android:text="@string/hr_member_diagnosed_head"
+        style="@style/commonTextView12"/>
+
+    <CheckBox style="@style/checkBox" android:id="@+id/switchTouchID5" android:text="@string/hr_member_diagnosed_body"/>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/_14sdp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/ll_member_diagnosed"
+        android:orientation="vertical">
+        <TextView style="@style/commonTextView"
+            android:gravity="start"
+            android:layout_marginBottom="@dimen/_14sdp"
+            android:textColor="@color/colorPrimary"
+            android:text="@string/hr_member_diagnosed_yes"/>
+        <CheckBox style="@style/checkBox" android:id="@+id/cb_member_diagnosed_type1" android:text="@string/hr_member_diagnosed_type1"/>
+        <CheckBox style="@style/checkBox" android:id="@+id/cb_member_diagnosed_type2" android:text="@string/hr_member_diagnosed_type2"/>
+        <CheckBox style="@style/checkBox" android:id="@+id/cb_member_diagnosed_type3" android:text="@string/hr_member_diagnosed_type3"/>
+        <CheckBox style="@style/checkBox" android:id="@+id/cb_member_diagnosed_type4" android:text="@string/hr_member_diagnosed_type4"/>
+        <CheckBox style="@style/checkBox" android:id="@+id/cb_member_diagnosed_type5" android:text="@string/hr_member_diagnosed_type5"/>
+        <CheckBox style="@style/checkBox" android:id="@+id/cb_member_diagnosed_type6" android:text="@string/hr_member_diagnosed_type6"/>
+        <CheckBox style="@style/checkBox" android:id="@+id/cb_member_diagnosed_type7" android:text="@string/hr_member_diagnosed_type7"/>
+        <CheckBox style="@style/checkBox" android:id="@+id/cb_member_diagnosed_type8" android:text="@string/hr_member_diagnosed_type8"/>
+        <CheckBox style="@style/checkBox" android:id="@+id/cb_member_diagnosed_type9" android:text="@string/hr_member_diagnosed_type9"/>
+        <CheckBox style="@style/checkBox" android:id="@+id/cb_member_diagnosed_type10" android:text="@string/hr_member_diagnosed_type10"/>
+        <CheckBox style="@style/checkBox" android:id="@+id/cb_member_diagnosed_type11" android:text="@string/hr_member_diagnosed_type11"/>
+        <CheckBox style="@style/checkBox" android:id="@+id/cb_member_diagnosed_type12" android:text="@string/hr_member_diagnosed_type12"/>
+
+        <com.google.android.material.textfield.TextInputLayout style="@style/commonTextInputLayout">
+            <EditText
+                style="@style/commonEditText"
+                android:id="@+id/et_member_diagnosed_other"
+                android:hint="@string/hr_member_diagnosed_type13"
+                android:inputType="textCapSentences"/>
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnBackStep5"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:textColor="@color/colorPrimary"
+            android:gravity="center"
+            android:padding="@dimen/_10sdp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:background="@drawable/btn_circle_white"
+            android:text="@string/BACK"/>
+        <TextView
+            android:padding="@dimen/_10sdp"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:id="@+id/btnNextStep5"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:background="@drawable/button_defaults"
+            android:text="@string/NEXT" />
+    </LinearLayout>
+
+
+</LinearLayout>

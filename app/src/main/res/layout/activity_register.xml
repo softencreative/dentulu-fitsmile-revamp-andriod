@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:visibility="gone">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/white"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:theme="@style/ToolBarStyle" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_5sdp"
+        android:orientation="horizontal">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/commonTextViewLogin"
+        android:fontFamily="@font/proxima_nova_bold"
+        android:text="@string/title_register"
+        android:textAllCaps="true"
+        android:textSize="@dimen/_28sdp"
+        android:paddingLeft="@dimen/_10sdp"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_select_language"
+            android:background="@drawable/bg_btn_white_stroke"
+            android:text="@string/language"
+            android:layout_margin="@dimen/_10sdp"
+            android:visibility="gone"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="end"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_14sdp"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/commonLabelTextViewBoldWhite"
+                android:text="@string/patient_information" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/TextInputLayoutStyleLogin"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_3sdp"
+                    android:layout_weight="1"
+                    app:boxCornerRadiusBottomEnd="0dp"
+                    app:boxCornerRadiusBottomStart="0dp"
+                    app:boxCornerRadiusTopEnd="0dp"
+                    app:hintTextColor="@color/white"
+                    app:boxCornerRadiusTopStart="0dp">
+
+                    <EditText
+                        android:id="@+id/et_first_name"
+                        style="@style/commonEditTextLogin"
+                        android:textColorHint="@color/white"
+                        android:hint="@string/hint_first_name"
+                        android:inputType="textEmailAddress" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/TextInputLayoutStyleLogin"
+                    app:hintTextColor="@color/white"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_weight="1"
+                    app:boxCornerRadiusBottomEnd="0dp"
+                    app:boxCornerRadiusBottomStart="0dp"
+                    app:boxCornerRadiusTopEnd="0dp"
+                    app:boxCornerRadiusTopStart="0dp">
+
+                    <EditText
+                        style="@style/commonEditTextLogin"
+                        android:textColorHint="@color/white"
+                        android:id="@+id/et_last_name"
+                        android:hint="@string/hint_last_name"
+                        android:inputType="textEmailAddress" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/TextInputLayoutStyleLogin"
+                app:hintTextColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_12sdp"
+                app:boxCornerRadiusBottomEnd="0dp"
+                app:boxCornerRadiusBottomStart="0dp"
+                app:boxCornerRadiusTopEnd="0dp"
+                app:boxCornerRadiusTopStart="0dp">
+
+                <EditText
+                    android:id="@+id/et_dob"
+                    style="@style/commonEditTextLogin"
+                    android:textColorHint="@color/white"
+                    android:focusable="false"
+                    android:drawableEnd="@drawable/ic_arrow_drop_down"
+                    android:focusableInTouchMode="false"
+                    android:hint="@string/hint_dob"
+                    android:inputType="textEmailAddress" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_male"
+                    style="@style/commonTextViewLogin"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_btn_white_stroke"
+                    android:gravity="center"
+                    android:padding="@dimen/_10sdp"
+                    android:text="@string/male" />
+
+                <TextView
+                    android:id="@+id/tv_female"
+                    style="@style/commonTextViewLogin"
+                    android:layout_width="0dp"
+                    android:layout_marginStart="-1dp"
+                    android:layout_marginEnd="-1dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_btn_white_stroke"
+                    android:gravity="center"
+                    android:padding="@dimen/_10sdp"
+                    android:text="@string/female" />
+
+                <TextView
+                    android:id="@+id/tv_other"
+                    style="@style/commonTextViewLogin"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_btn_white_stroke"
+                    android:gravity="center"
+                    android:padding="@dimen/_10sdp"
+                    android:text="@string/other" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <TextView
+                style="@style/commonLabelTextViewBoldWhite"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:text="@string/lbl_account_details" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/TextInputLayoutStyleLogin"
+                app:hintTextColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_12sdp"
+                app:boxCornerRadiusBottomEnd="0dp"
+                app:boxCornerRadiusBottomStart="0dp"
+                app:boxCornerRadiusTopEnd="0dp"
+                app:boxCornerRadiusTopStart="0dp">
+
+                <EditText
+                    android:id="@+id/et_email"
+                    style="@style/commonEditTextLogin"
+                    android:textColorHint="@color/white"
+                    android:hint="@string/hint_email_id"
+                    android:inputType="textEmailAddress" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_height="@dimen/_44sdp"
+                android:orientation="horizontal">
+                <com.hbb20.CountryCodePicker
+                    android:id="@+id/ccp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:ccpDialog_keyboardAutoPopup="false"
+                    app:ccp_defaultLanguage="SPANISH"
+                    app:ccp_autoDetectLanguage="true"
+                    app:ccp_defaultNameCode="MX"/>
+
+<!--                <com.hbb20.CountryCodePicker-->
+<!--                    android:id="@+id/ccp"-->
+<!--                    android:layout_centerVertical="true"-->
+<!--                    android:layout_width="@dimen/_100sdp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_marginTop="@dimen/_7sdp"-->
+<!--                    android:layout_marginBottom="@dimen/_5sdp"-->
+<!--                    android:layout_marginEnd="@dimen/_4sdp"-->
+<!--                    android:gravity="center"-->
+<!--                    android:background="@drawable/bg_btn_default_stroke"-->
+<!--                    app:defaultNameCode="US" />-->
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/TextInputLayoutStyleLogin"
+                    app:hintTextColor="@color/white"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    app:boxCornerRadiusBottomEnd="0dp"
+                    app:boxCornerRadiusBottomStart="0dp"
+                    app:boxCornerRadiusTopEnd="0dp"
+                    app:boxCornerRadiusTopStart="0dp">
+
+                    <EditText
+                        style="@style/commonEditTextLogin"
+                        android:textColorHint="@color/white"
+                        android:hint="@string/hint_phone"
+                        android:id="@+id/et_phone"
+                        android:inputType="number" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/TextInputLayoutStyleLogin"
+                app:hintTextColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_6sdp"
+                app:boxCornerRadiusBottomEnd="0dp"
+                app:boxCornerRadiusBottomStart="0dp"
+                app:boxCornerRadiusTopEnd="0dp"
+                app:boxCornerRadiusTopStart="0dp"
+                app:passwordToggleTint="@color/colorPrimary"
+                app:passwordToggleEnabled="true">
+
+                <EditText
+                    style="@style/commonEditTextLogin"
+                    android:textColorHint="@color/white"
+                    android:hint="@string/hint_password"
+                    android:id="@+id/et_pwd"
+                    android:inputType="textPassword" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/TextInputLayoutStyleLogin"
+                app:hintTextColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_6sdp"
+                app:boxCornerRadiusBottomEnd="0dp"
+                app:boxCornerRadiusBottomStart="0dp"
+                app:boxCornerRadiusTopEnd="0dp"
+                app:boxCornerRadiusTopStart="0dp"
+                app:passwordToggleTint="@color/colorPrimary"
+                app:passwordToggleEnabled="true">
+
+                <EditText
+                    style="@style/commonEditTextLogin"
+                    android:textColorHint="@color/white"
+                    android:id="@+id/et_confirm_pwd"
+                    android:hint="@string/hint_confirm_pwd"
+                    android:inputType="textPassword" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_register"
+                android:text="@string/register"
+                style="@style/commonButtonStrokeLogin"
+                android:layout_marginTop="@dimen/_14sdp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_25sdp"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

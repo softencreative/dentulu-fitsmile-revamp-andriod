@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_parent_choose_date"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="0dp"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#66000000"
+        android:clickable="true"
+        android:focusable="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/_2sdp"
+            android:layout_marginEnd="@dimen/_2sdp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_stroke_top_cornor"
+                android:orientation="vertical"
+                android:padding="@dimen/_12sdp">
+                <TextView
+                    style="@style/commonLabelTextViewBold"
+                    android:layout_marginTop="@dimen/_14sdp"
+                    android:layout_gravity="center"
+                    android:text="@string/schedule_your_appointment" />
+
+
+                <HorizontalScrollView
+                    android:scrollbars="none"
+                    android:layout_margin="@dimen/_16sdp"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/bg_btn_default_stroke"
+                    android:layout_height="wrap_content">
+
+                    <RadioGroup
+                        android:id="@+id/rg_date"
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+
+
+                    </RadioGroup>
+
+                </HorizontalScrollView>
+
+                <HorizontalScrollView
+                    android:scrollbars="none"
+                    android:layout_margin="@dimen/_16sdp"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/bg_btn_default_stroke"
+                    android:layout_height="wrap_content">
+
+                    <RadioGroup
+                        android:id="@+id/rg_time"
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+
+
+                    </RadioGroup>
+
+                </HorizontalScrollView>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_confirm"
+                    style="@style/commonButtonSolid"
+                    android:layout_marginTop="@dimen/_14sdp"
+                    android:text="@string/confirm" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_cancel"
+                    style="@style/commonButtonSolid"
+                    android:layout_marginTop="@dimen/_14sdp"
+                    android:text="@string/btn_cancel" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

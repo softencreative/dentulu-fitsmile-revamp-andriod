@@ -1,0 +1,97 @@
+{
+  "project_info": {
+    "project_number": "438160820287",
+    "firebase_url": "https://fits-smile.firebaseio.com",
+    "project_id": "fits-smile",
+    "storage_bucket": "fits-smile.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:438160820287:android:9a1e2d550be9ca527fd08a",
+        "android_client_info": {
+          "package_name": "com.app.fitsmile"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "438160820287-9ksgr6sl5dii8i7j7jc2ljji0pa2f9bg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.fitsmile",
+            "certificate_hash": "ab18f09962c9aa4f8eff53c325f9b9ca12d307e7"
+          }
+        },
+        {
+          "client_id": "438160820287-1jhab9i86agsdtf1ukrflc553d7c9t3d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0RDDzvdh6gxYKm2YThdHE6yl0TKqclmE"
+        },
+        {
+          "current_key": "AIzaSyCjtTCFb8nwkc5mD7X-ZFxqAUMq2jdzbQU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "438160820287-1jhab9i86agsdtf1ukrflc553d7c9t3d.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "438160820287-fk107b3663jhqnnpp34psc0bslgdgopu.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.dentulu.FitSmile"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:438160820287:android:cb7ddba77e4931e87fd08a",
+        "android_client_info": {
+          "package_name": "com.app.patient"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "438160820287-1jhab9i86agsdtf1ukrflc553d7c9t3d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0RDDzvdh6gxYKm2YThdHE6yl0TKqclmE"
+        },
+        {
+          "current_key": "AIzaSyCjtTCFb8nwkc5mD7X-ZFxqAUMq2jdzbQU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "438160820287-1jhab9i86agsdtf1ukrflc553d7c9t3d.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "438160820287-fk107b3663jhqnnpp34psc0bslgdgopu.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.dentulu.FitSmile"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

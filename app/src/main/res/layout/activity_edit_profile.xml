@@ -1,0 +1,291 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:elevation="0dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimaryDark"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:theme="@style/ToolBarStyleWhite" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="@dimen/_110sdp"
+            android:layout_height="@dimen/_110sdp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_marginBottom="@dimen/_30sdp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_centerInParent="true"
+                android:layout_height="@dimen/_100sdp"
+                android:src="@color/black" />
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imv_add_image"
+                android:layout_width="@dimen/_35sdp"
+                android:src="@color/colorPrimary"
+                android:layout_alignParentEnd="true"
+                android:layout_height="@dimen/_35sdp">
+
+            </de.hdodenhof.circleimageview.CircleImageView>
+
+            <ImageView
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                app:tint="@color/white"
+                android:padding="@dimen/_10sdp"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/ic_edit" />
+
+            <TextView
+                style="@style/commonLabelTextView"
+                android:layout_centerInParent="true"
+                android:text="@string/hint_add_photo"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_14sdp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/TextInputLayoutStyle"
+                    android:layout_width="0dp"
+                    app:boxStrokeColor="@color/colorPrimary"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_3sdp"
+                    android:layout_weight="1"
+                    app:boxCornerRadiusBottomEnd="0dp"
+                    app:boxCornerRadiusBottomStart="0dp"
+                    app:boxCornerRadiusTopEnd="0dp"
+                    app:boxCornerRadiusTopStart="0dp">
+
+                    <EditText
+                        android:id="@+id/et_first_name"
+                        style="@style/commonEditText"
+                        android:hint="@string/hint_first_name"
+                        android:inputType="textEmailAddress" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/TextInputLayoutStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_weight="1"
+                    app:boxCornerRadiusBottomEnd="0dp"
+                    app:boxCornerRadiusBottomStart="0dp"
+                    app:boxCornerRadiusTopEnd="0dp"
+                    app:boxCornerRadiusTopStart="0dp">
+
+                    <EditText
+                        android:id="@+id/et_last_name"
+                        style="@style/commonEditText"
+                        android:hint="@string/hint_last_name"
+                        android:inputType="textEmailAddress" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/TextInputLayoutStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_12sdp"
+                app:boxCornerRadiusBottomEnd="0dp"
+                app:boxCornerRadiusBottomStart="0dp"
+                app:boxCornerRadiusTopEnd="0dp"
+                app:boxCornerRadiusTopStart="0dp">
+
+                <EditText
+                    android:id="@+id/et_dob"
+                    style="@style/commonEditText"
+                    android:drawableEnd="@drawable/ic_arrow_drop_down"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:hint="@string/hint_dob"
+                    android:inputType="textEmailAddress" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/TextInputLayoutStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_12sdp"
+                app:boxCornerRadiusBottomEnd="0dp"
+                app:boxCornerRadiusBottomStart="0dp"
+                app:boxCornerRadiusTopEnd="0dp"
+                app:boxCornerRadiusTopStart="0dp">
+
+                <EditText
+                    android:id="@+id/et_email"
+                    style="@style/commonEditText"
+                    android:enabled="false"
+                    android:hint="@string/hint_email_id"
+                    android:inputType="textEmailAddress" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_44sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <com.hbb20.CountryCodePicker
+                    android:id="@+id/ccp"
+                    android:layout_width="wrap_content"
+                    app:ccpDialog_keyboardAutoPopup="false"
+                    app:ccp_countryPreference="MX"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="@dimen/_7sdp"
+                    android:layout_marginEnd="@dimen/_4sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:background="@drawable/bg_btn_default_stroke"
+                    app:ccp_defaultNameCode="MX"/>
+
+<!--                <com.hbb20.CountryCodePicker-->
+<!--                    android:id="@+id/ccp"-->
+<!--                    android:layout_width="@dimen/_100sdp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_centerVertical="true"-->
+<!--                    android:layout_marginTop="@dimen/_7sdp"-->
+<!--                    android:layout_marginEnd="@dimen/_4sdp"-->
+<!--                    android:layout_marginBottom="@dimen/_5sdp"-->
+<!--                    app:ccpLanguage="SPANISH"-->
+<!--                    app:defaultCode="52"-->
+<!--                    app:countryPreference="MX"-->
+<!--                    android:background="@drawable/bg_btn_default_stroke"-->
+<!--                    android:gravity="center"-->
+<!--                    app:defaultNameCode="MX" />-->
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/TextInputLayoutStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:boxCornerRadiusBottomEnd="0dp"
+                    app:boxCornerRadiusBottomStart="0dp"
+                    app:boxCornerRadiusTopEnd="0dp"
+                    app:boxCornerRadiusTopStart="0dp">
+
+                    <EditText
+                        android:id="@+id/et_phone"
+                        style="@style/commonEditText"
+                        android:hint="@string/hint_phone"
+                        android:inputType="phone" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/TextInputLayoutStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_12sdp"
+                app:boxCornerRadiusBottomEnd="0dp"
+                app:boxCornerRadiusBottomStart="0dp"
+                app:boxCornerRadiusTopEnd="0dp"
+                app:boxCornerRadiusTopStart="0dp">
+
+                <EditText
+                    style="@style/commonEditText"
+                    android:id="@+id/et_password"
+                    android:focusableInTouchMode="false"
+                    android:focusable="false"
+                    android:drawableEnd="@drawable/ic_edit"
+                    android:hint="@string/hint_password"
+                    android:inputType="textEmailAddress" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_male"
+                    style="@style/commonLabelTextView"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_btn_default_stroke"
+                    android:gravity="center"
+                    android:padding="@dimen/_10sdp"
+                    android:text="@string/male" />
+
+                <TextView
+                    android:id="@+id/tv_female"
+                    style="@style/commonLabelTextView"
+                    android:layout_width="0dp"
+                    android:layout_marginStart="-1dp"
+                    android:layout_marginEnd="-1dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_btn_default_stroke"
+                    android:gravity="center"
+                    android:padding="@dimen/_10sdp"
+                    android:text="@string/female" />
+
+                <TextView
+                    android:id="@+id/tv_other"
+                    style="@style/commonLabelTextView"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_btn_default_stroke"
+                    android:gravity="center"
+                    android:padding="@dimen/_10sdp"
+                    android:text="@string/non_binary" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_update_profile"
+                style="@style/commonButtonSolid"
+                android:layout_marginTop="@dimen/_14sdp"
+                android:text="@string/btn_update" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_25sdp" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

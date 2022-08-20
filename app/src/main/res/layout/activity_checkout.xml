@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".shop.ui.CheckoutActivity">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/white"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:theme="@style/ToolBarStyle" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        app:layout_constraintTop_toBottomOf="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/common_layout" />
+
+
+            <TextView
+                android:id="@+id/textPrdoucts"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@color/title_text_color"
+                android:fontFamily="@font/proxima_nova_bold"
+                android:padding="@dimen/_10sdp"
+                android:text="@string/products"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="@+id/guide_vertical_60"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textCartTotal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:background="@color/title_text_color"
+                android:fontFamily="@font/proxima_nova_bold"
+                android:padding="@dimen/_10sdp"
+                android:text="@string/sub_total"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/guide_vertical_60"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layoutProductTable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:background="@drawable/bg_stroke_checkout"
+                app:layout_constraintTop_toBottomOf="@+id/textCartTotal">
+
+                <include layout="@layout/common_layout" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerProductTotal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+
+                <TextView
+                    android:id="@+id/textTotal"
+                    style="@style/commonTextView12"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_30sdp"
+                    android:fontFamily="@font/proxima_nova_bold"
+                    android:padding="@dimen/_10sdp"
+                    android:text="@string/total"
+                    android:textColor="@color/title_text_color"
+                    app:layout_constraintEnd_toEndOf="@+id/guide_vertical_60"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/recyclerProductTotal" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="0dp"
+                    android:background="@color/color_selected_tab"
+                    app:layout_constraintBottom_toBottomOf="@+id/textTotal"
+                    app:layout_constraintStart_toStartOf="@+id/guide_vertical_60"
+                    app:layout_constraintTop_toTopOf="@+id/textTotal" />
+
+                <TextView
+                    android:id="@+id/textTotalPrice"
+                    style="@style/commonTextView12"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:fontFamily="@font/proxima_nova_bold"
+                    android:padding="@dimen/_10sdp"
+                    android:text="$60"
+                    android:textColor="@color/title_text_color"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/guide_vertical_70"
+                    app:layout_constraintTop_toBottomOf="@+id/recyclerProductTotal" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <TextView
+                android:id="@+id/textBillingAddress"
+                style="@style/commonTextView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/proxima_nova_bold"
+                android:text="@string/billing_details"
+                android:textColor="@color/colorPrimary"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/layoutProductTable" />
+
+            <TextView
+                android:id="@+id/textBillingAddressValue"
+                style="@style/commonTextView12"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_50sdp"
+                android:background="@drawable/bg_stroke_checkout"
+                android:fontFamily="@font/proxima_nova_light"
+                android:padding="@dimen/_6sdp"
+                android:text="@string/billing_Address"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textBillingAddress" />
+
+
+            <CheckBox
+                android:id="@+id/checkShippingAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:buttonTint="@color/colorPrimary"
+                app:layout_constraintBottom_toBottomOf="@+id/textShippingAddress"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textShippingAddress" />
+
+
+            <TextView
+                android:id="@+id/textShippingAddress"
+                style="@style/commonTextView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/proxima_nova_regular"
+                android:text="@string/shipping_address_same_above"
+                android:textColor="@color/title_text_color"
+                app:layout_constraintStart_toEndOf="@+id/checkShippingAddress"
+                app:layout_constraintTop_toBottomOf="@+id/textBillingAddressValue" />
+
+
+            <TextView
+                android:id="@+id/textShippingAddressValue"
+                style="@style/commonTextView12"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_50sdp"
+                android:background="@drawable/bg_stroke_checkout"
+                android:fontFamily="@font/proxima_nova_light"
+                android:padding="@dimen/_6sdp"
+                android:text="@string/shipping_address"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textShippingAddress" />
+
+
+            <TextView
+                android:id="@+id/textSavedCards"
+                style="@style/commonTextView12"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_50sdp"
+                android:background="@drawable/bg_stroke_checkout"
+                android:fontFamily="@font/proxima_nova_light"
+                android:padding="@dimen/_6sdp"
+                android:text="@string/txt_add_card"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textShippingAddressValue" />
+
+
+            <TextView
+                android:id="@+id/textGrandTotal"
+                style="@style/commonTextView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/proxima_nova_bold"
+                android:text="Grand Total: $50"
+                android:textColor="@color/colorPrimary"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textSavedCards" />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnAddCart"
+                style="@style/commonButtonSolidGrey"
+                android:layout_margin="@dimen/_20sdp"
+                android:paddingStart="@dimen/_50sdp"
+                android:paddingEnd="@dimen/_50sdp"
+                android:text="@string/checkout"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textGrandTotal" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

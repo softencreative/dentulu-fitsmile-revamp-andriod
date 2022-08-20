@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "438160820287",
+    "firebase_url": "https://fits-smile.firebaseio.com",
+    "project_id": "fits-smile",
+    "storage_bucket": "fits-smile.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:438160820287:android:cb7ddba77e4931e87fd08a",
+        "android_client_info": {
+          "package_name": "com.app.fitsmile"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "438160820287-1jhab9i86agsdtf1ukrflc553d7c9t3d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCjtTCFb8nwkc5mD7X-ZFxqAUMq2jdzbQU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "438160820287-1jhab9i86agsdtf1ukrflc553d7c9t3d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

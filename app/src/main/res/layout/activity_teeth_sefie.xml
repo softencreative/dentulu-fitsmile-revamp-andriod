@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_gray"
+    tools:context=".fitsreminder.TeethSefieActivity">
+
+    <com.app.fitsmile.utils.AutoFitTextureView
+        android:id="@+id/texture"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_above="@+id/layoutbottom"
+        android:layout_alignParentTop="true" />
+
+    <ImageView
+        android:layout_marginTop="@dimen/_60sdp"
+        android:id="@+id/imageClick"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_220sdp"/>
+
+    <ImageView
+        android:id="@+id/imageRound"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_160sdp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_80sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:background="@drawable/crop_part" />
+
+    <LinearLayout
+        android:background="@color/black_gray"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:padding="@dimen/_10sdp"
+            android:id="@+id/closeCamera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            app:tint="@color/white"
+            app:srcCompat="@drawable/ic_close_24" />
+
+        <ImageView
+            android:padding="@dimen/_10sdp"
+            android:id="@+id/switchCamera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            app:tint="@color/white"
+            app:srcCompat="@drawable/ic_baseline_flip_camera_ios_24" />
+
+        <ImageView
+            android:padding="@dimen/_10sdp"
+            android:id="@+id/flashOn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_flash_off" />
+
+
+
+        <ImageView
+            android:padding="@dimen/_10sdp"
+            android:id="@+id/imageZoom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_zoom_in" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutbottom"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:background="@color/black_gray"
+        android:layout_height="@dimen/_250sdp">
+        <ImageView
+            android:padding="@dimen/_5sdp"
+            android:layout_centerInParent="true"
+            android:id="@+id/captureBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_baseline_camera_24" />
+
+
+        <LinearLayout
+           android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:background="@drawable/bg_radio_btn_one_selector"
+                android:padding="@dimen/_20sdp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="@color/black_light"
+                android:textSize="@dimen/_16sp"
+                android:fontFamily="@font/proxima_nova_bold"
+                android:text="@string/lbl_left"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+            <TextView
+                android:background="@drawable/bg_radio_btn_one_selector"
+                android:padding="@dimen/_20sdp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="@color/black_light"
+                android:textSize="@dimen/_16sp"
+                android:fontFamily="@font/proxima_nova_bold"
+                android:text="@string/lbl_right"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+            <TextView
+                android:background="@drawable/bg_radio_btn_one_selector"
+                android:padding="@dimen/_20sdp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="@color/black_light"
+                android:textSize="@dimen/_16sp"
+                android:fontFamily="@font/proxima_nova_bold"
+                android:text="@string/lbl_front"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

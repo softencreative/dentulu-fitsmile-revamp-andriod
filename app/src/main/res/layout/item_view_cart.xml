@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_5sdp"
+    android:foreground="?android:attr/selectableItemBackground"
+    card_view:cardCornerRadius="1dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/lin_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/common_layout"/>
+
+        <ImageView
+            android:id="@+id/product_image"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:background="@color/image_dummy_color"
+            android:clickable="true"
+            android:scaleType="fitXY"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/product_name"
+            style="@style/commonTextView14"
+            android:layout_width="0dp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:fontFamily="@font/proxima_nova_light"
+            android:maxLines="2"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:textColor="@color/title_text_color"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintStart_toEndOf="@+id/product_image"
+            card_view:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/product_price"
+            style="@style/commonTextView12"
+            card_view:layout_constraintEnd_toEndOf="@+id/guide_vertical_65"
+            android:layout_width="0dp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            card_view:layout_constraintStart_toEndOf="@+id/product_image"
+           card_view:layout_constraintTop_toBottomOf="@+id/product_name"
+            android:fontFamily="@font/proxima_nova_bold"
+            android:paddingStart="@dimen/_5sdp"
+            android:singleLine="true" />
+
+
+        <TextView
+            card_view:layout_constraintTop_toBottomOf="@+id/product_name"
+            card_view:layout_constraintStart_toStartOf="@+id/guide_vertical_65"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/textQty"
+            android:text="Qty"
+            android:fontFamily="@font/proxima_nova_regular"
+            android:textColor="@color/light_grey_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <ImageView
+            android:id="@+id/imageMinusProduct"
+           android:padding="@dimen/_5sdp"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintStart_toStartOf="@+id/guide_vertical_5"
+            card_view:layout_constraintTop_toBottomOf="@+id/textQty"
+            android:layout_width="wrap_content"
+            android:src="@drawable/ic_miuns"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            card_view:layout_constraintTop_toTopOf="@+id/imageAddProduct"
+            card_view:layout_constraintBottom_toBottomOf="@+id/imageAddProduct"
+            android:id="@+id/textProductQuantity"
+            card_view:layout_constraintStart_toEndOf="@+id/imageMinusProduct"
+            card_view:layout_constraintEnd_toStartOf="@+id/imageAddProduct"
+            android:layout_width="0dp"
+            android:text="1"
+            android:gravity="center"
+            android:textColor="@color/title_text_color"
+            style="@style/commonTextView12"
+            android:fontFamily="@font/proxima_nova_regular"
+            android:layout_height="wrap_content"/>
+
+
+        <ImageView
+            android:padding="@dimen/_5sdp"
+            android:src="@drawable/ic_plus"
+            android:id="@+id/imageAddProduct"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintStart_toStartOf="@+id/textProductQuantity"
+            card_view:layout_constraintTop_toBottomOf="@+id/textQty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
+

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/cardUser"
+    android:layout_marginTop="@dimen/_10sdp"
+    android:layout_marginStart="@dimen/_10sdp"
+    android:layout_marginEnd="@dimen/_10sdp"
+    android:layout_marginBottom="@dimen/_1sdp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:padding="@dimen/_5sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_profile_placeholder"
+            android:id="@+id/imageUser"/>
+
+        <LinearLayout
+            android:id="@+id/ll_name"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:orientation="vertical"
+            android:layout_toEndOf="@+id/imageUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textColor="@color/black_gray"
+                android:id="@+id/name"
+                android:fontFamily="@font/proxima_nova_bold"
+                android:text="Ramandeep"
+                android:textSize="@dimen/_18sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:visibility="visible"
+                android:text="REF ID"
+                android:id="@+id/type"
+                android:fontFamily="@font/proxima_nova_bold"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textSize="@dimen/_14sp"
+                android:textColor="@color/black_light"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/imageSelect"
+            android:padding="@dimen/_5sdp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_check_24"
+            app:tint="@color/colorPrimary" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
