@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/white"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:theme="@style/ToolBarStyle" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_14sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:visibility="gone"
+        android:layout_marginEnd="@dimen/_14sdp">
+
+        <EditText
+            android:id="@+id/et_dentist_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            style="@style/commonEditText"
+            android:background="@drawable/bg_btn_default_stroke"
+            android:hint="@string/hint_search"
+            android:imeOptions="actionSearch"
+            android:padding="@dimen/_10sdp"
+            android:singleLine="true"
+            android:textColor="@color/black" />
+
+        <ImageView
+            android:id="@+id/iv_dentist_name"
+            android:layout_width="40dp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_alignParentEnd="true"
+            android:padding="@dimen/_5sdp"
+            android:src="@drawable/ic_search"
+            app:tint="@color/colorPrimary" />
+
+<!--        <AutoCompleteTextView-->
+<!--            android:id="@+id/searchAutoComplete"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignParentRight="true"-->
+<!--            android:layout_margin="3dp"-->
+<!--            android:padding="@dimen/_10sdp"-->
+<!--            android:layout_centerVertical="true"-->
+<!--            android:singleLine="true"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:background="@drawable/bg_btn_default_stroke"-->
+<!--            android:drawableRight="@drawable/ic_search"-->
+<!--            android:drawableTint="#A5A5A5"-->
+<!--            android:hint="@string/hint_search"-->
+<!--            android:imeOptions="actionSearch"-->
+<!--            android:inputType="textAutoComplete|textAutoCorrect" />-->
+
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/search_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_14sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_14sdp"
+        android:background="@drawable/bg_btn_default_stroke"
+        android:focusable="false"
+        android:padding="@dimen/_10sdp"
+        android:focusableInTouchMode="true"
+        android:queryHint="@string/hint_search"
+        app:defaultQueryHint="@string/hint_search"
+        app:iconifiedByDefault="false"
+        app:queryBackground="@null" />
+    <TextView
+        android:visibility="gone"
+        android:layout_margin="@dimen/_14sdp"
+        android:layout_gravity="center"
+        style="@style/commonLabelTextViewBold"
+        android:text="@string/lbl_select_doctor"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text="@string/lbl_no_doctor_connected"
+            android:id="@+id/no_doctors"
+            style="@style/commonLabelTextView"
+            android:visibility="gone"
+            android:gravity="center"
+            android:textColor="@color/colorAccent"
+            android:layout_height="match_parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginTop="@dimen/_10sdp"
+            android:id="@+id/recycler_search_dentist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

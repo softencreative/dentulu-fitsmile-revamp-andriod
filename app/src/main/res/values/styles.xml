@@ -1,0 +1,308 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowLightStatusBar" tools:ignore="NewApi">true</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <style name="BottomNavigationView" parent="@style/TextAppearance.AppCompat.Caption">
+        <item name="android:textSize">@dimen/_7sdp</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="BottomNavigationView.Active" parent="@style/TextAppearance.AppCompat.Caption">
+        <item name="android:textSize">@dimen/_9sdp</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="FullScreenVideoTheme" parent="AppTheme">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="ToolBarStyle" parent="Theme.MaterialComponents">
+        <item name="android:textColorPrimary">@color/colorPrimary</item>
+        <item name="android:textColorSecondary">@color/colorPrimary</item>
+        <item name="actionMenuTextColor">@color/colorPrimary</item>
+        <item name="android:fontFamily">@font/proxima_nova_regular</item>
+    </style>
+
+    <style name="ToolBarStyleWhite" parent="Theme.MaterialComponents">
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:textColorSecondary">@color/white</item>
+        <item name="actionMenuTextColor">@color/white</item>
+        <item name="android:fontFamily">@font/proxima_nova_regular</item>
+    </style>
+
+    <style name="AppTabLayout" parent="Widget.MaterialComponents.TabLayout">
+        <item name="tabIndicatorColor">@color/colorAccent</item>
+        <item name="tabIndicatorHeight">4dp</item>
+        <item name="tabPaddingStart">@dimen/_16sdp</item>
+        <item name="tabPaddingEnd">@dimen/_16sdp</item>
+        <item name="android:fontFamily">@font/proxima_nova_regular</item>
+        <item name="tabTextAppearance">@style/AppTabTextAppearance</item>
+        <item name="tabSelectedTextColor">@color/tool_bar_text_color</item>  //selected color
+    </style>
+
+    <style name="TextInputLayoutStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="boxStrokeColor">@drawable/bg_box_stroke_color</item>
+        <item name="boxStrokeWidth">2dp</item>
+        <item name="android:password">false</item>
+    </style>
+
+    <style name="TextInputLayoutStyleLogin" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="boxStrokeColor">@drawable/bg_box_stroke_color_white</item>
+        <item name="boxStrokeWidth">2dp</item>
+        <item name="android:textColorHint">@color/white</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:password">false</item>
+    </style>
+
+    <!-- for text -->
+    <style name="AppTabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">@dimen/_16sdp</item>
+        <item name="android:fontFamily">@font/proxima_nova_regular</item>
+        <item name="android:textColor">@color/title_text_color</item>   // default color
+        <item name="textAllCaps">true</item>
+    </style>
+
+    <style name="commonEditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:imeOptions">actionNext</item>
+        <item name="android:padding">@dimen/_8sdp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:fontFamily">@font/proxima_nova_regular</item>
+        <item name="android:textColor">@color/side_menu_txt</item>
+        <item name="android:textSize">@dimen/_14sdp</item>
+    </style>
+
+    <style name="commonEditTextLogin">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:imeOptions">actionNext</item>
+        <item name="android:padding">@dimen/_8sdp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:fontFamily">@font/proxima_nova_regular</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorHint">@color/white</item>
+        <item name="android:textSize">@dimen/_14sdp</item>
+    </style>
+
+    <style name="commonTextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/proxima_nova_regular</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">@dimen/_14sdp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="commonTextViewLogin">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/proxima_nova_regular</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/_14sdp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="commonLabelTextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/proxima_nova_regular</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">@dimen/_13sdp</item>
+        <item name="android:gravity">start</item>
+    </style>
+
+
+    <style name="commonTextView12">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/_12sdp</item>
+    </style>
+
+    <style name="commonTextView14">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/_14sdp</item>
+    </style>
+
+
+    <style name="commonTextView16">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/_16sdp</item>
+    </style>
+
+    <style name="checkBox">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/_12sdp</item>
+        <item name="android:layout_marginTop">@dimen/_5sdp</item>
+    </style>
+
+    <style name="commonTextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_marginTop">@dimen/_10sdp</item>
+    </style>
+
+    <style name="commonLabelTextViewLight">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/proxima_nova_regular</item>
+        <item name="android:textColor">@color/txt_color_body</item>
+        <item name="android:textSize">@dimen/_13sdp</item>
+        <item name="android:gravity">start</item>
+    </style>
+
+    <style name="commonLabelTextViewBold">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/proxima_nova_bold</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textSize">@dimen/_14sdp</item>
+        <item name="android:gravity">start</item>
+    </style>
+    <style name="commonLabelTextViewBoldWhite">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/proxima_nova_bold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/_14sdp</item>
+        <item name="android:gravity">start</item>
+    </style>
+    <style name="commonLabelTextViewTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/proxima_nova_bold</item>
+        <item name="android:textColor">@color/title_txt_color</item>
+        <item name="android:textSize">@dimen/_16sdp</item>
+        <item name="android:gravity">start</item>
+    </style>
+
+
+    <style name="commonButtonSolid">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/bg_btn_default_solid</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/proxima_nova_regular</item>
+        <item name="android:foreground">?android:attr/selectableItemBackground</item>
+        <item name="android:textSize">@dimen/_14sdp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="commonButtonSolidGrey">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/bg_btn_grey</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/proxima_nova_regular</item>
+        <item name="android:foreground">?android:attr/selectableItemBackground</item>
+        <item name="android:textSize">@dimen/_14sdp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="commonButtonStroke">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/bg_btn_default_stroke</item>
+        <item name="android:textColor">@color/side_menu_txt</item>
+        <item name="android:fontFamily">@font/proxima_nova_regular</item>
+        <item name="android:foreground">?android:attr/selectableItemBackground</item>
+        <item name="android:textSize">@dimen/_14sdp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+    <style name="commonButtonStrokeLogin">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/bg_bottom_white</item>
+        <item name="android:textColor">@color/side_menu_txt</item>
+        <item name="android:fontFamily">@font/proxima_nova_regular</item>
+        <item name="android:foreground">?android:attr/selectableItemBackground</item>
+        <item name="android:textSize">@dimen/_14sdp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="AppThemeRatingBar" parent="Widget.AppCompat.RatingBar.Indicator">
+        <item name="ratingBarStyle">@style/feedBackRating</item>
+    </style>
+    <style name="feedBackRating" parent="AppThemeRatingBar">
+        <item name="android:minHeight">@dimen/_25sdp</item>
+        <item name="android:minWidth">@dimen/_25sdp</item>
+        <item name="android:progressDrawable">@drawable/rating_bar_bg</item>
+    </style>
+
+    <style name="viewPagerTab" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">@dimen/_16sdp</item>
+<!--        <item name="textSize">@dimen/_16sdp</item>-->
+        <item name="android:fontFamily">@font/proxima_nova_bold</item>
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <style name="imgView">
+        <item name="android:layout_width">@dimen/_60sdp</item>
+        <item name="android:layout_height">@dimen/_60sdp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:tint">@color/white</item>
+    </style>
+
+    <style name="SwitchStyle" parent="Theme.AppCompat.Light">
+        <item name="colorControlActivated">@color/colorAccent</item>
+        <item name="colorSwitchThumbNormal">@color/profile_grey</item>
+        <item name="android:colorForeground">@color/colorAccent</item>
+    </style>
+    <style name="MySeekBarTheme" parent="Widget.AppCompat.SeekBar" >
+        <item name="colorAccent">@color/red</item>
+    </style>
+    <style name="NumberPickerStyle">
+        <item name="android:textSize">16sp</item>
+        <item name="fontFamily">@font/proxima_nova_regular</item>
+    </style>
+    <style name="CustomProgressBar" parent="android:Widget.ProgressBar.Horizontal">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/custom_progress_layout</item>
+        <item name="android:minHeight">10dip</item>
+        <item name="android:maxHeight">20dip</item>
+    </style>
+
+    <style name="CustomProgressBarGoal" parent="android:Widget.ProgressBar.Horizontal">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:minHeight">10dip</item>
+        <item name="android:maxHeight">20dip</item>
+    </style>
+</resources>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/bottom_home"
+        android:icon="@drawable/ic_home"
+        android:title="@string/btm_home" />
+
+    <item
+        android:id="@+id/bottom_my_appointments"
+        android:icon="@drawable/ic_calender"
+        android:title="@string/btm_my_appointment" />
+
+    <item
+        android:id="@+id/bottom_booking"
+        android:title="@string/btm_booking" />
+
+    <item
+        android:id="@+id/bottom_notification"
+        android:icon="@drawable/ic_notification"
+        android:title="@string/btm_notification" />
+
+    <item
+        android:id="@+id/bottom_my_account"
+        android:icon="@drawable/ic_my_account"
+        android:title="@string/btm_my_account" />
+
+
+
+
+</menu>

@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+           android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/white"
+                app:popupTheme="@style/AppTheme.PopupOverlay"
+                app:theme="@style/ToolBarStyle" />
+
+            <ImageView
+                android:id="@+id/imageSmileImageDelete"
+                app:tint="@color/colorPrimary"
+                android:padding="@dimen/_5sdp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_delete"/>
+        </RelativeLayout>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutImages"
+        android:visibility="visible"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="@dimen/_70sdp"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/imageRound"
+            android:layout_width="match_parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="@dimen/_100sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="@dimen/_100sdp"
+            android:layout_height="0dp"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layoutImagesShare"
+            android:layout_width="match_parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="@dimen/_100sdp"
+            android:layout_marginBottom="@dimen/_100sdp"
+            android:layout_height="@dimen/_270sdp">
+
+
+        <ImageView
+            android:paddingStart="@dimen/_1sdp"
+            android:paddingEnd="@dimen/_1sdp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:id="@+id/imageSelfie"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:id="@+id/textImageDate"
+            android:gravity="center"
+            android:padding="@dimen/_8sdp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/proxima_nova_bold"
+            android:text="@string/lbl_image_title"
+            android:background="#70ffffff"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/textImageName"
+                android:gravity="center"
+                android:padding="@dimen/_8sdp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/proxima_nova_bold"
+                android:text="@string/fitsmile"
+                android:background="#70ffffff"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutIcons"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:background="@color/black_gray"
+            app:layout_constraintBottom_toBottomOf="@+id/layoutImagesShare"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/imageEdit"
+                android:layout_weight="1"
+                android:padding="@dimen/_10sdp"
+                app:tint="@color/white"
+                android:src="@drawable/ic_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <ImageView
+                android:layout_weight="1"
+                android:padding="@dimen/_10sdp"
+                app:tint="@color/white"
+                android:src="@drawable/ic_campare_pics"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <ImageView
+                android:layout_weight="1"
+                android:padding="@dimen/_10sdp"
+                app:tint="@color/white"
+                android:src="@drawable/ic_video_smile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <ImageView
+                android:id="@+id/imageShare"
+                android:layout_weight="1"
+                android:padding="@dimen/_10sdp"
+                app:tint="@color/white"
+                android:src="@drawable/ic_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <ImageView
+                android:id="@+id/imageDelete"
+                android:layout_weight="1"
+                android:padding="@dimen/_10sdp"
+                app:tint="@color/white"
+                android:src="@drawable/ic_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+        <RelativeLayout
+            app:layout_constraintTop_toBottomOf="@+id/layoutIcons"
+            android:layout_width="match_parent"
+            android:background="@color/gray"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+
+            <com.yarolegovich.discretescrollview.DiscreteScrollView
+                android:id="@+id/picker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:dsv_orientation="horizontal" />
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:id="@+id/textAlignerImageNumber"
+                app:layout_constraintTop_toTopOf="parent"
+                android:background="@color/colorPrimary"
+                android:text="  "
+                android:fontFamily="@font/proxima_nova_bold"
+                android:textColor="@color/white"
+                android:paddingStart="@dimen/_20sdp"
+                android:paddingEnd="@dimen/_20sdp"
+                android:paddingTop="@dimen/_15sdp"
+                android:paddingBottom="@dimen/_15sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:visibility="gone"
+                android:id="@+id/recyclerPhotosIndex"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_50sdp"/>
+
+        </RelativeLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <TextView
+        android:id="@+id/nodata"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:fontFamily="@font/proxima_nova_regular"
+        android:text="No Aligner Images Yet"
+        android:visibility="visible" />
+
+    <View
+        android:id="@+id/fabBGLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black_translucent"
+        android:visibility="gone"/>
+    <LinearLayout
+        android:id="@+id/fabLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:padding="@dimen/_10sdp"
+        android:clipToPadding="false"
+        app:layout_behavior="com.app.fitsmile.utils.MoveUpwardBehavior"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:layout_gravity="bottom|end"
+        android:visibility="gone">
+        <!--    if you are not using Snackbar with this activity then remove below line from every place of the file:
+            app:layout_behavior="com.ajaysinghdewari.floatingactionbuttonmenu.activities.utils.MoveUpwardBehavior"
+            the above line enables the view to Scrolls up with the snackbar as, the FAB do automaticaly scrolls up
+            when the snackbar appear, so if snackbar is not used please remove the above line from every view present in the xml-->
+        <TextView
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:paddingStart="@dimen/_15sdp"
+            android:paddingEnd="@dimen/_15sdp"
+            android:fontFamily="@font/proxima_nova_bold"
+            android:textColor="@color/light_grey_color"
+            android:background="@drawable/text_bg_teeth_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Take Image"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            app:backgroundTint="@color/white"
+            app:background="@color/white"
+            app:tint="@color/black_light"
+            app:srcCompat="@drawable/ic_camera_24"
+            app:fabSize="mini"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fabLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10sdp"
+        android:clipToPadding="false"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:gravity="center_vertical"
+        app:layout_behavior="com.app.fitsmile.utils.MoveUpwardBehavior"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:layout_gravity="bottom|end"
+        android:visibility="gone">
+
+        <TextView
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:paddingStart="@dimen/_15sdp"
+            android:paddingEnd="@dimen/_15sdp"
+            android:fontFamily="@font/proxima_nova_bold"
+            android:textColor="@color/light_grey_color"
+            android:background="@drawable/text_bg_teeth_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pick from Gallery"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            app:backgroundTint="@color/white"
+            app:background="@color/white"
+            app:tint="@color/black_light"
+            app:srcCompat="@drawable/ic_gallery_24"
+            app:fabSize="mini"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:layout_marginBottom="@dimen/fab_margin"
+        android:clipToPadding="false"
+        android:gravity="center_vertical"
+        android:padding="@dimen/_10sdp"
+        app:layout_behavior="com.app.fitsmile.utils.MoveUpwardBehavior">
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:gravity="center_vertical"
+            app:backgroundTint="@color/colorPrimary"
+            app:tint="@color/white"
+            app:background="@color/colorPrimary"
+            app:fabSize="normal"
+            app:srcCompat="@drawable/ic_add" />
+    </LinearLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

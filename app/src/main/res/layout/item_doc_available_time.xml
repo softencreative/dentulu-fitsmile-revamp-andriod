@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginTop="16dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_days"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        style="@style/commonLabelTextViewBold"
+        android:textSize="12sp"
+        tools:text="Monday" />
+
+    <TextView
+        android:id="@+id/tv_timing"
+        android:gravity="center_vertical"
+        android:layout_marginTop="4dp"
+        android:layout_width="wrap_content"
+        android:drawablePadding="6dp"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_clock"
+        style="@style/commonLabelTextView"
+        android:textSize="12sp"
+        tools:text="07:00 AM - 09:00 PM" />
+
+    <TextView
+        android:id="@+id/tv_converted_time"
+        android:gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:visibility="gone"
+        style="@style/commonLabelTextView"
+        android:textSize="12sp"
+        tools:text="07:00 AM - 09:00 PM" />
+
+</LinearLayout>

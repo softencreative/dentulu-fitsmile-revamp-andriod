@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/_10sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <ImageView
+        android:id="@+id/imageTeeth"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/teeth_aligner"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_100sdp"/>
+
+    <TextView
+        android:id="@+id/textHeader"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/do_you_want_to_change_aligner"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textSize="@dimen/_22sp"
+         android:gravity="center"
+        android:fontFamily="@font/proxima_nova_bold"
+        app:layout_constraintTop_toBottomOf="@+id/imageTeeth"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/textAlignerDetails"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/change_from_aligner"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textSize="@dimen/_14sp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:fontFamily="@font/proxima_nova_bold"
+        app:layout_constraintTop_toBottomOf="@+id/textHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <View
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@color/transparent_white"
+        app:layout_constraintTop_toBottomOf="@+id/textAlignerDetails"
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

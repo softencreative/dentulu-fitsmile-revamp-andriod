@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="28dp"
+                android:background="@color/white"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="16dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:padding="@dimen/_10sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tvTitle"
+                            android:layout_width="match_parent"
+                            android:gravity="center"
+                            style="@style/commonLabelTextView"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:text="@string/app_name"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:textSize="@dimen/_14sdp"
+                            android:layout_height="wrap_content" />
+
+
+
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="@dimen/_14sdp">
+
+                            <TextView
+                                android:id="@+id/tvContent"
+                                android:layout_width="match_parent"
+                                android:gravity="center"
+                                android:layout_marginBottom="@dimen/_14sdp"
+                                style="@style/commonLabelTextView"
+                                android:text="@string/are_you_sure"
+                                android:textColor="@color/colorPrimary"
+                                android:layout_height="match_parent" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="@dimen/_6sdp"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:layout_width="@dimen/_100sdp"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/tvNo"
+                                    android:layout_marginEnd="@dimen/_5sdp"
+                                    android:textColor="@color/colorPrimary"
+                                    android:gravity="center"
+                                    android:padding="@dimen/_6sdp"
+                                    style="@style/commonLabelTextView"
+                                    android:foreground="?android:attr/selectableItemBackground"
+                                    android:background="@drawable/btn_circle_white"
+                                    android:text="@string/no"/>
+                                <TextView
+                                    android:padding="@dimen/_6sdp"
+                                    android:layout_width="@dimen/_100sdp"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/white"
+                                    android:gravity="center"
+                                    style="@style/commonLabelTextView"
+                                    android:layout_marginStart="@dimen/_5sdp"
+                                    android:id="@+id/tvYes"
+                                    android:foreground="?android:attr/selectableItemBackground"
+                                    android:background="@drawable/button_defaults"
+                                    android:text="@string/yes" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>
+
+

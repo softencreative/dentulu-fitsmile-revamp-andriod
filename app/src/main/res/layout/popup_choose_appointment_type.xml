@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/_8sdp"
+            android:orientation="vertical"
+            android:padding="@dimen/_14sdp">
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/tray_minder"
+                android:visibility="gone"
+                style="@style/commonButtonStroke"
+                android:padding="@dimen/_14sdp"
+                android:background="@drawable/bg_btn_white_corner"
+                android:text="@string/tray_minder" />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_book_video_appointment"
+                style="@style/commonButtonStroke"
+                android:padding="@dimen/_14sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:visibility="gone"
+                android:background="@drawable/bg_btn_white_corner"
+                android:text="@string/book_virtual_appointment" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_photo_consultation"
+                style="@style/commonButtonStroke"
+                android:padding="@dimen/_14sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/bg_btn_white_corner"
+                android:text="@string/book_photo_consultation" />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imv_close"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/ic_close" />
+</LinearLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_marginBottom="@dimen/_14sdp"
+    android:layout_marginEnd="@dimen/_14sdp"
+    android:layout_marginStart="@dimen/_14sdp"
+    android:background="@drawable/bg_btn_default_stroke"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:padding="@dimen/_10sdp"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/image"
+        android:layout_width="@dimen/_52sdp"
+        android:layout_height="@dimen/_52sdp"
+        android:background="@drawable/ic_profile_placeholder" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_dentist_name"
+                style="@style/commonLabelTextViewLight"
+                android:text="@string/doc_name_dr" />
+
+            <TextView
+                android:id="@+id/tv_view_profile"
+                style="@style/commonLabelTextViewLight"
+                android:textSize="@dimen/_10sdp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="italic"
+                android:text="@string/lbl_view_profile" />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <TextView
+            android:id="@+id/tv_schedule_now"
+            style="@style/commonLabelTextViewLight"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_round_cornor_stroke_medium"
+            android:padding="@dimen/_8sdp"
+            android:visibility="gone"
+            android:textSize="@dimen/_10sdp"
+            android:text="@string/schedule_now" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,713 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/top_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_80sdp"
+                android:fontFamily="@font/proxima_nova_bold"
+                android:gravity="center"
+                android:text="@string/daily_news"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/_23sdp"
+                android:visibility="gone" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="@color/colorPrimaryDark" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:id="@+id/layoutOverview"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_60sdp"
+                            android:padding="@dimen/_5sdp"
+                            android:src="@color/light_green" />
+
+                        <ImageView
+                            android:layout_width="@dimen/_40sdp"
+                            android:layout_height="@dimen/_40sdp"
+                            android:layout_centerInParent="true"
+                            android:padding="@dimen/_8sdp"
+                            android:src="@drawable/ic_overview_24"
+                            app:tint="@color/dark_green" />
+
+                    </RelativeLayout>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/proxima_nova_regular"
+                        android:gravity="center"
+                        android:text="@string/overview"
+                        android:textColor="@color/side_menu_txt"
+                        android:textSize="@dimen/_9sdp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutTimeline"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_60sdp"
+                            android:padding="@dimen/_5sdp"
+                            android:src="#e3f8fb" />
+
+                        <ImageView
+                            android:layout_width="@dimen/_40sdp"
+                            android:layout_height="@dimen/_40sdp"
+                            android:layout_centerInParent="true"
+                            android:padding="@dimen/_8sdp"
+                            android:src="@drawable/ic_timeline_24"
+                            app:tint="#25c6da" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/proxima_nova_regular"
+                        android:gravity="center"
+                        android:text="@string/timeline"
+                        android:textColor="@color/side_menu_txt"
+                        android:textSize="@dimen/_9sdp" />
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:id="@+id/layoutSmileProgress"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_60sdp"
+                            android:padding="@dimen/_5sdp"
+                            android:src="#f2d5f8" />
+
+                        <ImageView
+                            android:layout_width="@dimen/_40sdp"
+                            android:layout_height="@dimen/_40sdp"
+                            android:layout_centerInParent="true"
+                            android:padding="@dimen/_8sdp"
+                            android:src="@drawable/ic_smile_progress"
+                            app:tint="#bf68cf" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/proxima_nova_regular"
+                        android:gravity="center"
+                        android:text="@string/smile_progress"
+                        android:textColor="@color/side_menu_txt"
+                        android:textSize="@dimen/_9sdp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutFindDentist"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_60sdp"
+                            android:padding="@dimen/_5sdp"
+                            android:src="#d6dbf1" />
+
+                        <ImageView
+                            android:layout_width="@dimen/_40sdp"
+                            android:layout_height="@dimen/_40sdp"
+                            android:layout_centerInParent="true"
+                            android:padding="@dimen/_8sdp"
+                            android:src="@drawable/ic_dentist"
+                            app:tint="#626cb5" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/proxima_nova_regular"
+                        android:gravity="center"
+                        android:text="@string/my_dentist"
+                        android:textColor="@color/side_menu_txt"
+                        android:textSize="@dimen/_9sdp" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/layoutChat"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_60sdp"
+                            android:padding="@dimen/_5sdp"
+                            android:src="#f0d8d5" />
+
+                        <ImageView
+                            android:layout_width="@dimen/_40sdp"
+                            android:layout_height="@dimen/_40sdp"
+                            android:layout_centerInParent="true"
+                            android:padding="@dimen/_8sdp"
+                            android:src="@drawable/ic_chat"
+                            app:tint="#ed5238" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/proxima_nova_regular"
+                        android:gravity="center"
+                        android:text="@string/chat"
+                        android:textColor="@color/side_menu_txt"
+                        android:textSize="@dimen/_9sdp" />
+                </LinearLayout>
+            </LinearLayout>
+            <!--<LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginBottom="@dimen/_5sdp"
+                   android:orientation="horizontal">
+
+
+
+                   <LinearLayout
+
+                       android:layout_width="0dp"
+                       android:layout_height="wrap_content"
+                       android:layout_weight="1"
+                       android:gravity="center_horizontal"
+                       android:orientation="vertical">
+
+                       <de.hdodenhof.circleimageview.CircleImageView
+                           android:layout_width="@dimen/_60sdp"
+                           android:layout_height="@dimen/_60sdp"
+                           android:background="@drawable/ic_find_dentist" />
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:fontFamily="@font/proxima_nova_regular"
+                           android:gravity="center"
+                           android:text="@string/my_dentist"
+                           android:textColor="@color/side_menu_txt"
+                           android:textSize="@dimen/_9sdp" />
+                   </LinearLayout>
+
+
+
+                   <LinearLayout
+
+                       android:layout_width="0dp"
+                       android:layout_height="wrap_content"
+                       android:layout_weight="1"
+                       android:gravity="center_horizontal"
+                       android:orientation="vertical">
+
+                       <de.hdodenhof.circleimageview.CircleImageView
+                           android:layout_width="@dimen/_60sdp"
+                           android:layout_height="@dimen/_60sdp"
+                           android:background="@drawable/ic_chat" />
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:fontFamily="@font/proxima_nova_regular"
+                           android:gravity="center"
+                           android:text="@string/chat"
+                           android:textColor="@color/side_menu_txt"
+                           android:textSize="@dimen/_9sdp" />
+                   </LinearLayout>
+
+                <LinearLayout
+                    android:visibility="invisible"
+                    android:id="@+id/layoutChat3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="@dimen/_60sdp"
+                        android:layout_height="@dimen/_70sdp"
+                        android:background="@drawable/ic_chat" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/proxima_nova_regular"
+                        android:gravity="center"
+                        android:text="@string/chat"
+                        android:textColor="@color/side_menu_txt"
+                        android:textSize="@dimen/_9sdp" />
+                </LinearLayout>
+
+               </LinearLayout>
+           -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="@color/colorPrimaryDark" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:layout_marginBottom="@dimen/_16sdp"
+                android:fontFamily="@font/proxima_nova_regular"
+                android:gravity="center"
+                android:text="@string/my_appointments"
+                android:textColor="@color/side_menu_txt"
+                android:textSize="@dimen/_14sdp"
+                android:visibility="gone" />
+
+
+            <RelativeLayout
+                android:id="@+id/layoutReminder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="vertical"
+                android:padding="@dimen/_5sdp">
+
+                <RelativeLayout
+                    android:id="@+id/layoutChartScreen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:visibility="gone">
+
+
+                    <TextView
+                        android:id="@+id/textHeaderTrayMinder"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/proxima_nova_bold"
+                        android:gravity="center"
+                        android:text="@string/days_more_on_aligner"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/_18sdp" />
+
+                    <com.app.fitsmile.fitsreminder.PieChartView
+                        android:id="@+id/pieChart"
+                        android:layout_width="@dimen/_270sdp"
+                        android:layout_height="@dimen/_270sdp"
+                        android:layout_below="@+id/textHeaderTrayMinder"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="@dimen/_10sdp" />
+
+                    <RelativeLayout
+                        android:id="@+id/layoutTimer"
+                        android:layout_width="@dimen/_255sdp"
+                        android:layout_height="@dimen/_255sdp"
+                        android:layout_below="@+id/textHeaderTrayMinder"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/textWearIndicator"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="@dimen/_50sdp"
+                            android:fontFamily="@font/proxima_nova_light"
+                            android:text="@string/not_wearing"
+                            android:textColor="@color/red"
+                            android:textSize="@dimen/_10sdp" />
+
+                        <TextView
+                            android:id="@+id/textNameReminder"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/textWearIndicator"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:fontFamily="@font/proxima_nova_bold"
+                            android:text="@string/tray_minder"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/_16sdp" />
+
+                        <TextView
+                            android:id="@+id/textWearReminderTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/textNameReminder"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:fontFamily="@font/proxima_nova_bold"
+                            android:textColor="@color/black_light"
+                            android:textSize="@dimen/_24sdp" />
+
+                        <TextView
+                            android:id="@+id/textWearNotReminderTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/layoutPlay"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:fontFamily="@font/proxima_nova_bold"
+                            android:textColor="@color/black_light"
+                            android:textSize="@dimen/_10sdp" />
+
+                        <TextView
+                            android:id="@+id/textTodayGoal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/textWearReminderTime"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:fontFamily="@font/proxima_nova_bold"
+                            android:textColor="@color/black_light"
+                            android:textSize="@dimen/_10sdp" />
+
+                        <RelativeLayout
+                            android:id="@+id/layoutPlay"
+                            android:layout_width="@dimen/_68sdp"
+                            android:layout_height="@dimen/_68sdp"
+                            android:layout_below="@+id/textTodayGoal"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="@dimen/_10sdp">
+
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/circlePlay"
+                                android:layout_width="@dimen/_70sdp"
+                                android:layout_height="@dimen/_70sdp"
+                                android:layout_centerHorizontal="true"
+                                android:src="@color/white"
+                                app:civ_border_color="@color/red_light"
+                                app:civ_border_width="@dimen/_2sdp" />
+
+                            <TextView
+                                android:id="@+id/textPlay"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:fontFamily="@font/proxima_nova_bold"
+                                android:text="@string/resume"
+                                android:textColor="@color/red_light"
+                                android:textSize="@dimen/_12sp" />
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/textBottomPieChart"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/pieChart"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:drawableStart="@drawable/ic_calender"
+                        android:fontFamily="@font/proxima_nova_bold"
+                        android:gravity="center"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/_16sp"
+                        app:drawableTint="@color/colorPrimary" />
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/nodata"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/proxima_nova_regular"
+                    android:gravity="center"
+                    android:text="@string/no_fits_reminder_yet"
+                    android:visibility="gone" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_tray_minder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btm_my_appointment"
+                    android:visibility="gone" />
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <View
+        android:id="@+id/fabBGLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black_translucent"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/fabLayoutChangeDefault"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:clipToPadding="false"
+        android:gravity="center_vertical"
+        android:padding="@dimen/_10sdp"
+        android:visibility="gone"
+        app:layout_behavior="com.app.fitsmile.utils.MoveUpwardBehavior">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_btn_green"
+            android:fontFamily="@font/proxima_nova_bold"
+            android:paddingStart="@dimen/_15sdp"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingEnd="@dimen/_15sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:text="@string/select_patient_treatment"
+            android:textColor="@color/white" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabChangeDefault"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            app:background="@color/white"
+            app:backgroundTint="@color/white"
+            app:fabSize="mini"
+            app:srcCompat="@drawable/ic_set_default"
+            app:tint="@color/colorPrimary" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fabLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:clipToPadding="false"
+        android:gravity="center_vertical"
+        android:padding="@dimen/_10sdp"
+        android:visibility="gone"
+        app:layout_behavior="com.app.fitsmile.utils.MoveUpwardBehavior">
+        <!--    if you are not using Snackbar with this activity then remove below line from every place of the file:
+            app:layout_behavior="com.ajaysinghdewari.floatingactionbuttonmenu.activities.utils.MoveUpwardBehavior"
+            the above line enables the view to Scrolls up with the snackbar as, the FAB do automaticaly scrolls up
+            when the snackbar appear, so if snackbar is not used please remove the above line from every view present in the xml-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_btn_green"
+            android:fontFamily="@font/proxima_nova_bold"
+            android:paddingStart="@dimen/_15sdp"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingEnd="@dimen/_15sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:text="@string/reminder"
+            android:textColor="@color/white" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            app:background="@color/white"
+            app:backgroundTint="@color/white"
+            app:fabSize="mini"
+            app:srcCompat="@drawable/ic_alarm"
+            app:tint="@color/colorPrimary" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fabLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:clipToPadding="false"
+        android:gravity="center_vertical"
+        android:padding="@dimen/_10sdp"
+        android:visibility="gone"
+        app:layout_behavior="com.app.fitsmile.utils.MoveUpwardBehavior">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_btn_green"
+            android:fontFamily="@font/proxima_nova_bold"
+            android:paddingStart="@dimen/_15sdp"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingEnd="@dimen/_15sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:text="@string/share"
+            android:textColor="@color/white" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            app:background="@color/white"
+            app:backgroundTint="@color/white"
+            app:fabSize="mini"
+            app:srcCompat="@drawable/ic_share"
+            app:tint="@color/colorPrimary" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fabLayout3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:clipToPadding="false"
+        android:gravity="center_vertical"
+        android:padding="@dimen/_10sdp"
+        android:visibility="gone"
+        app:layout_behavior="com.app.fitsmile.utils.MoveUpwardBehavior">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_btn_green"
+            android:fontFamily="@font/proxima_nova_bold"
+            android:paddingStart="@dimen/_15sdp"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingEnd="@dimen/_15sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:text="@string/adjust_reminder"
+            android:textColor="@color/white" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            app:background="@color/white"
+            app:backgroundTint="@color/white"
+            app:fabSize="mini"
+            app:srcCompat="@drawable/ic_settings_24"
+            app:tint="@color/colorPrimary" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layoutChartScreen"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:clipToPadding="false"
+        android:gravity="center_vertical"
+        android:padding="@dimen/_10sdp"
+        app:layout_behavior="com.app.fitsmile.utils.MoveUpwardBehavior">
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:gravity="center_vertical"
+            android:visibility="gone"
+            app:background="@color/colorPrimary"
+            app:backgroundTint="@color/colorPrimary"
+            app:fabSize="normal"
+            app:srcCompat="@drawable/ic_reminder_settings"
+            app:tint="@color/white" />
+    </LinearLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+

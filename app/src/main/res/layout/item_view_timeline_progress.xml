@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/textAligner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:fontFamily="@font/proxima_nova_bold"
+        android:text="@string/aligner"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_22sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textAligner"
+        app:layout_constraintBottom_toBottomOf="@+id/textAligner"
+        android:visibility="gone"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/textCurrentAligner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:paddingTop="@dimen/_2sdp"
+        android:paddingStart="@dimen/_5sdp"
+        android:paddingBottom="@dimen/_2sdp"
+        android:paddingEnd="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:fontFamily="@font/proxima_nova_bold"
+        android:text="@string/current_aligner"
+        android:background="@drawable/bg_corner_blue"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_12sp" />
+
+    <TextView
+        android:id="@+id/textAlignerNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:fontFamily="@font/proxima_nova_bold"
+        android:text="1/20"
+        android:textColor="@color/title_text_color_light"
+        android:textSize="@dimen/_18sp"
+        app:layout_constraintStart_toEndOf="@+id/textAligner"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/layoutAlignerDays"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_5sdp"
+        app:layout_constraintTop_toBottomOf="@+id/textAligner">
+
+        <TextView
+            android:id="@+id/textMonth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/proxima_nova_regular"
+            android:text="Dec"
+            android:textColor="@color/title_text_color_light"
+            android:textSize="@dimen/_12sp" />
+
+        <TextView
+            android:id="@+id/textDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textMonth"
+            android:layout_toEndOf="@+id/textMonth"
+            android:fontFamily="@font/proxima_nova_bold"
+            android:text="30"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_22sp" />
+
+        <TextView
+            android:id="@+id/textDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textDate"
+            android:fontFamily="@font/proxima_nova_regular"
+            android:paddingBottom="@dimen/_15sdp"
+            android:text="Thu"
+            android:textColor="@color/title_text_color_light"
+            android:textSize="@dimen/_12sp" />
+
+        <RelativeLayout
+            android:id="@+id/viewLine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textDay"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/_40sdp">
+
+            <View
+                android:id="@+id/viewAligner"
+                android:layout_width="2dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@color/profile_grey" />
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/circleGoalIndicator"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:src="@color/title_text_color_light" />
+
+            <ImageView
+                android:id="@+id/imageGoalIndicator"
+                android:layout_width="@dimen/_10sdp"
+                android:layout_height="@dimen/_10sdp"
+                android:layout_alignTop="@+id/circleGoalIndicator"
+                android:layout_alignBottom="@+id/circleGoalIndicator"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textGoalName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:layout_toEndOf="@+id/viewLine"
+            android:fontFamily="@font/proxima_nova_bold"
+            android:text="@string/not_tracked"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_16sp" />
+
+
+
+
+        <ProgressBar
+            android:id="@+id/customProgress"
+            style="@style/CustomProgressBarGoal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textGoalName"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_60sdp"
+            android:layout_toEndOf="@+id/viewLine"
+            android:progress="0" />
+
+        <TextView
+            android:id="@+id/textGoalTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/customProgress"
+            android:layout_alignBottom="@+id/customProgress"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:fontFamily="@font/proxima_nova_bold"
+            android:text="09:33"
+            android:textSize="@dimen/_10sp" />
+
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imv_edit_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:padding="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:src="@drawable/edit" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_16sdp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_image"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_60sdp"
+                    android:layout_margin="@dimen/_16sdp"
+                    android:src="@color/profile_grey" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_username"
+                        style="@style/commonLabelTextViewBold"
+                        android:singleLine="true"
+                        android:text="@string/user_name"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/tv_code"
+                        style="@style/commonLabelTextViewLight"
+                        android:singleLine="true"
+                        android:text="@string/user_code"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/tv_email"
+                        style="@style/commonLabelTextViewLight"
+                        android:singleLine="true"
+                        android:text="@string/user_email_id"
+                        android:textColor="@color/white" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+
+
+
+                <TextView
+                    style="@style/commonLabelTextViewBold"
+                    android:layout_marginStart="@dimen/_14sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_14sdp"
+                    android:text="@string/lbl_my_family_friends" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_family_list"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    app:cardElevation="@dimen/_5sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recycler_member_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_16sdp"
+                        android:paddingEnd="@dimen/_14sdp" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_insurance"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    app:elevation="@dimen/_14sdp">
+
+                    <TextView
+                        style="@style/commonLabelTextViewBold"
+                        android:layout_margin="@dimen/_24sdp"
+                        android:text="@string/lbl_insurance" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_my_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:visibility="gone"
+                    app:elevation="@dimen/_14sdp">
+
+                    <TextView
+                        style="@style/commonLabelTextViewBold"
+                        android:layout_margin="@dimen/_24sdp"
+                        android:text="@string/lbl_my_address" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardRewards"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:visibility="gone"
+                    app:elevation="@dimen/_14sdp">
+
+                    <TextView
+                        style="@style/commonLabelTextViewBold"
+                        android:layout_margin="@dimen/_24sdp"
+                        android:text="@string/lbl_my_rewards" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_language"
+                    android:visibility="gone"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:elevation="@dimen/_14sdp">
+
+                    <TextView
+                        style="@style/commonLabelTextViewBold"
+                        android:layout_margin="@dimen/_24sdp"
+                        android:text="@string/language" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_settings"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    app:elevation="@dimen/_14sdp">
+
+                    <TextView
+                        style="@style/commonLabelTextViewBold"
+                        android:layout_margin="@dimen/_24sdp"
+                        android:text="@string/lbl_my_settings" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:visibility="gone"
+                    android:id="@+id/cardMyOrders"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    app:elevation="@dimen/_14sdp">
+
+                    <TextView
+                        style="@style/commonLabelTextViewBold"
+                        android:layout_margin="@dimen/_24sdp"
+                        android:text="@string/lbl_my_order" />
+
+                </androidx.cardview.widget.CardView>
+                <TextView
+                    style="@style/commonLabelTextViewBold"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:visibility="gone"
+                    android:text="@string/dentist_gender" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_14sdp"
+                    android:visibility="gone"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_8sdp"
+                        android:layout_weight="1"
+                        android:gravity="end">
+
+                        <ImageView
+                            android:id="@+id/imv_dentist_male"
+                            android:layout_width="@dimen/_80sdp"
+                            android:layout_height="@dimen/_80sdp"
+                            android:background="@drawable/bg_round_corner_stroke"
+                            android:padding="@dimen/_8sdp"
+                            android:src="@drawable/ic_men_check" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:layout_weight="1"
+                        android:gravity="start">
+
+                        <ImageView
+                            android:id="@+id/imv_dentist_female"
+                            android:layout_width="@dimen/_80sdp"
+                            android:layout_height="@dimen/_80sdp"
+                            android:background="@drawable/bg_round_corner_stroke"
+                            android:padding="@dimen/_8sdp"
+                            android:src="@drawable/ic_women_check" />
+                    </LinearLayout>
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_24sdp" />
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+
+    <include layout="@layout/popup_add_member" />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+

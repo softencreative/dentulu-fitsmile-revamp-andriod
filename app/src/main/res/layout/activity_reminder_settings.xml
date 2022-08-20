@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fitsreminder.ReminderSettingsActivity">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/white"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:theme="@style/ToolBarStyle" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+  <androidx.recyclerview.widget.RecyclerView
+      android:id="@+id/recyclerAlarmSettings"
+      android:layout_margin="@dimen/_10sdp"
+      app:layout_constraintTop_toBottomOf="@+id/appbar"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"/>
+
+ <!-- <TextView
+      android:id="@+id/textReminderList"
+      app:layout_constraintTop_toBottomOf="@+id/appbar"
+      android:layout_marginTop="@dimen/_10sdp"
+      android:layout_marginStart="@dimen/_10sdp"
+      app:layout_constraintStart_toStartOf="parent"
+      android:text="Remind Me To..."
+      android:textColor="@color/title_text_color_light"
+      android:fontFamily="@font/proxima_nova_regular"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"/>
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+      android:layout_marginTop="@dimen/_10sdp"
+      android:id="@+id/layoutWearAlignerReminder"
+      app:layout_constraintTop_toBottomOf="@+id/textReminderList"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+
+
+    <ImageView
+        android:id="@+id/imageSwitchAligner"
+        app:layout_constraintTop_toTopOf="@+id/textWearAligner"
+        android:layout_marginStart="@dimen/_10sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:padding="@dimen/_2sdp"
+        app:tint="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="@+id/textWearAlignerReminder"
+        android:layout_width="wrap_content"
+        android:src="@drawable/ic_notification_reminder"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/textWearAligner"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+
+        app:layout_constraintStart_toEndOf="@+id/imageSwitchAligner"
+        android:layout_width="wrap_content"
+        android:textSize="@dimen/_16sp"
+        android:text="Switch Aligner"
+        android:textColor="@color/tick_color"
+        android:fontFamily="@font/proxima_nova_regular"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_marginTop="@dimen/_1sdp"
+        android:id="@+id/textWearAlignerReminder"
+        android:layout_marginStart="@dimen/_15sdp"
+        app:layout_constraintTop_toBottomOf="@+id/textWearAligner"
+        app:layout_constraintStart_toEndOf="@+id/imageSwitchAligner"
+        android:layout_width="wrap_content"
+        android:textSize="@dimen/_12sp"
+        android:textColor="@color/title_text_color_light"
+        android:text="No Reminder"
+        android:fontFamily="@font/proxima_nova_regular"
+        android:layout_height="wrap_content"/>
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+      android:id="@+id/layoutTakeSelfie"
+      android:layout_marginTop="@dimen/_10sdp"
+      app:layout_constraintTop_toBottomOf="@+id/layoutWearAlignerReminder"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/imageTakeTeethImage"
+        app:layout_constraintTop_toTopOf="@+id/textTeethImage"
+        android:layout_marginStart="@dimen/_10sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:padding="@dimen/_2sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/textTeethImageReminder"
+        android:layout_width="wrap_content"
+        app:tint="@color/colorPrimary"
+        android:src="@drawable/ic_campare_pics"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/textTeethImage"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageTakeTeethImage"
+        android:layout_width="wrap_content"
+        android:textSize="@dimen/_16sp"
+        android:text="Take Teeth Selfies"
+        android:textColor="@color/tick_color"
+        android:fontFamily="@font/proxima_nova_regular"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_marginTop="@dimen/_1sdp"
+        android:id="@+id/textTeethImageReminder"
+        android:layout_marginStart="@dimen/_15sdp"
+        app:layout_constraintTop_toBottomOf="@+id/textTeethImage"
+        app:layout_constraintStart_toEndOf="@+id/imageTakeTeethImage"
+        android:layout_width="wrap_content"
+        android:textSize="@dimen/_12sp"
+        android:textColor="@color/title_text_color_light"
+        android:text="No Reminder"
+        android:fontFamily="@font/proxima_nova_regular"
+        android:layout_height="wrap_content"/>
+  </androidx.constraintlayout.widget.ConstraintLayout>
+    <View
+        android:id="@+id/dividerCalendar"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@color/light_grey_color"
+        app:layout_constraintTop_toBottomOf="@+id/layoutTakeSelfie"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <TextView
+        android:id="@+id/textCalendar"
+        app:layout_constraintTop_toBottomOf="@+id/dividerCalendar"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Calendar"
+        android:textColor="@color/title_text_color_light"
+        android:fontFamily="@font/proxima_nova_regular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+      android:layout_marginTop="@dimen/_10sdp"
+      android:id="@+id/layoutAdjustReminderDate"
+      app:layout_constraintTop_toBottomOf="@+id/textCalendar"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imageAdjustColor"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:padding="@dimen/_2sdp"
+        android:layout_width="wrap_content"
+        app:tint="@color/colorPrimary"
+        android:src="@drawable/ic_edit"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_marginStart="@dimen/_15sdp"
+        app:layout_constraintTop_toTopOf="@+id/imageAdjustColor"
+        app:layout_constraintBottom_toBottomOf="@+id/imageAdjustColor"
+        app:layout_constraintStart_toEndOf="@+id/imageAdjustColor"
+        android:layout_width="wrap_content"
+        android:textSize="@dimen/_16sp"
+        android:text="Adjust Reminder"
+        android:textColor="@color/tick_color"
+        android:fontFamily="@font/proxima_nova_regular"
+        android:layout_height="wrap_content"/>
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+      android:layout_marginTop="@dimen/_10sdp"
+      android:id="@+id/layoutWeakStart"
+      app:layout_constraintTop_toBottomOf="@+id/layoutAdjustReminderDate"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/imageCalendar"
+        app:layout_constraintTop_toTopOf="@+id/textWeakStart"
+        android:layout_marginStart="@dimen/_10sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:padding="@dimen/_2sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/textWeekStartDay"
+        android:layout_width="wrap_content"
+        app:tint="@color/colorPrimary"
+        android:src="@drawable/ic_calender"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/textWeakStart"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageCalendar"
+        android:layout_width="wrap_content"
+        android:textSize="@dimen/_16sp"
+        android:text="Start Week On"
+        android:textColor="@color/tick_color"
+        android:fontFamily="@font/proxima_nova_regular"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_marginTop="@dimen/_1sdp"
+        android:id="@+id/textWeekStartDay"
+        android:layout_marginStart="@dimen/_15sdp"
+        app:layout_constraintTop_toBottomOf="@+id/textWeakStart"
+        app:layout_constraintStart_toEndOf="@+id/imageCalendar"
+        android:layout_width="wrap_content"
+        android:textSize="@dimen/_12sp"
+        android:textColor="@color/title_text_color_light"
+        android:text="Sunday"
+        android:fontFamily="@font/proxima_nova_regular"
+        android:layout_height="wrap_content"/>
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+-->
+</androidx.constraintlayout.widget.ConstraintLayout>

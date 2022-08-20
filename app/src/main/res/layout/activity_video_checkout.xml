@@ -1,0 +1,682 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/white"
+                app:popupTheme="@style/AppTheme.PopupOverlay"
+                app:theme="@style/ToolBarStyle" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_14sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/commonLabelTextViewBold"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/lbl_call_fee" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_fee"
+                        style="@style/commonLabelTextView"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/discount_dollar"
+                        android:textSize="@dimen/_34sdp" />
+
+                    <TextView
+                        style="@style/commonLabelTextViewLight"
+                        android:layout_width="0dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:layout_weight="0.4"
+                        android:text="@string/paisa"
+                        android:textSize="@dimen/_20sdp"
+                        android:visibility="gone" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:visibility="gone"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_btn_default_stroke"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/_10sdp">
+
+                        <com.google.android.material.switchmaterial.SwitchMaterial
+                            android:id="@+id/switchTouchID"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:theme="@style/SwitchStyle" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:text="@string/add_insurance"
+                            android:textColor="@color/colorPrimary" />
+                    </LinearLayout>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:id="@+id/layoutAddInsurance"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+
+                        <TextView
+                            style="@style/commonLabelTextViewBold"
+                            android:layout_marginTop="@dimen/_14sdp"
+                            android:text="@string/insurance_provider_name" />
+
+                        <TextView
+                            android:id="@+id/textSelectProvider"
+                            style="@style/commonLabelTextViewLight"
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="@dimen/_4sdp"
+                            android:background="@drawable/bg_btn_default_stroke"
+                            android:drawableEnd="@drawable/ic_arrow_drop_down"
+                            android:padding="@dimen/_10sdp"
+                            android:text="@string/select_insurance_provider" />
+
+                        <TextView
+                            style="@style/commonLabelTextViewBold"
+                            android:layout_marginTop="@dimen/_14sdp"
+                            android:text="@string/insurance_no" />
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:boxCornerRadiusBottomEnd="0dp"
+                            app:boxCornerRadiusBottomStart="0dp"
+                            app:boxCornerRadiusTopEnd="0dp"
+                            app:boxCornerRadiusTopStart="0dp">
+
+                            <EditText
+                                android:id="@+id/editInsuranceNumber"
+                                style="@style/commonEditText"
+                                android:hint="@string/hint_enter_insurance_no"
+                                android:inputType="number" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <TextView
+                            style="@style/commonLabelTextViewBold"
+                            android:layout_marginTop="@dimen/_14sdp"
+                            android:text="@string/insurance_card" />
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <androidx.appcompat.widget.LinearLayoutCompat
+                                android:layout_width="0dp"
+                                android:layout_height="@dimen/_110sdp"
+                                android:layout_marginTop="@dimen/_4sdp"
+                                android:layout_marginEnd="@dimen/_4sdp"
+                                android:layout_weight="1"
+                                android:background="@drawable/bg_btn_default_stroke"
+                                android:orientation="vertical">
+
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1">
+
+
+                                    <ImageView
+                                        android:id="@+id/ins_front"
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
+                                        android:layout_alignTop="@+id/iv_insurance_front"
+                                        android:layout_alignBottom="@+id/iv_insurance_front"
+                                        android:layout_centerInParent="true"
+                                        android:layout_gravity="center"
+                                        app:srcCompat="@drawable/ic_cameraa" />
+
+                                    <TextView
+                                        android:id="@+id/textInsuranceFront"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentBottom="true"
+                                        android:gravity="center"
+                                        android:padding="@dimen/_1sdp"
+                                        android:text="Front"
+                                        android:textColor="@color/colorPrimaryDark" />
+
+                                    <ImageView
+                                        android:id="@+id/iv_insurance_front"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_above="@+id/textInsuranceFront"
+                                        android:layout_centerInParent="true"
+                                        android:layout_margin="@dimen/_2sdp"
+                                        android:clickable="true"
+                                        android:scaleType="fitXY" />
+
+
+                                </RelativeLayout>
+
+                            </androidx.appcompat.widget.LinearLayoutCompat>
+
+                            <androidx.appcompat.widget.LinearLayoutCompat
+                                android:layout_width="0dp"
+                                android:layout_height="@dimen/_110sdp"
+                                android:layout_marginStart="@dimen/_4sdp"
+                                android:layout_marginTop="@dimen/_4sdp"
+                                android:layout_weight="1"
+                                android:background="@drawable/bg_btn_default_stroke"
+                                android:orientation="vertical">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1">
+
+
+                                    <ImageView
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
+                                        android:layout_alignTop="@+id/iv_insurance_back"
+                                        android:layout_alignBottom="@+id/iv_insurance_back"
+                                        android:layout_centerInParent="true"
+                                        android:layout_gravity="center"
+                                        app:srcCompat="@drawable/ic_cameraa" />
+
+                                    <TextView
+                                        android:id="@+id/textInsuranceBack"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentBottom="true"
+                                        android:gravity="center"
+                                        android:padding="@dimen/_1sdp"
+                                        android:text="@string/back"
+                                        android:textColor="@color/colorPrimaryDark" />
+
+                                    <ImageView
+                                        android:id="@+id/iv_insurance_back"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_above="@+id/textInsuranceBack"
+                                        android:layout_centerInParent="true"
+                                        android:layout_margin="@dimen/_2sdp"
+                                        android:clickable="true"
+                                        android:scaleType="fitXY" />
+
+
+                                </RelativeLayout>
+
+
+                            </androidx.appcompat.widget.LinearLayoutCompat>
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                        <TextView
+                            style="@style/commonLabelTextViewBold"
+                            android:layout_marginTop="@dimen/_14sdp"
+                            android:text="@string/driving_license" />
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <androidx.appcompat.widget.LinearLayoutCompat
+                                android:layout_width="0dp"
+                                android:layout_height="@dimen/_110sdp"
+                                android:layout_marginTop="@dimen/_4sdp"
+                                android:layout_marginEnd="@dimen/_4sdp"
+                                android:layout_weight="1"
+                                android:background="@drawable/bg_btn_default_stroke"
+                                android:orientation="vertical">
+
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1">
+
+
+                                    <ImageView
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
+                                        android:layout_alignTop="@+id/iv_licence_front"
+                                        android:layout_alignBottom="@+id/iv_licence_front"
+                                        android:layout_centerInParent="true"
+                                        android:layout_gravity="center"
+                                        app:srcCompat="@drawable/ic_cameraa" />
+
+                                    <TextView
+                                        android:id="@+id/textLicenceFront"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentBottom="true"
+                                        android:gravity="center"
+                                        android:padding="@dimen/_1sdp"
+                                        android:text="@string/lbl_front"
+                                        android:textColor="@color/colorPrimaryDark" />
+
+                                    <ImageView
+                                        android:id="@+id/iv_licence_front"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_above="@+id/textLicenceFront"
+                                        android:layout_centerInParent="true"
+                                        android:layout_margin="@dimen/_2sdp"
+                                        android:clickable="true"
+                                        android:scaleType="fitXY" />
+
+
+                                </RelativeLayout>
+
+
+                            </androidx.appcompat.widget.LinearLayoutCompat>
+
+                            <androidx.appcompat.widget.LinearLayoutCompat
+                                android:layout_width="0dp"
+                                android:layout_height="@dimen/_110sdp"
+                                android:layout_marginStart="@dimen/_4sdp"
+                                android:layout_marginTop="@dimen/_4sdp"
+                                android:layout_weight="1"
+                                android:background="@drawable/bg_btn_default_stroke"
+                                android:orientation="vertical">
+
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1">
+
+
+                                    <ImageView
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
+                                        android:layout_alignTop="@+id/iv_licence_back"
+                                        android:layout_alignBottom="@+id/iv_licence_back"
+                                        android:layout_centerInParent="true"
+                                        android:layout_gravity="center"
+                                        app:srcCompat="@drawable/ic_cameraa" />
+
+                                    <TextView
+                                        android:id="@+id/textLicenceBack"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentBottom="true"
+                                        android:fontFamily="@font/proxima_nova_bold"
+                                        android:gravity="center"
+                                        android:padding="@dimen/_1sdp"
+                                        android:text="@string/back"
+                                        android:textColor="@color/colorPrimaryDark" />
+
+                                    <ImageView
+                                        android:id="@+id/iv_licence_back"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_above="@+id/textLicenceBack"
+                                        android:layout_margin="@dimen/_2sdp"
+                                        android:clickable="true"
+                                        android:scaleType="fitXY" />
+
+
+                                </RelativeLayout>
+
+                            </androidx.appcompat.widget.LinearLayoutCompat>
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+                </LinearLayout>
+
+
+                <TextView
+                    style="@style/commonLabelTextViewBold"
+                    android:layout_marginTop="@dimen/_14sdp"
+                    android:text="@string/schedule_your_appointment" />
+
+                <TextView
+                    android:id="@+id/tv_choose_date"
+                    style="@style/commonLabelTextViewLight"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:background="@drawable/bg_btn_default_stroke"
+                    android:drawableEnd="@drawable/ic_right_arrow"
+                    android:padding="@dimen/_10sdp"
+                    android:text="@string/select_date_time" />
+
+                <TextView
+                    style="@style/commonLabelTextViewBold"
+                    android:layout_marginTop="@dimen/_14sdp"
+                    android:visibility="gone"
+                    android:text="@string/coupon_code" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/layoutEnterCoupon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/edit_coupon"
+                        style="@style/commonLabelTextViewLight"
+                        android:layout_width="0dp"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:layout_weight="0.7"
+                        android:background="@drawable/bg_btn_default_stroke"
+                        android:hint="@string/coupon_code"
+                        android:inputType="text"
+                        android:padding="@dimen/_10sdp"
+                        android:textColorHint="@color/profile_grey" />
+
+                    <TextView
+                        android:id="@+id/textApply"
+                        style="@style/commonLabelTextView"
+                        android:layout_width="0dp"
+                        android:layout_marginStart="-1dp"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:layout_weight="0.3"
+                        android:background="@drawable/bg_stroke_light_grey"
+                        android:gravity="center"
+                        android:padding="@dimen/_10sdp"
+                        android:text="@string/apply"
+                        android:textColor="@color/white" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/layoutApplyCoupon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_btn_default_stroke"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/couponApply"
+                        style="@style/commonLabelTextView"
+                        android:layout_width="0dp"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:layout_weight="0.7"
+                        android:padding="@dimen/_10sdp"
+                        android:text="@string/coupon_applied"
+                        android:textColor="@color/colorPrimary" />
+
+                    <ImageView
+                        android:id="@+id/imv_cancel_coupon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="@dimen/_5sdp"
+                        app:srcCompat="@drawable/places_ic_clear" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                <TextView
+                    style="@style/commonLabelTextViewBold"
+                    android:layout_marginTop="@dimen/_14sdp"
+                    android:text="@string/fill_form" />
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/tv_add_health_record"
+                    style="@style/commonLabelTextViewLight"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:background="@drawable/bg_btn_default_stroke"
+                    android:drawableEnd="@drawable/ic_right_arrow"
+                    android:padding="@dimen/_10sdp"
+                    android:text="@string/complete_health_history" />
+
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/ll_completed_health_record"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:background="@drawable/bg_btn_default_stroke"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_10sdp"
+                    android:visibility="gone">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_green_tick"
+                        android:tint="@android:color/holo_green_light" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="4dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/commonLabelTextViewBold"
+                            android:text="@string/completed_health_history"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <TextView
+                            android:id="@+id/tv_expire_days"
+                            style="@style/commonLabelTextViewLight"
+                            android:text="@string/your_health_history_expire_in"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/view_completed_medical_history"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="4dp"
+                        android:padding="6dp"
+                        android:src="@drawable/ic_eye" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/imv_edit_health_record"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="6dp"
+                        android:src="@drawable/edit"
+                        android:tint="@color/colorPrimary" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <TextView
+                    android:id="@+id/tv_agree"
+                    style="@style/commonLabelTextViewLight"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:background="@drawable/bg_btn_default_stroke"
+                    android:gravity="center"
+                    android:padding="@dimen/_10sdp"
+                    android:singleLine="true"
+                    android:text="@string/i_agree_consent" />
+
+
+                <TextView
+                    android:visibility="gone"
+                    style="@style/commonLabelTextViewBold"
+                    android:layout_marginTop="@dimen/_14sdp"
+                    android:text="@string/payment_method" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:visibility="gone"
+                    android:id="@+id/ll_payment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:background="@drawable/bg_btn_default_stroke"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_card"
+                        style="@style/commonLabelTextViewLight"
+                        android:layout_width="match_parent"
+                        android:drawableEnd="@drawable/ic_down_arrow"
+                        android:padding="@dimen/_10sdp"
+                        android:text="@string/credit_card" />
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <TextView
+                    style="@style/commonLabelTextViewLight"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="-1dp"
+                    android:background="@drawable/bg_btn_default_stroke"
+                    android:drawableEnd="@drawable/ic_down_arrow"
+                    android:padding="@dimen/_10sdp"
+                    android:text="@string/paypal"
+                    android:visibility="gone" />
+
+                <TextView
+                    style="@style/commonLabelTextViewLight"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="-1dp"
+                    android:background="@drawable/bg_btn_default_stroke"
+                    android:drawableEnd="@drawable/ic_down_arrow"
+                    android:padding="@dimen/_10sdp"
+                    android:text="@string/google_pay"
+                    android:visibility="gone" />
+
+                <TextView
+                    style="@style/commonLabelTextViewBold"
+                    android:layout_marginTop="@dimen/_14sdp"
+                    android:text="@string/summary" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/commonLabelTextViewLight"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="@string/item_charge"
+                        android:textSize="@dimen/_10sdp" />
+
+                    <TextView
+                        android:id="@+id/tv_summary_total_fee"
+                        style="@style/commonLabelTextViewLight"
+                        android:layout_width="wrap_content"
+                        android:text="@string/discount_dollar"
+                        android:textSize="@dimen/_10sdp" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/commonLabelTextViewLight"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="@string/applied_discount_code"
+                        android:textSize="@dimen/_10sdp" />
+
+                    <TextView
+                        android:id="@+id/tv_discount_fee"
+                        style="@style/commonLabelTextViewLight"
+                        android:layout_width="wrap_content"
+                        android:text="@string/discount_dollar"
+                        android:textSize="@dimen/_10sdp" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    android:background="@color/colorPrimaryDark" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/commonLabelTextView"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="@string/total"
+                        android:textSize="@dimen/_23sdp" />
+
+                    <TextView
+                        android:id="@+id/tv_final_fee"
+                        style="@style/commonLabelTextViewLight"
+                        android:layout_width="wrap_content"
+                        android:text="@string/discount_dollar"
+                        android:textSize="@dimen/_23sdp" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_completed"
+                    style="@style/commonButtonSolid"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:text="@string/complete_payment" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_25sdp" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+
+    <include layout="@layout/popup_choose_appointment_date" />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

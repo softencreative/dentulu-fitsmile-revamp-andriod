@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".photoConsultation.DentistQuestionsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/topBar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/ll_next_button_layout"
+            android:orientation="vertical">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:id="@+id/appBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/AppTheme.AppBarOverlay">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="@color/white"
+                    app:popupTheme="@style/AppTheme.PopupOverlay"
+                    app:theme="@style/ToolBarStyle" />
+            </com.google.android.material.appbar.AppBarLayout>
+
+            <com.app.fitsmile.utils.NonSwipeableViewPager
+                android:id="@+id/vp_questions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_next_button_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:gravity="center"
+            android:layout_marginHorizontal="@dimen/_5sdp"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_back"
+                style="@style/commonButtonStroke"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:paddingVertical="@dimen/_10sdp"
+                android:textSize="@dimen/_14sdp"
+                android:text="@string/back" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_next"
+                style="@style/commonButtonSolid"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:textSize="@dimen/_14sdp"
+                android:paddingVertical="@dimen/_10sdp"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:text="@string/next" />
+        </LinearLayout>
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_no_data"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:text="@string/not_data_found"
+            android:gravity="center"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/framelayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10sdp"
+        android:descendantFocusability="blocksDescendants" >
+
+        <com.app.fitsmile.intra.utils.MyImageView
+            android:layout_centerInParent="true"
+            android:id="@+id/iv_Videos_Item"
+            android:layout_width="80sp"
+            android:layout_height="80dip"
+            android:scaleType="fitXY"
+            android:src="@drawable/friends_sends_pictures_no" />
+
+        <ImageView
+            android:id="@+id/iv_Videos_Playback_Item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/playback_videos_item_state" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_toRightOf="@+id/framelayout"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_Videos_Name_Item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/tv_Photo_Name"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_16sdp" />
+        <TextView
+            android:id="@+id/tv_Videos_Date"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/tv_Photo_Name"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="@dimen/_14sdp" />
+    </LinearLayout>
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_alignParentEnd="true" />
+
+    <View
+        android:layout_below="@+id/framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="0.5sp"
+        android:background="@color/light_grey_color" />
+
+</RelativeLayout>

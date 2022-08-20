@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_100sdp">
+
+
+                <TextView
+                    android:id="@+id/title_completed_health_his"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:gravity="center"
+                    android:padding="12dp"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_80sdp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="-12dp"
+                    android:src="@drawable/ic_success_appointment" />
+
+            </RelativeLayout>
+
+            <androidx.core.widget.NestedScrollView
+                android:id="@+id/scroll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/commonLabelTextViewBold"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/_14sdp"
+                        android:text="@string/thank_you"
+                        android:textSize="@dimen/_23sdp" />
+
+                    <TextView
+                        android:gravity="center"
+                        style="@style/commonLabelTextView"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:text="@string/successfully_booked_appointment" />
+
+                    <TextView
+                        style="@style/commonLabelTextView"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/_12sdp"
+                        android:id="@+id/tv_appointment"
+                        android:text="@string/lbl_appointment_id" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_14sdp"
+
+                        android:background="@drawable/bg_line" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/profile_image"
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_80sdp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/_14sdp"
+                        android:background="@drawable/bg_round_storke" />
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        style="@style/commonLabelTextView"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:layout_marginBottom="@dimen/_20sdp"
+                        android:text="@string/doc_name_dr" />
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_8sdp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/commonLabelTextViewLight"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:text="@string/appointment_date_time"
+                            android:textSize="@dimen/_10sdp" />
+
+                        <TextView
+                            android:id="@+id/tv_date_time"
+                            style="@style/commonLabelTextViewLight"
+                            android:layout_width="wrap_content"
+                            android:text="@string/date_value"
+                            android:textSize="@dimen/_10sdp" />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:layout_marginEnd="@dimen/_8sdp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/commonLabelTextViewLight"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:text="@string/fee"
+                            android:textSize="@dimen/_10sdp" />
+
+                        <TextView
+                            style="@style/commonLabelTextViewLight"
+                            android:layout_width="wrap_content"
+                            android:text="@string/discount_dollar"
+                            android:id="@+id/tv_paid_amt"
+                            android:textSize="@dimen/_10sdp" />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <TextView
+                        android:id="@+id/tv_thanks"
+                        style="@style/commonLabelTextViewLight"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_36sdp"
+                        android:background="@drawable/bg_round_solid_corner_stroke"
+                        android:paddingStart="@dimen/_36sdp"
+                        android:layout_marginBottom="@dimen/_26sdp"
+                        android:paddingTop="@dimen/_8sdp"
+                        android:paddingEnd="@dimen/_36sdp"
+                        android:paddingBottom="@dimen/_8sdp"
+                        android:text="@string/thanks"
+                        android:fontFamily="@font/proxima_nova_bold"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_10sdp" />
+
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imv_close"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/ic_close_dialog" />
+</LinearLayout>

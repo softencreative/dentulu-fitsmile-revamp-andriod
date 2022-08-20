@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioButton xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:gravity="center"
+    android:text=""
+    android:id="@+id/rb_time"
+    android:fontFamily="@font/proxima_nova_regular"
+    android:padding="@dimen/_14sdp"
+    android:button="@color/white"
+    android:background="@drawable/bg_radio_btn_three_selector"
+    android:layout_height="wrap_content">
+
+</RadioButton>

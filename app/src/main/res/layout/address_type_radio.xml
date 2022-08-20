@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_10sdp">
+
+    <RadioButton
+        android:id="@+id/radioBtn"
+        style="@style/commonLabelTextViewBold"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_margin="@dimen/_10sdp"
+        android:background="@drawable/bg_round_corner_stroke"
+        android:button="@null"
+        android:drawableBottom="@drawable/radio_button_selector"
+        android:gravity="center"
+        android:padding="@dimen/_8sdp"
+        android:textSize="@dimen/_12sdp" />
+</LinearLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/textHeader"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:fontFamily="@font/proxima_nova_bold"
+        android:gravity="center"
+        android:text="@string/click_each_image_to_capture"
+        android:textSize="@dimen/_14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/layoutImages"
+        android:layout_margin="@dimen/_5sdp"
+        app:layout_constraintTop_toBottomOf="@+id/textHeader"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_centerHorizontal="true"
+                android:id="@+id/circleImageFront"
+                android:layout_width="@dimen/_50sdp"
+                android:src="@color/colorPrimaryDark"
+                android:layout_height="@dimen/_50sdp"/>
+
+            <ImageView
+                android:id="@+id/imageFront"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_front_teeth_layout"
+                android:layout_width="@dimen/_50sdp"
+                android:padding="@dimen/_10sdp"
+                android:layout_height="@dimen/_50sdp"/>
+
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/circleImageFront"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Front"
+                android:fontFamily="@font/proxima_nova_bold"
+                android:textSize="@dimen/_12sp"
+                android:textColor="@color/light_grey_color"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_centerHorizontal="true"
+                android:id="@+id/circleImageRight"
+                android:layout_width="@dimen/_50sdp"
+                android:src="@color/colorPrimaryDark"
+                android:layout_height="@dimen/_50sdp"/>
+            <ImageView
+                android:id="@+id/imageRight"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_right_teeth_layout"
+                android:layout_width="@dimen/_50sdp"
+                android:padding="@dimen/_10sdp"
+                android:layout_height="@dimen/_50sdp"/>
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/circleImageRight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lbl_right"
+                android:textSize="@dimen/_12sp"
+                android:fontFamily="@font/proxima_nova_bold"
+                android:textColor="@color/light_grey_color"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_centerHorizontal="true"
+                android:id="@+id/circleImageLeft"
+                android:layout_width="@dimen/_50sdp"
+                android:src="@color/colorPrimaryDark"
+                android:layout_height="@dimen/_50sdp"/>
+            <ImageView
+                android:id="@+id/imageLeft"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_left_teeth_layout"
+                android:layout_width="@dimen/_50sdp"
+                android:padding="@dimen/_10sdp"
+                android:layout_height="@dimen/_50sdp"/>
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/circleImageLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lbl_left"
+                android:textSize="@dimen/_12sp"
+                android:fontFamily="@font/proxima_nova_bold"
+                android:textColor="@color/light_grey_color"/>
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

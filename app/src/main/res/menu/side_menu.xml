@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single">
+
+        <item android:id="@+id/home"
+            android:title="@string/dashboard" />
+
+<!--        <item android:id="@+id/myAccount"-->
+<!--            android:title="@string/btm_my_account" />-->
+<!--
+
+        <item android:id="@+id/my_appointments"
+            android:title="@string/my_appointments" />
+
+        <item android:id="@+id/intra_oral_camera"
+            android:title="@string/intra_oral_camera" />
+
+        <item android:id="@+id/fitsReminder"
+            android:title="@string/fits_reminder" />
+        <item android:id="@+id/smileProgress"
+            android:title="@string/smile_progress" />
+
+        <item android:id="@+id/my_chat"
+            app:actionViewClass="android.widget.TextView"
+            android:title="@string/chat" />
+
+        <item android:id="@+id/my_shop"
+            android:title="@string/shop" />
+-->
+
+<!--        <item android:id="@+id/notification"-->
+<!--            android:title="@string/notification" />-->
+
+        <item android:id="@+id/chatOffice"
+            android:title="@string/chat_with_office" />
+
+<!--        <item android:id="@+id/addFitsReminder"-->
+<!--            android:title="@string/start_new_treatment" />-->
+
+        <item android:id="@+id/help"
+            android:title="@string/faq" />
+
+
+        <item android:id="@+id/contact_us"
+            android:title="@string/contact_us" />
+
+        <item android:id="@+id/termsPolicy"
+            android:title="@string/terms_amp_policy" />
+
+
+        <item android:id="@+id/logout"
+            android:title="@string/logout"/>
+
+    </group>
+</menu>

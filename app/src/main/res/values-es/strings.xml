@@ -1,0 +1,1061 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--    1.	  | Línea del tiempo | Progreso de tu sonrisa  | Mis dentistas  | Chat-->
+    <!--    No hay recordatorios-->
+    <!--    Inicio  | Citas  | Notificaciones  | Mi cuenta-->
+
+    <string name="overview">Resumen</string>
+    <string name="timeline">Línea del tiempo</string>
+    <string name="smile_progress">Progreso de tu sonrisa</string>
+    <string name="my_dentist">Mi dentista</string>
+
+
+    <!--Appointment List Activity-->
+    <string name="title_consultations">Consultas de fotos</string>
+    <string name="title_appointment_list">Citas</string>
+    <string name="tab_video_virtual">Cita \n virtual</string>
+    <string name="tab_photo_consultation">FOTO \n CONSULTA</string>
+    <string name="tray_minder_tab">FITS \n RECORDATORIOS</string>
+
+    <!-- video appointment list-->
+    <string name="date_time">Fecha y hora</string>
+    <string name="services">Servicios</string>
+    <string name="call_durations">Duración de la llamada</string>
+    <string name="no_appointment_yet">Aún no hay citas</string>
+    <string name="appointment_id">Número de cita</string>
+    <string name="dentist_name">Nombre del dentista</string>
+    <string name="status_of_consul">Estatus</string>
+    <string name="doctor_name">Nombre del doctor</string>
+    <string name="status_of_consult">Estado de la consulta</string>
+    <string name="call_duration">Duración de la llamada</string>
+    <string name="created_on">Creada en</string>
+    <string name="completed">Finalizada</string>
+    <string name="confirmed">Confirmada</string>
+    <string name="date">Jun 24, 2020 04:08 PM</string>
+    <string name="duration">01:23</string>
+    <string name="id">456979659546</string>
+    <string name="view_full_details"><u>Ver más</u></string>
+    <string name="doc_name">Dr Jackson</string>
+
+    <string name="awaiting_consultant">Pendiente</string>
+    <string name="consultation_send">Enviada</string>
+
+
+    <!--photo consulation adapter-->
+    <string name="consultation_id">Número de cita</string>
+    <string name="patient_name">Nombre del paciente</string>
+    <string name="patient_name_photo">Nombre</string>
+    <string name="consultation_sent">Consulta enviada</string>
+    <string name="no_reminder">No hay recordatorios</string>
+    <string name="apply">Aplicar</string>
+    <string name="select_language">Elige tu idioma</string>
+
+    <string name="payment_details">Detalles del pago</string>
+    <string name="total_cost">Servicio Descuento</string>
+    <string name="total_payment">Total</string>
+
+    <!--popup choose appointment type-->
+    <!--    <string name="book_photo_consultation">Agenda una consulta fotográfica</string>-->
+    <string name="book_photo_consultation">Enviar revisión fotográfica</string>
+    <string name="book_virtual_appointment">Agenda una cita virtual</string>
+
+    <!--Search dentist -->
+    <string name="hint_search">buscar</string>
+    <string name="lbl_no_doctor_available">No hay doctores disponibles</string>
+    <string name="lbl_select_doctor">Seleccionar dentista</string>
+    <string name="lbl_view_profile">Ver perfil</string>
+    <string name="schedule_now">Agendar cita</string>
+
+
+    <!--Video Appointment checkout screen-->
+    <string name="title_video_appointment">Cita virtual</string>
+    <string name="lbl_call_fee">Tarifa de llamada</string>
+    <string name="schedule_your_appointment">Programa tu cita</string>
+    <string name="select_date_time">Selecciona día y hora</string>
+    <string name="coupon_code">Código del cupón</string>
+    <string name="fill_form">Completa tu historial médico y acepta las  condiciones</string>
+    <string name="complete_health_history">Historial médico completo</string>
+    <string name="completed_health_history">Historial médico completo</string>
+    <string name="i_agree_consent">Firma aquí</string>
+    <string name="summary">Resumen</string>
+    <string name="complete_payment">Completa el pago</string>
+    <string name="total">Total</string>
+    <string name="item_charge">Servicio cobrado</string>
+    <string name="applied_discount_code">Código de descuento aplicado</string>
+    <string name="your_health_history_expire_in">Tu historial médico expira en 50 días</string>
+    <string name="payment_method">Payment Method</string>
+
+
+    <!--video appointment detail popup-->
+    <string name="discount_cost">Descuento</string>
+
+    <!--Health history-->
+    <string name="title_health_history">Historia de salud</string>
+    <string name="hr_allergies_head">Alergias de</string>
+    <string name="hr_allergies_body">No tengo alergias</string>
+    <string name="hr_allergies_yes">Por favor selecciona los medicamentos a los que eres alérgico</string>
+    <string name="hr_allergies_type1">Amoxicilina</string>
+    <string name="hr_allergies_type2">Aspirina</string>
+    <string name="hr_allergies_type3">Azitromicina</string>
+    <string name="hr_allergies_type4">Claritromicina</string>
+    <string name="hr_allergies_type5">Ciprofloxacino</string>
+    <string name="hr_allergies_type6">Codeína</string>
+    <string name="hr_allergies_type7">Doxiciclina</string>
+    <string name="hr_allergies_type8">Eritromicina</string>
+    <string name="hr_allergies_type9">ibuprofen(Advil, Motrin, Midol)</string>
+    <string name="hr_allergies_type10">Yodo</string>
+    <string name="hr_allergies_type11">Lidocaína</string>
+    <string name="hr_allergies_type12">morphhine</string>
+    <string name="hr_allergies_type13">Naproxeno</string>
+    <string name="hr_allergies_type14">penicillin</string>
+    <string name="hr_allergies_type15">oxycodone(Percocet)</string>
+    <string name="hr_allergies_type16">Sulfamida</string>
+    <string name="hr_allergies_type17">Tetracilina</string>
+    <string name="hr_allergies_type18">Otros</string>
+    <string name="hr_allergies_types">Indique cualquier otra alergia conocida:</string>
+    <string name="hr_allergies_types1">egg</string>
+    <string name="hr_allergies_types2">Látex</string>
+    <string name="hr_allergies_types3">Cacahuates</string>
+    <string name="hr_allergies_types4">Crustáceos</string>
+    <string name="hr_allergies_types5">Lácteos</string>
+    <string name="hr_allergies_types6">Otros</string>
+    <string name="back">Atrás</string>
+    <string name="next">Siguiente</string>
+
+    <string name="add_insurance">Agregar tu seguro de gastos médicos</string>
+    <string name="error_please_add_date_time">Por favor selecciona el día y hora de tu cita</string>
+
+    <!--choose appointment date-->
+    <string name="schedule_your">Agenda tu cita</string>
+    <string name="confirm">Confirma</string>
+    <string name="cancel">Cancelar</string>
+
+    <string name="select_insurance_provider">Selecciona tu compañía de seguros</string>
+    <string name="title_insurance">Seguro</string>
+    <string name="insurance_provider_name">Nombre de tu compañía de seguros médicos</string>
+    <string name="insurance_no">Número de póliza</string>
+    <string name="hint_enter_insurance_no">Ingresa el número de tu póliza</string>
+    <string name="insurance_card">Tarjeta de seguro de gastos médicos</string>
+    <string name="driving_license">Identificación oficial</string>
+    <string name="how_to_reimbursed">Cómo solicitar un reembolso a tu compañía de seguros</string>
+    <string name="lbl_front">Frente</string>
+
+    <!--Notification List-->
+    <string name="title_notification">Notificaciones</string>
+    <string name="no_notification_yet">Aún no hay notificaciones</string>
+
+    <!--my account -->
+    <string name="dentist_gender">Género del dentista</string>
+    <string name="lbl_my_family_friends">Familia y amigos</string>
+    <string name="lbl_insurance">Mi seguro</string>
+    <string name="lbl_my_address">Mi dirección</string>
+    <string name="lbl_my_rewards">Mis recompensas</string>
+    <string name="lbl_my_settings">Configuración</string>
+    <string name="lbl_my_order">Mis ordenes</string>
+    <string name="language">Idioma</string>
+
+    <!--Edit Profile-->
+    <string name="title_edit_profile">Mi perfil</string>
+    <string name="hint_first_name">Nombre</string>
+    <string name="hint_last_name">Apellido</string>
+    <string name="hint_dob">Fecha de nacimiento</string>
+    <string name="male">Hombre</string>
+    <string name="female">Mujer</string>
+    <string name="other">Otro</string>
+    <string name="non_binary">Otro</string>
+    <string name="hint_email_id">Email</string>
+    <string name="hint_phone">Teléfono</string>
+    <string name="hint_password">Contraseña</string>
+    <string name="btn_update">Actualizar</string>
+    <string name="hint_repeat_password">Repite la contraseña</string>
+    <string name="lbl_non_gender">No específico de género</string>
+
+    <string name="hint_relationship_to_patient">Relación con el paciente</string>
+    <string name="btn_add">Añadir</string>
+    <string name="btn_cancel">Cancelar</string>
+    <string name="Spouse">Cónyuge</string>
+    <string name="child">Hijo</string>
+    <string name="Relative">Pariente</string>
+    <string name="Friend">Amigo</string>
+    <string name="Other">Otro</string>
+
+    <!--Rewards -->
+    <string name="your_rewards_points">Tus puntos</string>
+    <string name="earning_details">Puntos ganados</string>
+    <string name="recent_transactions">Transacciones recientes</string>
+    <string name="invite_and_earn"><![CDATA[Invita y gana]]></string>
+    <string name="no_earning_yet">Aún no hay recompensas</string>
+    <string name="earn_10">Gana $10</string>
+    <string name="invite_your_friends_and_family">Invita a tu familia y amigos</string>
+    <string name="your_invite_code">Tu código de invitación</string>
+    <string name="t_c_apply"><![CDATA[T&C Aplicar]]></string>
+
+    <!--settings screen-->
+    <string name="sms_alert">Notificaciones por SMS</string>
+    <string name="title_settings">Configuración</string>
+    <string name="notification_alert">Alertas de notificación</string>
+    <string name="alinger_alert">Recordatorios de mi alineador</string>
+    <string name="use_touch_id">Identificación por huella digital</string>
+    <string name="update">Actualizar</string>
+    <string name="txt_new">Nuevo</string>
+
+    <string name="chat_history">Historial de conversación</string>
+
+    <!--Slider menu-->
+    <string name="openDrawer">open_drawer</string>
+    <string name="closeDrawer">close_drawer</string>
+    <string name="user_name">User Name</string>
+    <string name="user_email_id">user@gmail.com</string>
+    <string name="user_code">#DENP00002</string>
+    <string name="home">Inicio</string>
+    <string name="dashboard">Inicio</string>
+    <string name="my_appointments">Mis citas</string>
+    <string name="intra_oral_camera">Cámara intraoral</string>
+    <string name="chat">Chat</string>
+    <string name="shop">tienda</string>
+    <string name="notification">Notificaciones</string>
+    <string name="invite_friends">Invitar a amigas</string>
+    <string name="help">Ayuda</string>
+    <string name="contact_us">Contacta con nosotros</string>
+    <string name="logout">Cerrar sesión</string>
+
+    <string name="faq">Preguntas frecuentes</string>
+    <string name="terms_amp_policy"><![CDATA[Términos y condiciones]]></string>
+
+    <string name="btm_home">Inicio</string>
+    <string name="btm_my_appointment">Citas</string>
+    <string name="btm_booking"></string>
+    <string name="btm_notification">Notificaciones</string>
+    <string name="btm_my_account">Mi cuenta</string>
+    <string name="start_new_treatment">Empezar un tratamiento</string>
+    <string name="chat_with_office">Chatear con la oficina</string>
+
+    <string name="slide_1_title">Configura tu tratamiento en unos cuantos pasos</string>
+    <string name="slide_2_title">Selecciona un alineador para tu tratamiento</string>
+    <string name="slide_3_title">Número de alineadores</string>
+    <string name="slide_4_title">Número de días de uso por alineador</string>
+    <string name="slide_5_title">Número de alineador actual</string>
+    <string name="slide_6_title">Cuántos días has usado tu alineador actual</string>
+    <string name="slide_7_title">Recuérdame cambiar el alineador a las</string>
+    <string name="select_your_daily_goal">Cuántas horas al día quieres usar tu alineador</string>
+
+    <string name="nextt">Siguiente</string>
+    <string name="skip">Omitir</string>
+    <string name="select_the_patient">Selecciona al paciente</string>
+    <string name="fits_aligner">Fits aligner</string>
+
+    <!--Search dentist -->
+    <string name="select_provider">Selecciona un dentista</string>
+    <string name="start">Entendido</string>
+
+    <string name="waiting_for_confirm">Pendiente</string>
+    <string name="appointment_details">Detalles de la citas</string>
+    <string name="your_health_history_will">Tu historial médico expira en</string>
+
+    <string name="day">día</string>
+    <string name="days">días</string>
+    <string name="previous">Previo</string>
+    <string name="action_settings">Configuración</string>
+    <string name="no_transcation">Sin transacciones</string>
+    <string name="progress_success">Tu progreso se ha actualizado correctamente</string>
+    <string name="not_tracked">No rastreada</string>
+
+    <string name="no_photo_consultation_yet">Todavía no hay consultas fotográficas</string>
+    <string name="hint_add_photo">Sube una foto</string>
+    <string name="type_a_message">Escribe un mensaje</string>
+    <string name="lbl_patient_name">Nombre del paciente</string>
+    <string name="type_of_aligner">Tipo de alineador</string>
+    <string name="days_of_aligner">Días con el alineador</string>
+    <string name="switch_aligner">Horario para cambiar el alineador</string>
+
+    <!--Forgot Password-->
+    <string name="title_forgot_password">Olvidaste tu contraseña?</string>
+    <string name="btn_reset_password">Restablecer contraseña</string>
+    <string name="go_back">Regresar</string>
+    <string name="email_id_required">Ingresa tu email</string>
+    <string name="invalid_email_address">Email inválido</string>
+
+    <string name="successfull_screen_message">Pronto recibiras tu evaluación. Te avisaremos cuando esté lista</string>
+    <string name="please_fill_required_data">Por favor responde las siguientes preguntas</string>
+    <string name="please_select_atleast_one_option_to_proceed">Por favor elige una opción</string>
+    <string name="take_photo_">Toma una foto</string>
+    <string name="choose_your_profile_picture">Elije una foto de perfil</string>
+    <string name="no_forms_found">No se encontraron formularios</string>
+
+
+    <!--Slider activity-->
+    <string name="login_register">Inicia sesión y Regístrate</string>
+    <string name="login">Inicia sesión</string>
+    <string name="register">Regístrate</string>
+    <string name="dentist_touch_here">Si eres dentista, da click aquí</string>
+
+    <!--Login Activity-->
+    <string name="new_user"><u>Nuevo usuario</u></string>
+    <string name="forget_pwd"><u>Olvidé mi Contraseña</u></string>
+    <string name="hint_email">Identificación de correo</string>
+    <string name="hint_pwd">contraseña</string>
+    <string name="title_login">ACCESO</string>
+
+    <string name="patient_information">Información del paciente</string>
+    <!--Edit profile-->
+    <string name="profile_updated_successfully">Perfil actualizado exitosamente</string>
+    <string name="updated_failed">Error de actualización</string>
+
+    <!--Change Password-->
+    <string name="title_change_password">Cambiar contraseña</string>
+    <string name="current_password">Contraseña actual</string>
+    <string name="new_password">Nueva contraseña</string>
+    <string name="confirm_password">Confirmar contraseña</string>
+    <string name="please_enter_your_current_password">Por favor escribe tu contraseña actual</string>
+    <string name="new_pwd_should_not_same_as_current_pwd">La nueva contraseña no puede ser igual a la anterior</string>
+    <string name="enter_your_new_pwd">Por favor confirma tu contraseña</string>
+    <string name="new_confirm_pwd_not_match">Las contraseñas no coinciden</string>
+
+    <string name="question1">¿Cómo podemos ayudar a tu sonrisa?</string>
+    <string name="ans1">Quiero blanquear mis dientes</string>
+    <string name="ans2">Quiero enderezar mis dientes</string>
+    <string name="ans3">Quiero tratar mi dolor dental</string>
+    <string name="question2">¿Cuál es tu principal objetivo?</string>
+    <string name="answer2">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero.</string>
+    <string name="question3">¿Cuáles son tus prioridades?</string>
+    <string name="answer3">Calidad de tratamiento</string>
+    <string name="question4">¿Qué tan rápido quieres empezar?</string>
+    <string name="answer4">Cuanto antes</string>
+    <string name="question5">¿Tienes seguro dental?</string>
+    <string name="answer5">Sí</string>
+
+    <!--Register Activity-->
+    <string name="title_register">Registro</string>
+    <string name="lbl_personal_details">Información personal</string>
+    <string name="lbl_account_details">Detalles de cuenta</string>
+    <string name="hint_confirm_pwd">Confirma tu contraseña</string>
+
+    <!--validation error-->
+    <string name="please_enter_first_name">Nombre</string>
+    <string name="please_enter_last_name">Apellido</string>
+    <string name="please_select_date_of_birth">Fecha de nacimiento</string>
+    <string name="please_select_gender">Género</string>
+    <string name="please_enter_email_address">Email</string>
+    <string name="invalid_email">Email inválido</string>
+    <string name="error_please_choose_relationship">Estado civil</string>
+    <string name="please_enter_password">Contraseña</string>
+    <string name="please_enter_confirm_password">Confirma tu contraseña</string>
+    <string name="password_does_not_match">Las contraseñas no coinciden</string>
+    <string name="please_enter_mobile_number">Teléfono celular</string>
+
+    <string name="video_call_total">Tarifa de la video llamada</string>
+    <string name="discount_coupon_code_apply">Cupón de descuento</string>
+    <string name="you_pay">Total a pagar</string>
+
+    <string name="credit_card">Agrega una tarjeta</string>
+    <string name="paypal">Paypal</string>
+    <string name="google_pay">Google Pay</string>
+    <string name="save_card">Save Card</string>
+
+    <string name="error_please_add_card">Por favor agrega una tarjeta</string>
+    <string name="error_please_select_dentist">Por favor elije un dentista</string>
+    <string name="error_please_add_health_history">Agrega tu historial médico</string>
+    <string name="error_please_agree_add_digital_Signature">Por favor acepta las condiciones y agrega tu firma digital</string>
+
+    <!--appointment success screen-->
+    <string name="thank_you">¡Gracias!</string>
+    <string name="successfully_booked_appointment">¡Listo! Tu cita quedó agendada</string>
+    <string name="lbl_appointment_id">Número de cita  203659978</string>
+    <string name="appointment_date_time">Día y hora de la cita</string>
+    <string name="fee">Tarifa</string>
+    <string name="thanks">¡Gracias!</string>
+    <string name="date_value">02/02/2020</string>
+
+    <string name="network_error">Error de red</string>
+    <string name="please_provide_rating">Califícanos</string>
+    <string name="str_feedback_call">¡Muchas gracias por usar Fit smile!!
+        \n Por favor califícanos positivamente y comparte tu experiencia</string>
+    <string name="str_feedback_order">¡Que disfrutes tu compra! \nPor favor califica otra compra</string>
+    <string name="product_added_message">Producto eliminado de tu carrito</string>
+    <string name="product_removed_message">Producto añadido al carrito</string>
+    <string name="your_shopping_cart_is_empty">El carrito de compra está vacío</string>
+    <string name="upload_insurance">cargar Seguro dental</string>
+
+    <string name="please_choose_date">Por favor elije una fecha</string>
+    <string name="please_choose_time">Por favor elije un horario</string>
+    <string name="insurace_add_number">Por favor ingresa el tipo de seguro y número de póliza</string>
+
+    <string name="settings">Configuración</string>
+
+    <string name="call_from_fit_smile">Llamada desde Fit Smile</string>
+    <string name="calling_video">Llamando...</string>
+    <string name="login_with_touch_id">Ingresar con huella digital</string>
+    <string name="not_you">¿No eres tú?</string>
+    <string name="intraoral_picture">Fotos intraorales</string>
+    <string name="mouth_cam">Cámara oral</string>
+    <string name="connect_text">Por favor conéctate a la red WiFi de la cámara oral de Fit Smile</string>
+    <string name="video_resolution">La resolución de tu cámara es demasiado alta para poder grabar</string>
+    <string name="gallery">Galería</string>
+    <string name="settings_intra">Configuración</string>
+    <string name="video_path">Ruta de video</string>
+
+    <!--Treatment plan-->
+    <string name="lbl_estimated_cost">Costo estimado</string>
+    <string name="lbl_no_of_appointment">Número de citas</string>
+    <string name="lbl_clinical_evaluation">Evaluación clínica / diagnóstico</string>
+    <string name="lbl_treatment_type">Tipo de tratamiento</string>
+    <string name="lbl_conventional_dentures">Prótesis dental convencional</string>
+    <string name="lbl_before_after_image">Imágenes de antes y después</string>
+    <string name="about_image">Acerca de las imágenes</string>
+    <string name="lbl_special_offer">Oferta especial</string>
+    <string name="lbl_estimated_insurance_coverage">Monto estimado de cobertura por parte del seguro</string>
+    <string name="lbl_recorded_video">Videos</string>
+    <string name="treatment_options">Opciones de tratamiento</string>
+    <string name="coupon_applied">Se aplicó el cupón de descuento</string>
+    <string name="add_insurance_images">Por favor agrega imágenes del seguro</string>
+    <string name="driver_licence_image">Por favor sube la imagen de tu identificación oficial</string>
+
+    <string name="title_activity_welcome">Pantalla principal</string>
+    <string name="turn_phone_to_face_the_mirror">Voltea la cámara de tu teléfono hacia el espejo</string>
+    <string name="rejected">Rechazada</string>
+    <string name="upload_images_of_your_aligner_1_for_your_n_providers_to_track_your_progress">Sube imágenes de tu alineador #1, para poder evaluar tu progreso</string>
+
+    <string name="slide_2_desc">Alineador Orthero</string>
+    <string name="slide_3_desc">15</string>
+    <string name="slide_4_desc">14</string>
+    <string name="slide_5_desc">1</string>
+    <string name="slide_6_desc">0</string>
+    <string name="slide_7_desc">10:00 AM</string>
+    <string name="fits_reminder">Recordatorio</string>
+    <string name="number_picker_formatter">%02d</string>
+    <string name="tray_minder">Recordatorio</string>
+    <string name="reminder_settings">Configuración de los recordatorios</string>
+    <string name="transition_image">transición:IMAGEN</string>
+    <string name="save_changes">Guardar cambios</string>
+    <string name="treatmentList">Lista de tratamientos</string>
+    <string name="no_fits_reminder_yet">Aún no tienes recordatorios</string>
+    <string name="time_to_put_aligner">Hora de colocarte tu alineador</string>
+    <string name="delete_reminder"><u>Eliminar recordatorio</u></string>
+    <string name="support_spanish_com">ayuda@fits-smile.com</string>
+    <string name="set_default"><u>Establece un recordatorio predetermiando</u></string>
+    <string name="adjust_aligner_days">Ajustar tus días con el alineador</string>
+    <string name="do_you_want_to_change_aligner">¿Quieres Cambiar de alineador?</string>
+    <string name="breakfast">Desayuno</string>
+    <string name="_30_mins">30 minutos</string>
+    <string name="alarm_settings">Configuración de la alarma</string>
+
+    <!--stripe activity-->
+    <string name="btn_save">Guardar</string>
+    <string name="title_payment">Pago</string>
+    <string name="card_added_successfully">Tarjeta agregada exitosamente</string>
+    <string name="please_enter_card_details">Ingresa los datos de tu tarjeta</string>
+    <string name="are_you_sure_you_want_to_delete_this_card">¿Estás seguro de que quieres eliminar esta tarjeta?</string>
+    <string name="are_you_sure_you_want_to_delete_this_reminder">¿Estás seguro de que quieres eliminar este recordatorio?</string>
+    <string name="are_you_sure_you_want_to_delete_these_Images">¿Estás seguro de que quieres eliminar estas imágenes?</string>
+    <string name="please_check_your_network">Por favor revisa tu conexión e intenta otra vez.</string>
+    <string name="something_went_wrong">Ocurrió un problema. Por favor intenta otra vez.</string>
+    <string name="categories">Categorías</string>
+    <string name="i_m_a_product_detail_i_m_a_great_place_to_add_more_information_about_your_product_such_as_sizing_material_care_and_cleaning_instructions_this_is_also_a_great_space_to_write_what_makes_this_product_special_and_how_your_customers_can_benefit_from_this_item_buyers_like_to_know_what_they_re_getting_before_they_purchase_so_give_them_as_much_information_as_possible_so_they_can_buy_with_confidence_and_certainty">I\'m a product detail. I\'m a great place to add more information about your product such as sizing, material, care and cleaning instructions. This is also a great space to write what makes this product special and how your customers can benefit from this item. Buyers like to know what they’re getting before they purchase, so give them as much information as possible so they can buy with confidence and certainty.</string>
+    <string name="add_to_cart">Agregar al carrito</string>
+    <string name="checkout">Pagar</string>
+    <string name="proceed">Continuar</string>
+    <string name="order_status">Estatus de tu orden</string>
+
+    <string name="work">Trabajo</string>
+    <string name="no_address">No hay una dirección</string>
+    <string name="add_new_address">Agregar una dirección nueva</string>
+    <string name="add_new">Agregar nueva</string>
+    <string name="address_name_hint">Ingresa el nombre de la dirección</string>
+    <string name="address_description_hint">Selecciona la dirección</string>
+
+    <!--Image picker -->
+    <string name="lbl_set_profile_photo">Elige</string>
+    <string name="lbl_take_camera_picture">Toma una fotografía</string>
+    <string name="lbl_choose_from_gallery">Elige una de la Galería</string>
+    <string name="lbl_view_picture">Ver la fotografía</string>
+    <string name="btn_office_promotion">Promiciones de Office</string>
+    <string name="toast_image_intent_null">La opción para elegir una imagen no se encuentra</string>
+    <string name="dialog_permission_title">Conceder Permisos</string>
+    <string name="dialog_permission_message">La aplicación necesita una autorización para utilizar esta función. Tú puedes otorgar esta autorización en App Settings. </string>
+    <string name="go_to_settings">IR A CONFIGURACION</string>
+    <string name="cancel_caps">CANCELAR</string>
+    <string name="cart_empty">Tu carrito está vacío</string>
+    <string name="patient_response">Respuesta del paciente</string>
+    <string name="patient_images_or_videos">Imágenes y videos del paciente</string>
+
+    <!--Session out popup-->
+    <string name="alert">Alerta</string>
+    <string name="you_are_already_logged">Ya has iniciado sesión con otro dispositivo. Por favor termina tu sesión en ese dispositivo e iníciala nuevamente en este dispositivo. </string>
+    <string name="first_name">First name</string>
+    <string name="please_choose_image_from_gallery">Por favor elige una Imagen de la galería</string>
+    <string name="add_photo">Sube una foto</string>
+    <string name="successfully_completed">Completado exitósamente</string>
+
+    <!--Video Call Activity-->
+    <string name="dentist_dit_not_attend_the_call">El dentista no asistió a la llamada</string>
+    <string name="dr_without_dot">Dr</string>
+    <string name="calling">Vocación</string>
+    <string name="agora_app_id">796479eed47b41ff9c3b44043e5928b7</string>
+    <string name="feedback">Suministre realimentación</string>
+    <string name="submit">Enviar</string>
+
+    <string name="_400">$400</string>
+    <string name="online">en línea</string>
+    <string name="offline">desconectada</string>
+    <string name="uploading">enviando ...</string>
+
+    <string name="txt_stop_record">Primero deje de grabar</string>
+    <string name="SD_card_full">La memoria de la tarjeta SD está llena, elimine algunos archivos!</string>
+    <string name="title_activity_pick_location">Mapa</string>
+    <string name="title_activity_view_address">Ver dirección</string>
+    <string name="title_activity_edit_address">Editar dirección</string>
+    <string name="no_address_type">No hay ningún tipo de dirección disponible.</string>
+    <string name="camera_text">Utiliza tu abrebocas y toma una \n selfie de tu sonrisa</string>
+
+
+    <!--WiFi camera-->
+    <string name="unlock">Unlock</string>
+    <string name="confirm_pattern">Confirm your screen lock PIN,Pattern or Password</string>
+    <string name="setting_label"><![CDATA[Please set the screen lock Manually by navigating to : Settings>Security.]]></string>
+    <string name="unlock_success">App is Unlocked successfully.</string>
+    <string name="unlock_failed">Failed to Unlock the app.</string>
+    <string name="device_is_secure">Device is now secure.</string>
+    <string name="security_device_cancelled">Device is not secure or user cancel the request.</string>
+    <string name="authenticate_again">Authenticate Again</string>
+
+    <string name="title_contact">Contacta con nosotros</string>
+    <string name="email">Email</string>
+    <string name="telephone">teléfono</string>
+    <string name="website">sitio web</string>
+    <string name="address">dirección</string>
+
+
+    <string name="wearing">fits en uso</string>
+    <!--    <string name="wearing">UTILIZANDO</string>-->
+    <string name="pause">PAUSA</string>
+    <string name="in">en</string>
+    <string name="resume">REANUDAR</string>
+    <string name="not_wearing">fits sin uso</string>
+    <string name="out">Hora actual</string>
+    <string name="remaining_days">día restante para una sonrisa perfecta</string>
+    <string name="days_of_aligner_1">días de Aligner</string>
+    <!--    <string name="today_goal_time_completed">Objetivo completado del día</string>-->
+    <string name="today_goal_time_completed">Objetivo del día completado</string>
+    <!--    <string name="today_goal_pending_time">Tiempo objetivo de hoy completado</string>-->
+    <!--    <string name="today_goal_pending_time">Objetivo de hoy Tiempo restante</string>-->
+    <string name="today_goal_pending_time">Tiempo restante para el objetivo de hoy </string>
+    <string name="aligner_reminder">Recordatorio de uso de alineador</string>
+    <string name="remind_me_to_wear">Recuérdame que me ponga de nuevo</string>
+    <string name="treatment_completed">El tratamiento se había completado</string>
+    <string name="connecting">Conectando</string>
+    <string name="not_mentioned">No mencionada</string>
+    <string name="choose_option_to_proceed">Elija una opción para continuar</string>
+    <string name="enable_gps">Habilite el GPS para continuar</string>
+    <string name="chat_not_available">Los detalles del chat no están disponibles para este usuario</string>
+    <string name="cannot_chat_with_himself">No puedes chatear contigo mismo</string>
+    <string name="type_some_message">Por favor escriba algún mensaje para enviar</string>
+    <string name="file_not_document">Uno o más archivos seleccionados no es un documento</string>
+    <string name="dentulu_user">Usuario de Dentulu</string>
+    <string name="you_sent_photo">Tu enviaste una foto</string>
+    <string name="sent_photo">Envió una foto</string>
+    <string name="you_sent_video">Enviaste un video</string>
+    <string name="sent_video">Envió un video</string>
+    <string name="you_sent_file">Enviaste un archivo</string>
+    <string name="sent_file">Envió un archivo</string>
+    <string name="not_able_to_add_treatment">No podrá agregar un nuevo tratamiento hasta que termine el primero para este paciente</string>
+    <string name="goal_missed">Objetivo perdido</string>
+    <string name="today">Hoy dia</string>
+    <string name="goal_reached">Objetivo alcanzado</string>
+    <string name="switch_aligner_title">Cambiar alineador</string>
+    <string name="treatment_complete">Tratamiento completa</string>
+    <string name="remind_me_to_switch_aligner">Recuérdame cambiar de alineador en</string>
+    <string name="switch_your_aligner">Cambia tu alineador</string>
+    <string name="aligner">Alineador</string>
+    <string name="select_provider_id">Seleccione ID de proveedor</string>
+    <string name="capital_confirm">CONFIRMAR</string>
+    <string name="capital_cancel">CANCELAR</string>
+    <string name="select_daily_goal">Seleccionar objetivo diario</string>
+    <string name="edit_alarm_name">Editar nombre de alarma</string>
+    <string name="permission_warning">¡¡¡Lo siento !!!, no puedes usar esta aplicación sin otorgar permiso</string>
+    <string name="timer_active">Temporizador activa</string>
+    <string name="tap_to_return_to_timer">Toca para volver al temporizador</string>
+    <string name="insurance_provider_required">Se requiere proveedor de seguro</string>
+    <string name="insurance_number_required">Se requiere número de seguro</string>
+    <string name="card_Attachment_required">Se requiere adjuntar una tarjeta de seguro</string>
+    <string name="driving_licence_required">Se requiere licencia de conducir</string>
+    <string name="insurance_reimbursed">Seguro reembolsado</string>
+    <string name="discount_code_message">"¡Hola! Estoy usando la aplicación Fit smile y pensé que a ti también te podría gustar. Utilice este código de descuento para recibir un"</string>
+    <string name="use_below_code">Utilice el siguiente código</string>
+    <string name="coupon_code_copied">Se copió el código del cupón</string>
+    <string name="earn">Ganar</string>
+    <string name="_select_Address_type">Seleccione el tipo de dirección de los botones de opción</string>
+    <string name="enter_name_to_save_address">Ingrese el nombre con el que desea guardar la dirección</string>
+    <string name="_select_Address">Por favor seleccione la dirección</string>
+    <string name="get_address_type_from_rb">Seleccione el tipo de dirección de los botones de opción</string>
+    <string name="service_not_available">Oh, lo siento. El servicio no está disponible en su área. Seleccione otra ubicación.</string>
+    <string name="warning">Advertencia</string>
+    <string name="enter_phone_no">Por favor ingrese el numero de telefono</string>
+    <string name="invite_term_and_condition"><![CDATA[Términos y condiciones de la invitación]]></string>
+    <string name="current_aligner">Alineador actual</string>
+    <string name="total_aligner">Alineadores totales</string>
+    <string name="wear_each_aligner">Use cada alineador</string>
+    <string name="daily_goal">Objetivo diario</string>
+    <string name="provider">Dentista</string>
+    <string name="provider_name">Nombre del proveedor</string>
+    <string name="completed_with_treatment">Completo con tratamiento</string>
+    <string name="days_left">Días restantes</string>
+
+
+    <string name="hours">horas</string>
+    <string name="hour">hora</string>
+    <string name="select_aligner">Seleccionar alineador</string>
+    <string name="no_aligner_image_yet">Aún no hay imágenes de alineadores</string>
+    <string name="BACK">ESPALDA</string>
+    <string name="NEXT">PRÓXIMA</string>
+    <string name="not_data_yet">Aún no hay datos</string>
+    <string name="products">Productos</string>
+    <string name="sub_total">Sub total</string>
+    <string name="billing_details">Detalles de facturación</string>
+    <string name="billing_Address">Dirección de Envio</string>
+    <string name="shipping_address_same_above">Dirección de envío igual a la anterior</string>
+    <string name="shipping_address">Dirección de Envío</string>
+    <string name="txt_add_card">Agregar tarjeta</string>
+    <string name="grand_total">Gran total:</string>
+    <string name="please_add_billing_Address">Agregue la dirección de facturación</string>
+    <string name="please_add_shipping_Address">Por favor agregue la dirección de envío</string>
+    <string name="please_add_card">Por favor agregue una tarjeta</string>
+    <string name="select_billing_address">Seleccione la dirección de facturación</string>
+    <string name="put_aligner_back_on_teeth">Vuelva a colocar el alineador en los dientes.</string>
+    <string name="txt_address">Calle Durango No. 263 Int 9, Colonia Roma Norte, Delegación Cuauhtemoc, C.P. 06700, Ciudad de México.</string>
+    <string name="not_data_found">Datos no encontrados</string>
+    <string name="no_faq_data">No hay datos de preguntas frecuentes</string>
+    <string name="save_history">GUARDAR HISTORIA</string>
+    <string name="step1">Paso 1:</string>
+    <string name="step2">Paso 2:</string>
+    <string name="start_camera">Iniciar cámara</string>
+    <string name="connect_wifi">Conectar Wi-Fi</string>
+    <string name="step3">Paso 3:</string>
+    <string name="view_gallery">Ver galería</string>
+    <string name="order_placed_on">La orden está puesta en</string>
+    <string name="order_id">Solicitar ID</string>
+    <string name="product_name">nombre del producto</string>
+    <string name="price">Precio</string>
+    <string name="nos">3 números</string>
+    <string name="total_nos">Números totales</string>
+    <string name="delievery_address">Dirección de entrega</string>
+    <string name="cancel_address">Cancelar orden</string>
+    <string name="feedback_order">Orden de retroalimentación</string>
+    <string name="all_Done">¡Todo listo!</string>
+    <string name="txt_done">Hecho</string>
+    <string name="product_info">Información del producto</string>
+    <string name="remove_from_cart">Quitar del carrito</string>
+    <string name="clear">Clara</string>
+    <string name="reboot">Reiniciar</string>
+    <!--signature-->
+    <string name="title_signature">Firma</string>
+    <string name="sign">Adoptar y firmar</string>
+    <string name="full_name">Nombre completo*</string>
+    <string name="initials">Iniciales*</string>
+    <string name="preview">Avance*</string>
+    <string name="change_style">Cambia estilo</string>
+    <string name="add_at_least_one_image">Agregue al menos una imagen</string>
+    <string name="format_not_supportted">Este formato no es compatible </string>
+    <string name="adopt_and_sign">Adoptar y firmar</string>
+    <string name="scan">Escanear</string>
+    <string name="lbl_left">Izquierda</string>
+    <string name="lbl_right">Derecha</string>
+    <string name="lbl_top">Cima</string>
+    <string name="lbl_bottom">Fondo</string>
+    <string name="lbl_up">Superior</string>
+    <string name="lbl_down">Inferior</string>
+    <string name="lbl_image_title">Utiliza tu abrebocas y tomate una selfie de \n tu dentadura como se muestra en la imagen de ejemplo</string>
+    <string name="reminder">Recordatorio</string>
+    <string name="share">Compartir</string>
+    <string name="no_reminder_yet">Sin recordatorios todavía</string>
+    <string name="change_location">Cambiar locación</string>
+    <string name="click_each_image_to_capture">Haga clic en cada imagen para capturar fotos de sus \ n proveedores y realizar un seguimiento de su progreso</string>
+    <string name="want_to_send_mail">¿Quieres enviar un correo electrónico?</string>
+    <string name="cart_total">Total del carrito</string>
+    <string name="days_more_on_aligner">10 días más sobre el alineador #1</string>
+    <string name="select_patient_treatment">Seleccione el tratamiento del paciente</string>
+    <string name="adjust_reminder">Ajustar recordatorio</string>
+    <string name="cancel_order">Cancelar orden</string>
+    <string name="no_orders_yet">Aún no hay pedidos</string>
+    <string name="shop_now">Compra ahora</string>
+    <string name="aligner1">Alineador 1</string>
+    <string name="day1">1 día</string>
+    <string name="aligner_hash_1">Alineador #1</string>
+    <string name="view">Vista</string>
+    <string name="category">Categoría</string>
+    <string name="teeth_power">Poder de los dientes *2</string>
+    <string name="unit_price">Precio unitario</string>
+    <string name="view_order">Ver pedido</string>
+    <string name="myself">Yo mismo</string>
+    <string name="face2">Face2</string>
+    <string name="fitsmile">Sonrisa</string>
+    <!--    <string name="tap_to_take_photo">Toca en cualquier lugar para tomar una foto</string>-->
+    <string name="tap_to_take_photo">Doble Tap para tomar una foto</string>
+    <string name="select">Seleccione</string>
+    <string name="title">Título</string>
+    <string name="description">descripción</string>
+    <string name="change_from_aligner">Cambiar de Alineador 1 a Alineador 2</string>
+    <string name="add">AGREGAR</string>
+    <string name="information">Información:</string>
+    <string name="text_date">fecha</string>
+    <string name="name">nombre</string>
+    <string name="days_remaining">días para una sonrisa perfecta</string>
+    <string name="no_reminder_change_default">No hay otro recordatorio para cambiar el valor predeterminado</string>
+    <string name="change_default_aligner">Cambiar el alineador predeterminado</string>
+    <string name="upload_image_of_aligner">Sube imágenes de tu alineador #</string>
+    <string name="for_provider_track_progress">para \n que tu dentista realice el seguimiento \n de tu progreso</string>
+    <string name="upload_image">Cargar imagen</string>
+    <string name="put_aligner">Poner Alineador</string>
+
+    <string name="practice_location">Lugar de práctica</string>
+    <string name="dental_office">Oficina dental</string>
+    <string name="dental_school">Escuela dental</string>
+    <string name="language_spoken">Lenguaje hablado</string>
+    <string name="bio">BIO</string>
+    <string name="licence_no">Número de licencia</string>
+    <string name="available_time">Tiempo disponible</string>
+    <string name="tele_dentistry_service">Servicios de tele odontología</string>
+    <string name="mobile_dentistry_service">Servicios de odontología móvil</string>
+    <string name="member_of_value">Asociación dental americana</string>
+    <string name="label_license_no">Licencia No</string>
+    <string name="label_state">Expresar</string>
+
+    <string name="title_dentist_profile">Perfil del dentista</string>
+    <string name="cosmetic_dentist">Dentista cosmética</string>
+    <string name="member_of">Miembro de</string>
+
+    <string name="lbl_email">Email</string>
+    <string name="lbl_number">Número de teléfono</string>
+    <string name="lbl_response">Respuesta del paciente</string>
+    <string name="lbl_patient_images_videos">Imágenes o videos de pacientes</string>
+    <string name="lbl_teeth_images">Imágenes de dientes</string>
+
+    <string name="dash_ask_my_dentist">Consulta de fotos</string>
+    <string name="dr">Dentista</string>
+
+    <!--home fragment-->
+    <string name="daily_news">Noticias diarias y Actualizaciones</string>
+    <string name="add_find_dentist">Agregar / encontrar \ nMi dentista</string>
+    <string name="intra_oral">Cámara intraoral</string>
+    <string name="home_chat">Chat</string>
+    <string name="home_shop">Tienda</string>
+    <string name="virtual_appointment">Cita virtual</string>
+
+    <string name="i_agree_consent_signed">Acepté el formulario de consentimiento (firmado)</string>
+    <!--web consent form-->
+    <string name="title_web_consent_form">Formulario de consentimiento web</string>
+    <string name="btn_agree">Estar de acuerdo</string>
+
+    <string name="hr_medications_head">Medicamentos actuales</string>
+    <string name="hr_medications_body">No estoy tomando ningún medicamento</string>
+    <string name="hr_medications_yes">Marque cualquier medicamento que esté tomando actualmente</string>
+
+    <string name="hr_medcondition_head">Condiciones médicas</string>
+    <string name="hr_medcondition_body">No le han diagnosticado ninguna afección médica.</string>
+    <string name="hr_medcondition_yes">Por favor marque cualquier condición médica que le hayan diagnosticado.</string>
+    <string name="hr_medcondition_type1">reflujo ácido</string>
+    <string name="hr_medcondition_type2">asma</string>
+    <string name="hr_medcondition_type3">coágulos de sangre</string>
+    <string name="hr_medcondition_type4">cáncer</string>
+    <string name="hr_medcondition_type5">enfermedad de las arterias coronarias (CAD)</string>
+    <string name="hr_medcondition_type6">diabetes</string>
+    <string name="hr_medcondition_type7">ataque al corazón</string>
+    <string name="hr_medcondition_type8">hipertensión</string>
+    <string name="hr_medcondition_type9">enfermedad del riñon</string>
+    <string name="hr_medcondition_type10">úlcera estomacal</string>
+    <string name="hr_medcondition_type11">golpe</string>
+    <string name="hr_medcondition_type12">enfermedad de tiroides</string>
+    <string name="hr_medcondition_type13">Otra(s)</string>
+
+    <string name="hr_medical_procedures_head">Procedimientos médicos</string>
+    <string name="hr_medical_procedures_body">No tiene ningún procedimiento médico anterior.</string>
+    <string name="hr_medical_procedures_yes">Seleccione los procedimientos médicos a los que se ha sometido</string>
+    <string name="hr_medical_procedures_type1">angioplastia</string>
+    <string name="hr_medical_procedures_type2">apendectomía</string>
+    <string name="hr_medical_procedures_type3">cirugía de espalda</string>
+    <string name="hr_medical_procedures_type4">cirugía de vesícula biliar</string>
+    <string name="hr_medical_procedures_type5">bypass de corazón</string>
+    <string name="hr_medical_procedures_type6">reparación de hernia</string>
+    <string name="hr_medical_procedures_type7">reemplazo de cadera</string>
+    <string name="hr_medical_procedures_type8">cirugía de rodilla</string>
+    <string name="hr_medical_procedures_type9">marcapasos</string>
+    <string name="hr_medical_procedures_type10">amigdalectomía</string>
+    <string name="hr_medical_procedures_type11">vasectomia</string>
+    <string name="hr_medical_procedures_type12">Otra(s)</string>
+
+    <string name="hr_member_diagnosed_head">Historial médico familiar</string>
+    <string name="hr_member_diagnosed_body">No tiene ningún familiar diagnosticado con alguna condición médica</string>
+    <string name="hr_member_diagnosed_yes">Seleccione con qué afecciones se le ha diagnosticado a un miembro de la familia</string>
+    <string name="hr_member_diagnosed_type1">alzheimers</string>
+    <string name="hr_member_diagnosed_type2">asma</string>
+    <string name="hr_member_diagnosed_type3">cáncer</string>
+    <string name="hr_member_diagnosed_type4">enfermedad de las arterias coronarias (CAD)</string>
+    <string name="hr_member_diagnosed_type5">diabetes</string>
+    <string name="hr_member_diagnosed_type6">ataque al corazón</string>
+    <string name="hr_member_diagnosed_type7">colesterol alto</string>
+    <string name="hr_member_diagnosed_type8">hipertensión</string>
+    <string name="hr_member_diagnosed_type9">enfermedad del riñon</string>
+    <string name="hr_member_diagnosed_type10">migrañas</string>
+    <string name="hr_member_diagnosed_type11">osteoporosis</string>
+    <string name="hr_member_diagnosed_type12">golpe</string>
+    <string name="hr_member_diagnosed_type13">Otra(s)</string>
+
+
+    <!--medical record pop-->
+    <string name="title_completed_medical_record">Historial de salud completo</string>
+    <string name="medicine_title">John, s Medicamentos actuales.</string>
+
+    <!--common popup-->
+    <string name="no">No</string>
+    <string name="got_it">Entendido</string>
+    <string name="yes">sí</string>
+    <string name="are_you_sure">Estas segura?</string>
+
+
+    <string name="str_hint_wifi">Busque el nombre de Wi-Fi como se muestra a continuación. Los últimos caracteres difieren y son únicos para cada dispositivo. </string>
+
+    <!-- playback activity -->
+    <string name="label_Playback_Activity">Álbum</string>
+    <string name="tv_Playback_Photos">Fotos</string>
+    <string name="tv_Playback_Videos">Videos</string>
+    <string name="tv_Playback_BuiltinSdcard">Tarjeta SD incorporada</string>
+    <string name="tv_Playback_ExternalSdcard">Tarjeta SD externa</string>
+    <string name="str_playback_notfindexcard">No se puede encontrar la tarjeta ex sd</string>
+    <string name="str_playback_warning">ADVERTENCIA</string>
+    <string name="str_playback_deletephoto">Borra esta foto?</string>
+    <string name="str_playback_deletevideo">Eliminar este video?</string>
+    <string name="str_playback_confirm">Confirmar</string>
+    <string name="str_playback_cancel">Cancelar</string>
+
+    -- videoplayer.xml -->
+    <string name="tv_VideoPlayer_Time">tv_VideoPlayer_Time</string>
+
+    <!-- gridview photos item -->
+    <string name="tv_Photo_Name">default.jpg</string>
+    <string name="description_iv_change_cam">cambiar cámara local o cámara wifi</string>
+    <string name="Iv_Pop_Selector">selector de vista de lista en ventana emergente</string>
+
+    <!-- ImagePager Activity -->
+    <string name="str_imagepager_filename">Nombre del archivo:</string>
+    <string name="str_imagepager_filepath">Ruta de archivo:</string>
+    <string name="str_imagepager_time">Tiempo:</string>
+    <string name="str_imagepager_filesize">Tamaño del archivo:</string>
+    <string name="str_imagepager_resolution">Resolución:</string>
+    <string name="str_imagepager_filetype">Tipo de archivo:</string>
+    <string name="add_image">Agregar imagen</string>
+    <string name="TIMELINE">CRONOGRAMA</string>
+    <string name="CALENDER">CALENDARIO</string>
+    <string name="was_wearing">yo estaba usando...</string>
+    <string name="add_images">Agregar imagenes</string>
+    <string name="login_to_fits_account">Inicia sesión en tu cuenta fits</string>
+    <string name="term_policy_content_0">El presente contrato tiene como finalidad hacer de su conocimiento los Términos y Condiciones (“Términos y Condiciones”) aplicables al servicio y productos de fits Smile, el (“Titular”) quien tiene su domicilio ubicado en: Durango 263, interior 9, Roma Norte, Cuauhtemoc, CDMX.\n Cualquier persona que desee acceder o hacer uso del contenido, productos y/o servicios de fits Smile, estará sujeto a los presentes Términos y Condiciones, así como a políticas y principios incorporados al presente documento. De lo contrario, cualquier persona que no acepte los presentes Términos y Condiciones, deberá abstenerse de solicitar el servicio y/o adquirir los productos y servicios que en su caso sean ofrecidos.\n  Dada la naturaleza de la actividad desarrollada por el Titular, se hace de su conocimiento que el mismo cuenta con Aviso de Funcionamiento ante la Comisión Federal Para la Protección contra Riesgos Sanitarios (“COFEPRIS”) y cuenta con número de Aviso , mediante el cual cumple con la regulación aplicable para proporcionar el servicio odontológico.</string>
+    <string name="term_policy_header_title">Términos y condiciones</string>
+    <string name="term_policy_header_1">Fits Smile</string>
+    <string name="term_policy_header_2">Condiciones Generales:</string>
+    <string name="term_policy_header_3">Modificaciones al servicio y precios:</string>
+    <string name="term_policy_header_4">Comunicaciones electronicas:</string>
+    <string name="term_policy_header_5">Renuncia o garantía y limitación de responsabilidad:</string>
+    <string name="term_policy_header_6">Producto:</string>
+    <string name="term_policy_header_7">Renuncia o garantía y limitación de responsabilidad:</string>
+    <string name="term_policy_header_8">Contrato:</string>
+    <string name="term_policy_header_9">Ofertas de Venta:</string>
+    <string name="term_policy_header_10">Forma de Pago:</string>
+    <string name="term_policy_header_11">Método de Envío:</string>
+    <string name="term_policy_header_12">Entrega del Producto:</string>
+    <string name="term_policy_header_13">Recepción del Producto y Devolución:</string>
+    <string name="term_policy_header_14">Política de devolución y reembolso:</string>
+    <string name="term_policy_header_15">Política de reemplazo de alineadores:</string>
+    <string name="term_policy_header_16">Política de refinamiento:</string>
+    <string name="term_policy_header_17">Criterios para refinamiento::</string>
+    <string name="term_policy_header_18">Promociones y Descuentos:</string>
+    <string name="term_policy_header_19">Restricciones:</string>
+    <string name="term_policy_header_20">Terminación del Contrato:</string>
+    <string name="term_policy_header_21">Vigencia de los Términos y Condiciones:</string>
+    <string name="term_policy_header_22">Jurisdicción:</string>
+    <string name="term_policy_header_23">Interpretación:</string>
+    <string name="term_policy_header_24">Confidencialidad de la Información:</string>
+    <string name="term_policy_header_25">Acceso y uso del Sitio:</string>
+    <string name="term_policy_header_26">Políticas de Facturación:</string>
+    <string name="term_policy_header_27">DECLARACIÓN:</string>
+    <string name="term_policy_header_28">Propiedad Industrial e Intelectual:</string>
+    <string name="term_policy_header_29">Consultas, Recomendaciones Y Quejas:</string>
+
+    <string name="term_policy_content_1">CURADENT, S.A.P.I. de C.V., en lo sucesivo la “Empresa”, con domicilio en calle Durango 263, Roma Norte, Cuauhtemoc C.P. 06700 en la Ciudad de México, expide los siguientes Términos y Condiciones para que a través de sus diversos medios electrónicos se comercialicen y se oferten diversos productos al público en general, identificados de manera individual como “Usuario”.\n
+Página de Internet de la Empresa: Es el sitio Web de fits Smile, bajo la denominación www.fits-smile.com, en el cual Fits Smile publica Ofertas de Venta, en donde se puede registrar el usuario para adquirir los Productos publicados, realizar pedidos, ponerse en contacto con fits Smile a través del correo electrónico ayuda@fits-smile.com.\n
+Cualquier persona que desee acceder o hacer uso del contenido, productos y/o servicios “fits Smile”, estará sujeta a los presentes Términos y Condiciones, así como a políticas y principios incorporados al presente documento. De lo contrario, cualquier persona que no acepte los presentes Términos y Condiciones, deberá abstenerse de solicitar el servicio y/o adquirir los productos que en su caso sean ofrecidos.\n
+Dada la naturaleza regulatoria y clasificación del producto, las guardas dentales no están sujetas a la obtención de un Registro Sanitario u otro permiso equivalente para su comercialización, de conformidad con la regulación sanitaria en México.
+</string>
+    <string name="term_policy_content_2">Nos reservamos el derecho de actualizar, cambiar o reemplazar en cualquier momento, cualquier parte de estos Términos de servicio mediante la publicación de actualizaciones y / o cambios. Su uso continuado o acceso al sitio web después de la publicación de cualquier cambio constituye la aceptación total de dichos cambios.\n
+Los Servicios se encuentran dirigidos a personas que cuenten con la mayoría de edad. Los menores de edad podrán solicitar los Servicios con la autorización de sus padres o tutores, mismos que se sujetan a los presentes Términos y Condiciones. En este sentido, el Titular se deslinda de cualquier responsabilidad por el incumplimiento de este requisito.\n
+No puede usar nuestros productos o nuestro sitio para ningún propósito ilegal o no autorizado, o distinto para el que fue creado, ni puede, en el uso del servicio, violar las leyes de su jurisdicción (incluidas, entre otras, las leyes de derechos de autor).\n
+Usted acepta no reproducir, duplicar, copiar, vender, revender o explotar cualquier parte del servicio, uso del servicio o acceso al servicio o cualquier contacto en el sitio web a través del cual se proporciona el servicio. Usted acepta que el sitio y los servicios que en el mismo se ofrecen son solo para uso personal y no comercial y se adquieren bajo la responsabilidad del usuario.\n
+Si no cumple con los Términos, podemos cancelar su acceso al sitio y los servicios en cualquier momento, sin previo aviso, además de cualquier otro recurso o acción legal que pueda estar disponible para nosotros.\n
+Cualquier persona que desee acceder o hacer uso del contenido, productos y/o servicios de fits Smile estará sujeta a los presentes Términos y Condiciones, así como a políticas y principios incorporados al presente documento. De lo contrario, cualquier persona que no acepte los presentes Términos y Condiciones, deberá abstenerse de solicitar el servicio y/o adquirir los productos que en su caso sean ofrecidos.\n
+Los Servicios están dirigidos a clientes residentes en los Estados Unidos Mexicanos y cumplen con la legislación establecida en este país. El Titular no asegura que los Servicios y productos ofrecidos cumplan total o parcialmente con la legislación de otros países, de forma que, si el paciente reside o tiene su domicilio establecido en otro país y decide utilizar los Servicios, lo hará bajo su propia responsabilidad y deberá asegurarse de que tal utilización cumpla con la legislación que le sea aplicable. El Titular no asume la responsabilidad que se pueda derivar de dicho acto.
+</string>
+    <string name="term_policy_content_3">Los precios de los Bienes y/o Productos están sujetos a cambios sin previo aviso.\n
+Nos reservamos el derecho de modificar o interrumpir el acceso o inclusión al Sitio en cualquier momento (o cualquier parte o contenido del mismo), así como cualquier servicio incluido en los Bienes y/o Productos.
+</string>
+    <string name="term_policy_content_4">Usted acepta comunicarse con nosotros electrónicamente. Nos comunicaremos con usted por correo electrónico, mensaje de texto o mediante la publicación de mensajes en el sitio a través de un portal u otros medios electrónicos. Usted acepta que las comunicaciones electrónicas, incluidos los consentimientos y autorizaciones que pueda otorgar, son perfectamente validos y vinculantes.\n
+Todas las comunicaciones que se realicen por medios electrónicos serán perfectamente válidas entre las partes. El paciente autoriza la comunicación de forma electrónica con fits Smile, por lo cual todos los acuerdos, avisos, divulgaciones y/o notificaciones enviados de manera electrónica son perfectamente válidos y surten efecto el día de su entrega, quedando el paciente obligado a proporcionar su dirección de correo electrónico y mantenerla activa, mientras se mantenga vigente la relación paciente - ortodoncista con fits Smile.
+</string>
+    <string name="term_policy_content_5">Usted reconoce que está utilizando el Sitio, las Aplicaciones y los Bienes y/o Productos que adquiera en el mismo incluidos los Servicios bajo su propio riesgo. El Sitio, y la Información de la App y Bienes y/o Productos incluidos los Servicios se proporcionan "tal cual" y en la medida permitida por la ley aplicable. Fits Smile y sus proveedores de servicios de terceros no declaran ni garantizan que el acceso al Sitio y las Aplicaciones y sus Servicios sea ininterrumpido o que no habrá fallas, errores u omisiones, ni pérdida o violación de seguridad de la información transmitida. o que no se transmitirán virus a través del acceso o el uso del Sitio por el Usuario.\n
+fits Smile y sus proveedores de servicios externos no serán responsables ante usted ni ante terceros por ningún daño directo, indirecto, especial, consecuente o punitivo que surja de este o en relación con estos Términos, la prestación de los Servicios a continuación, la venta o compra de cualquiera de os Bienes y/o Productos  mercancía solicitada a través del Sitio, su acceso o incapacidad para acceder al Sitio y las Aplicaciones, la Información del Sitio y la Aplicación o los Servicios, incluidos los virus presuntamente obtenidos del Sitio, su uso o dependencia, el Sitio e Información de la aplicación o materiales disponibles a través de sitios de terceros vinculados al Sitio, independientemente del tipo de reclamo o la naturaleza de la causa de la acción, incluso si se advierte de la posibilidad de tales daños. También puede tener otros derechos que varían de un estado a otro.\n
+Por la presente, usted acepta liberar a fits Smile, sus y proveedores de servicios de terceros, y cada uno de sus respectivos directores, funcionarios, empleados y agentes de todos y cada uno de los reclamos, demandas y daños (reales y consecuentes) de todo tipo y naturaleza, conocidos y desconocidos, sospechosos e insospechados, revelados y no revelados ("reclamos"), que surjan de o estén relacionados de alguna manera con su uso del Sitio y las Aplicaciones y sus Bienes y/o Productos.
+</string>
+    <string name="term_policy_content_6">El producto proporcionado por fits Smile consiste en el diseño de alineadores o guardas dentales personalizadas para cada paciente. Odontólogos independientes a fits Smile determinarán el número de alineadores o guardas dentales necesarios para cada caso, así como el tiempo de uso de cada uno de ellos. El paciente recibirá los alineadores o guardas dentales al inicio del tratamiento.
+</string>
+    <string name="term_policy_content_7">Usted reconoce que está utilizando el Sitio, las Aplicaciones y los Bienes y/o Productos que adquiera en el mismo incluidos los Servicios bajo su propio riesgo. El Sitio, y la Información de la App y Bienes y/o Productos incluidos los Servicios se proporcionan "tal cual" y en la medida permitida por la ley aplicable. Fits Smile y sus proveedores de servicios de terceros no declaran ni garantizan que el acceso al Sitio y las Aplicaciones y sus Servicios sea ininterrumpido o que no habrá fallas, errores u omisiones, ni pérdida o violación de seguridad de la información transmitida. o que no se transmitirán virus a través del acceso o el uso del Sitio por el Usuario.\n
+fits Smile y sus proveedores de servicios externos no serán responsables ante usted ni ante terceros por ningún daño directo, indirecto, especial, consecuente o punitivo que surja de este o en relación con estos Términos, la prestación de los Servicios a continuación, la venta o compra de cualquiera de os Bienes y/o Productos  mercancía solicitada a través del Sitio, su acceso o incapacidad para acceder al Sitio y las Aplicaciones, la Información del Sitio y la Aplicación o los Servicios, incluidos los virus presuntamente obtenidos del Sitio, su uso o dependencia, el Sitio e Información de la aplicación o materiales disponibles a través de sitios de terceros vinculados al Sitio, independientemente del tipo de reclamo o la naturaleza de la causa de la acción, incluso si se advierte de la posibilidad de tales daños. También puede tener otros derechos que varían de un estado a otro.\n
+Por la presente, usted acepta liberar a fits Smile, sus y proveedores de servicios de terceros, y cada uno de sus respectivos directores, funcionarios, empleados y agentes de todos y cada uno de los reclamos, demandas y daños (reales y consecuentes) de todo tipo y naturaleza, conocidos y desconocidos, sospechosos e insospechados, revelados y no revelados ("reclamos"), que surjan de o estén relacionados de alguna manera con su uso del Sitio y las Aplicaciones y sus Bienes y/o Productos.
+</string>
+    <string name="term_policy_content_8">Es aquel por el que la Empresa le transmite la propiedad de los Bienes y/o Productos al Usuario a través del Sitio, con Registro que acepta una Oferta de Venta, creando así un pedido y pagando a cambio un precio cierto en moneda de curso legal de los Estados Unidos Mexicanos. Dicho contrato se someterá a los presentes Términos.</string>
+    <string name="term_policy_content_9">Es toda aquella publicación sobre los Bienes y/o Productos en el Sitio, que contenga un precio y descripción de los Bienes y/o Productos que puede constar de clasificación, denominación, serie, modelo, color, etc. El precio señalado en la Oferta de Venta no es negociable, y se le respetará el descuento o quita señalada en la propia Oferta de Venta en su caso.\n
+El Precio excluye tratamientos adicionales o alternos, estudios, radiografias salvo que se señale explícitamente lo contrario.
+</string>
+    <string name="term_policy_content_10">Una vez que se vaya a efectuar el pago de los Bienes y/o Producto seleccionado, el Usuario deberá confirmar el monto a pagar para cubrir el costo del mismo. Los pagos pueden realizarse por diferentes medios, ya sea Tarjeta Bancaria, (crédito o débito), pago en efectivo, depósito o Transferencia ante cualquier Institución, o algún otro medio que la Empresa se reserve a publicar. La Forma de Pago se realizará después de Recibir la Confirmación de Pedido.\n
+El costo de los alineadores o guardas dentales deberá ser informado al paciente previa fabricación del producto. La cantidad deberá ser pagada con cargo a la tarjeta de crédito o débito del paciente. El pago de los alineadores o guardas dentales deberá ser realizado previo a su fabricación, con lo cual el paciente está de acuerdo o autoriza que se realice el cargo mediante la aceptación de estos Términos y Condiciones.\n
+\n
+Es responsabilidad del paciente la captura de los datos de la tarjeta de crédito o débito para el pago del producto, así como contar con el monto suficiente para que el cargo sea correctamente aprobado. fits Smile no será responsable por cargos que se realicen directamente a las tarjetas de crédito o débito del paciente y que este último no sea aprobado y/o reconocido.\n
+\n
+Queda excluido de dicho pago, el uso de medicamentos, consultas adicionales, la necesidad de otras opiniones, tratamientos o servicios de especialidad odontológica, estudios, radiografías, cirugías, prótesis, insumos, equipos y cualesquier otros gastos que deberán ser pagados exclusivamente por el paciente.
+</string>
+    <string name="term_policy_content_11">El Envío Gratis es aplicable únicamente en las compras de los Bienes y/o Productos que ascienden al monto que la Empresa establezca en el Sitio o en su caso en los Bienes y/o Productos que la misma seleccione y así oferte.</string>
+    <string name="term_policy_content_12">La entrega se realizará en el domicilio señalado por el Usuario en el Sitio en el rubro denominado Portal de la Cuenta o en una dirección diferente proporcionada por el Usuario, que deberá realizarse al momento de confirmar el Pedido.\n
+Las entregas pueden efectuarse por partes, dentro del plazo señalado al momento de la Confirmación del Pedido, dicho plazo empezará a correr una vez que sea aprobado el pago; el Usuario podrá revisar el status de entrega de los Bienes y/o Productosen el Sitioportal.\n
+En caso de que los Bienes y/o  Productos no sean entregados en el plazo fijado por la Empresa, no se le podrá reclamar ningún tipo de interés a la Empresa, el Usuario podrá contactar al Centro de Atención a Clientes de la Empresa, donde se expedirá un documento que señale el Estado de Envío y en el cual se especifique las razones del retraso.
+</string>
+    <string name="term_policy_content_13">Al momento de Recibir los Bienes y/o Productos, en el domicilio señalado, el Usuario está obligado a revisar los mismos. En caso de algún desperfecto el Usuario podrá ejecutar los medios señalados en el apartado de Devolución o Garantías de los presentes Términos.\n
+La Devolución del Producto procederá cuando los Bienes y/o Productos no excedan más de treinta días desde su Entrega, así como cuando la devolución derive de situaciones en que el Producto no sea de las medidas, el color, material, etc., que el Usuario deseaba.\n
+El Usuario deberá devolver los Bienes y/o Productos en sus condiciones originales, con su empaquetado original y sin roturas, el acuse de recibido del Bien y/o Producto, número de autorización de devolución (o guía) y factura de compra. La Empresa cuando sea procedente y se cumpla con lo aquí establecido remplazará el bien en un plazo de veinte días hábiles, en el entendido de la sujeción a factores independientes de la Empresa como son entrega por parte de la empresa de paquetería, disponibilidad de los Bienes y/o Productos a sustituir o disponibilidad de las piezas del mismo. La Empresa se reserva el derecho a entregar un Bien y/o Producto distinto, del mismo valor y que cumpla las mismas funciones que el solicitado, a causa de la imposible reparación o sustitución del mismo.\n
+Existen ciertos Bienes y/o Productos que por su naturaleza no son aplicables a la devolución, señalados de manera expresa en la descripción del Bien y/o producto de que se trate.\n
+El producto tiene una garantía por defectos de fabricación de 30 días misma que se podrá hacer valida cuando el Usuario compruebe el correcto uso del producto.\n
+El resultado de los productos “fits Smile” tiene una garantía de 30 días misma que se podrá hacer válida cuando el Usuario compruebe el correcto uso del producto.\n
+El uso adecuado de los alineadores y guardas dentales para su correcto funcionamiento es responsabilidad del Usuario, lineamiento que se proporcionará al cliente en las instrucciones de los Bienes y/o Productos, cuando este lo reciba.\n
+Para hacer válida la garantía, el medio probatorio para el correcto uso de los Bienes y/o Productos, el seguimiento a este y el resultado del uso de los Bienes y/o Productos, será comprobado por medio de la plataforma digital que “fits Smile” pone a disposición de los clientes misma que se rige bajo estos términos y condiciones y el Aviso de Privacidad de “fits Smile” en la página web www.fits-smile.com, plataforma digital donde deberá estar registrado el uso del producto por lo menos por un plazo de 30 días, con una frecuencia cada 15 días y con un número de interrupciones en el uso no mayor a 30 días.\n
+\n
+“fits Smile” no será responsable por ninguna circunstancia de pérdidas o daños derivados del mal uso del producto y por la falta de seguimiento o incorrecto uso de las instrucciones del producto.\n
+“fits Smile” no será responsable por daños al producto o el resultado, frente al cliente por la atención de odontólogos, médicos, personal de salud o personas independientes a “fits Smile” que intervengan en el uso de los Bienes y/o Productos.\n
+El cliente tendrá derecho a la devolución de los Bienes y/o Productos y el cambio de este por uno nuevo cuando este presente defectos en su fabricación y/o en el ajuste de este a la dentadura del Usuario, para hacer valer esta devolución del Usuario deberá mandar un correo electrónico a ayuda@fits-smile.com, en un plazo no mayor a 5 días posteriores a la recepción de los Bienes y/o Productos, explicando de forma detallada la circunstancia que amerita la devolución y/o las evidencias que estime conveniente para que un ejecutivo de “fits Smile” pueda dictaminar la falla, coordinar la devolución de los Bienes y/o Productos y el cambio de este por un Producto nuevo que cumpla con las condiciones de calidad de la empresa.
+</string>
+    <string name="term_policy_content_14">Si durante tu cita de diagnóstico nuestro equipo médico determina que eres candidato apto para nuestro tratamiento de ortodoncia invisible, realizaremos un escaneo de tu dentadura con el cual nuestros ortodoncistas diseñarán tu plan de tratamiento a la medida. Éste incluye un video en 3D que muestra los resultados que puedes esperar al usar los alineadores Fits Smile y el tiempo estimado para lograr la sonrisa propuesta. Si al revisar tu plan de tratamiento y video 3D, no estás satisfecho con tu plan de tratamiento, tu ortodoncista trabajará contigo para realizar los ajustes médicamente posibles a tu plan con el objetivo de encontrar una sonrisa que funcione para ti. Es muy importante considerar que la ortodoncista sólo podrá proponer movimientos dentales que se encuentren dentro del alcance de los alineadores invisibles y de las características anatómicas y fisiológicas de tu boca.\n
+\n
+Si después de estos ajustes a tu plan de tratamiento todavía no estás conforme con el resultado propuesto, tendrás hasta 5 días naturales a partir de haber recibido tu video 3D para solicitar un reembolso parcial de tu tratamiento. Este será el único periodo posible para solicitar dicho trámite ya que una vez transcurrido este periodo, Fits asumirá que has aceptado tu plan de tratamiento y comenzaremos a producir tus alineadores personalizados por lo que ya no podrás hacer cambios ni pedir un reembolso.\n
+\n
+Si llegas a solicitar un reembolso, Fits te reembolsará el monto que pagaste menos $2,500.00 (dos mil quinientos pesos) para cubrir el costo de producción de tu video render 3D y la planeación de tu tratamiento.\n
+\n
+Si realizas modificaciones a tu dentadura después de tu Escaneo que no hayan sido autorizadas por escrito por tu ortodoncista Fits Smile (ejemplo: caries, resinas, prótesis, endodoncia, extracciones, etc.) y que alteren la composición ósea de tus dientes, no podrás solicitar un reembolso ni pedir que se vuelvan a producir tus Fits Smile. Esto es debido a que tus alineadores son fabricados en base al modelo de 3D que obtenemos del escaneo 3D durante tu cita de diagnóstico en clínica por lo que al realizar modificaciones a tu boca sin autorización previa tiene como consecuencia que los alineadores ya no embonen correctamente en tu dentadura y por lo tanto no se darán los movimientos dentales planeados.
+</string>
+    <string name="term_policy_content_15">Si crees que los alineadores Fits Smile que recibiste son defectuosos, escríbenos a ayuda@fits-smile.com o llámanos al  +52 55 9063-7087 para que evaluemos tu caso. En caso de ser aceptado, nuestro equipo de garantía solicitará un reemplazo de las piezas defectuosas sin costo para tí.\n
+Si tienes dudas sobre tu pedido o necesitas información adicional, escríbenos a: ayuda@fits-smile.com
+</string>
+    <string name="term_policy_content_16">Si al término de tu tratamiento con fits Smile los resultados son muy distintos a los resultados propuestos en tu plan de tratamiento original (vídeo 3D), nuestro equipo médico analizará tu caso para determinar si eres candidat@ para un tratamiento de refinamiento, el cual consiste en elaborar una serie de alineadores adicionales para realizar los movimientos faltantes y así lograr un resultado más cercano al marcado en tu plan de tratamiento original.\n
+En todo momento un equipo de profesionales y especialistas estaremos evaluando tu caso y prevalece nuestro compromiso por ofrecerte la mejor solución que cubra tus necesidades estéticas y funcionales. Es por eso que las recomendaciones de nuestros ortodoncistas son el eje del análisis de cada paciente.\n
+Previo al inicio del proceso de refinamiento un equipo de ortodoncistas analizará tu caso detalladamente, para lo cual te pediremos que nos envíes una serie de fotografías con las cuales trabajaremos y emitiremos un diagnóstico (evaluaremos cuáles fueron los factores por los cuales no se alcanzaron los resultados del tratamiento propuesto). Es importante que sepas que cada paciente es diferente, esto hace que los movimientos que realizamos con los alineadores fits se expresen de forma distinta e individual y que las características anatómicas/fisiológicas (tamaño y forma de tus dientes, hueso y encía, así como capacidad de movimiento dental) de cada uno pueden llegar a limitar los movimientos dentales con alineadores.\n
+Es importante que consideres que para poder ser candidato a un proceso de refinamiento es obligatorio que hayas utilizado tus alineadores Fits-Smile según lo prescrito por tu ortodoncista asignado. Esto incluye lo siguiente:\n
+Utilizar los alineadores al menos 22 horas al día\n
+Utilizar cada etapa durante por lo menos 14 días continuos\n
+No adelantar el tratamiento ni saltarse ninguna etapa. Cada etapa consta de 14 días naturales usando cada par de alineadores (uno superior y uno inferior)\n
+No interrumpir el tratamiento en ningún momento a menos de que lo indique su ortodoncista asignada ya que esto puede causar desfases en el movimiento de las piezas dentales.\n
+No alterar los alineadores de ninguna manera ni combinarlo con ningún otro tratamiento dental externo a Fits-Smile sin autorización previa y por escrito de tu ortodoncista asignado.\n
+        \n
+Dar seguimiento a tu tratamiento a través del App:\n
+Programar y atender sus video consultas de manera periódica según las indicaciones de su ortodoncista asignado para poder revisar el progreso del tratamiento.\n
+Subir sus fotos de progreso cada 15 días al término de cada etapa. Si el paciente no sube más de 3 reportes consecutivos o 4 reportes en el tiempo total del tratamiento, esto podrá ser causal de invalidación de la garantía de sonrisa\n
+Subir sus foto-consultas como le indique el ortodoncista antes de cada video consulta.\n
+Mantener el tracker del App actualizado para poder monitorear los objetivos cumplidos del paciente.\n
+NOTA IMPORTANTE: Si incumples en 4 o más reportes (4 etapas) durante todo el tratamiento o 3 reportes seguidos, nos reservaremos el derecho a cancelar tu garantía de sonrisa y por lo tanto negar cualquier proceso de refinamiento.\n
+Un proceso de refinamiento sólo aplicará si tu ortodoncista asignado considera que es recomendable para tu caso y que hayas cumplido con todas las indicaciones y normas de uso correcto de tus alineadores. En caso de aplicar, será necesario que regreses a una de nuestras clínicas para realizarte un nuevo escaneo intraoral y toma de fotografías intra y extraorales y en un plazo no mayor a 30 días a partir de la realización del nuevo escaneo estarás recibiendo tus alineadores complementarios a tu domicilio.\n
+</string>
+    <string name="term_policy_content_17">1- Si terminaste tu tratamiento completo tanto superior como inferior siguiendo las instrucciones de uso que vienen con tus fits (uso mínimo 22 hrs al día, cambio cada 15 días, subir fotos de tu progreso después de cada etapa a la App Fits, higiene de los alineadores e higiene bucodental óptima), realizaremos una comparación con los modelos 3D y/o el vídeo que te presentamos en un principio. Si el especialista determina que es el mejor resultado al que puede llegarse, dadas tus condiciones anatómicas y fisiológicas, el tratamiento es considerado como exitoso y no podrás aplicar para refinamiento.\n
+2- Dentro de nuestro análisis evaluaremos el estado de higiene de tu boca y si el sarro impide que los alineadores se ajusten adecuadamente o que se muevan los dientes de manera correcta, nos comunicaremos contigo y te recomendaremos acudir con un odontólogo para que realices los procedimientos que recomienden nuestros especialistas. También podríamos recomendarte repetir alguna etapa de tu tratamiento dependiendo de los movimientos que no se hayan reflejado, o bien, si es necesario, realizaremos un re-escaneo. A partir de las recomendaciones de nuestros especialistas, tu tratamiento se pausará y tendrás hasta 2 meses para atenderte para que podamos re-evaluar tu caso. Sin embargo, si excedes este tiempo para atender las recomendaciones de nuestros especialistas no podrás aplicar a un proceso de refinamiento a menos de que tengamos la autorización expresa de nuestro equipo.\n
+3-Si tuviste algún inconveniente con tus alineadores (fracturas, extravíos, problemas para colocarlos, o cualquier otro), es indispensable que lo hayas reportado inmediatamente con nuestro equipo al momento del problema. Si no existen registros de los inconvenientes, no podrás aplicar a un refinamiento. Si tuviste algún problema dental, también es indispensable que te comuniques con nuestro equipo, pues si te realizas tratamientos con especialistas externos, especialmente cuando estos modifican la forma o posición de tus dientes, no podrás aplicar al refinamiento.\n
+4- El tiempo máximo para iniciar el proceso de refinamiento es de un mes (30 días) a partir del término de uso del último alineador tanto superior como inferior, por lo que deberás de comunicarte con nosotros para hacer válido este beneficio. Una vez recibida tu solicitud y evaluado tu caso, te confirmaremos por escrito si eres candidat@ para un refinamiento y los pasos a seguir para poderlo realizar.\n
+5- Es importante haber concluido ambas arcadas (superior e inferior) para realizar una evaluación integral de tu tratamiento.\n
+6- Por la naturaleza de los movimientos dentales, en algunos pacientes requerimos de un ajuste oclusal (Pulido/desgaste dental selectivo) con el fin de eliminar puntos de contacto entre diente y diente que dificultan el asentamiento del caso.\n
+7- Los resultados no necesariamente serán iguales al modelo de proyección inicial, pues el resultado final depende de las condiciones anatómicas y fisiológicas del paciente. Sin embargo, buscamos llegar al mejor resultado que cada paciente puede alcanzar dentro de sus condiciones.\n
+8- Hay algunos casos que se tienen que revisar con más detalle y se te podría pedir que asistas a un re-escaneo 3D a alguno de nuestras clínicas, el cual utilizaremos para compararlo con tu plan de tratamiento inicial y haremos el análisis el cual te haremos llegar junto con los archivos 3D de tu re-escaneo.
+</string>
+    <string name="term_policy_content_18">Son aquellas quitas y/o descuentos sobre el precio de los Bienes y/o Productos que se establezcan en el Sitio, las cuales estarán sujetas a las condiciones, restricciones, el plazo de duración o volumen de los Bienes y/o Productos que se encontrarán en los diferentes anuncios publicados o disponibles en el Sitio.\n
+Obligaciones y responsabilidad del usuario\n
+El usuario acepta que:\n
+a)    Cualquier contenido, datos, información que proporcione a fits Smile para la realización del producto, por cualquier medio electrónico: no será fraudulenta, inexacta o engañosa, ilegal, ni infringirá ninguna ley, código, reglamento, norma, acuerdo, etc. de carácter federal, estatal o local; ni de ninguna forma utilizará el portal www.fits-smile.com, para realizar actividades similares o idénticas a las proporcionadas por fits Smile\n
+b)    No realizará injurias, amenazas o acoso en contra de fits Smile, su personal o generará información falsa en contra de ellos; y\n
+c)    Su equipo o medio de conexión no contendrá algún virus o procedimientos que puedan dañar, interferir perjudicialmente con, interceptar clandestinamente o expropiar cualquier información o datos generados a través de las consultas. De ser el caso, fits Smile se reserva el derecho de denegar las consultas al paciente.\n
+</string>
+    <string name="term_policy_content_19">Cualquier trasgresión a los presentes Términos por parte del Usuario generarán el derecho en favor de fits Smile, en cualquier momento y sin necesidad de notificación previa de ningún tipo, suspender o terminar la prestación de los servicios y/o de retirarle o denegarle el acceso al Sitio al Usuario trasgresor, así como quitarle o sacarlo del Registro.\n
+El Sitio puede ser utilizado únicamente con fines lícitos por lo que el Usuario acepta y se obliga a no darle un uso distinto.\n
+Se encuentra terminantemente prohibido cualquier tipo de copia, distribución, transmisión, retransmisión, publicación, impresión, difusión y/o explotación comercial del material y/o contenido puesto a disposición del público a través de este Sitio, sin el previo consentimiento expreso y por escrito de fits Smile o, en su caso, del titular de los derechos de propiedad correspondientes. El incumplimiento de lo mencionado sujetará al infractor a todos los reclamos civiles y sanciones penales o cualquier otro que pudieran corresponder.\n
+Al momento del Registro del Usuario en el Sitio no se aceptarán y podrán ser cancelados en cualquier momento, direcciones de correo electrónico (e-mails) o cualquier dato que contengan expresiones o conjuntos gráficos-denominativos que ya hayan sido escogidos anteriormente por otro Usuario o, que de alguna otra forma, fuesen injuriosos, altisonantes, coincidentes con marcas, nombres comerciales, anuncios de establecimientos, razones sociales de empresas, expresiones publicitarias, nombres y seudónimos de personas de relevancia pública, famosos o registrados por terceros, cuyo uso no esté autorizado o que fuese en general, contrario a la ley o a las exigencias morales y de buenas costumbres generalmente aceptadas, así como expresiones que pudieran inducir a otras personas por error, quedando claro que el Usuario responderá por el uso indebido tanto en el ámbito civil como penal, o cualquier otro si aplicase.\n
+El Usuario no deberá hacer cargar, publicar o de cualquier otra forma disponer en el Sitio de cualquier material protegido por derechos de autor, registro de marcas o cualquier otro derecho de propiedad intelectual o industrial, sin previa y expresa autorización del titular del mencionado derecho, asimismo no podrá utilizar el Sitio para realizar negocios y/o revender los Bienes y/o Productos.\n
+</string>
+    <string name="term_policy_content_20">El Contrato que se perfecciona al contestar una oferta de venta, termina en el momento que las partes cumplen con sus obligaciones.\n
+La Empresa podrá Terminar anticipadamente el Contrato si:\n
+El Precio no es pagado puntualmente por el Usuario, a cuyo efecto las partes pactan expresamente que la falta de pago total o parcial producirá la Terminación de pleno derecho.\n
+El Usuario incumple con cualquiera de las obligaciones asumidas en estos Términos.\n
+Así lo convengan sus intereses cumpliendo previamente con sus obligaciones o indemnizaciones pactadas.\n
+La Empresa podrá optar por exigir la ejecución de su obligación de pagar el precio o rescindir el Contrato y la indemnización, además podrá exigir resarcimiento de daños y perjuicios.\n
+El Usuario incumple con cualquier de las obligaciones y/o restricciones establecidas en los presentes Términos.
+</string>
+    <string name="term_policy_content_21">La Empresa, así como el Usuario, reconocen que los Términos son de vigencia indefinida.\n
+fits Smile se reserva el derecho de efectuar alteraciones y/o modificaciones al presente documento sin necesidad de previo aviso. Por lo anterior fits Smile recomienda al Usuario que vuelva a leer con regularidad este documento, de forma que se mantenga siempre informado sobre eventuales modificaciones. Las alteraciones al Contrato se volverán efectivas inmediatamente después de su publicación en el Sitio.\n
+Una vez realizadas las modificaciones al Sitio, las Partes entienden que el Usuario que continúe usando el Sitio tiene pleno conocimiento de las mismas, que han sido leídas y consiente y acepta los Términos reformados y/o modificados.\n
+</string>
+    <string name="term_policy_content_22">En caso que exista conflicto en relación al Contrato, fits Smile está en la total disposición de llegar a un acuerdo con el Usuario para la resolución del Conflicto. Si no existe dicho acuerdo, y en los demás casos no relacionados con el Contrato, se llevará la instancia correspondiente ante la Procuraduría del Consumidor o bien ante los Tribunales de la Ciudad de México.\n
+Para toda resolución de disputas o conflictos entre las partes, éstas acuerdan someterse expresamente a las leyes aplicables y tribunales competentes de la Ciudad de México, renunciando en forma expresa e irrevocable a cualesquiera otro fuero o jurisdicción que les pudiera corresponder por razón de sus domicilios presentes o futuros o por cualquier otra causa.
+</string>
+    <string name="term_policy_content_23">Para todo lo relativo a la interpretación de los presentes Términos se estará a lo dispuesto a los mismos, al glosario que como Usuario puedes consultar, al Aviso de Privacidad, a nuestra legislación federal mexicana vigente y, en su caso, a la de la Ciudad de México.</string>
+    <string name="term_policy_content_24">Los datos e información de los Usuarios serán administrados únicamente por la Empresa en las formas y fines establecidos en el Aviso de Privacidad. La Empresa hará todo lo que esté a su alcance para proteger la privacidad de la información que el Usuario le entregue, revele y de a conocer por cualquier medio. Puede suceder que, en virtud de órdenes judiciales, o de regulaciones legales, la Empresa se vea compelida a revelar información a las autoridades o terceras partes bajo ciertas circunstancias, o bien en casos que terceras partes puedan interceptar o acceder a cierta información o transmisiones de datos en cuyo caso la Empresa no responderá por la información que le sea requerida para su revelación. En estos casos, la Empresa notificará al Usuario sobre esta situación, en términos de la legislación aplicable y de forma inmediata a que tenga conocimiento, sin que dicha revelación se entienda como un incumplimiento de la Empresa.\n
+No asumimos ninguna obligación de mantener confidencial cualquier otra información que el Usuario proporcione a través de boletines y pláticas en línea (chats), así como la información que obtenga a través de los cookies, información que no haya sido directamente entregada a la Empresa.\n
+Se debe aclarar que NO se vende, regala, facilita ni alquila la información del Usuario a ningún tercero ni somos dueños de la misma.\n
+La Empresa tomará todas las medidas posibles para mantener la confidencialidad y la seguridad descritas anteriormente, pero no responderá por los daños y/o perjuicios que pudieran derivarse de la violación de esas medidas por parte de terceros que utilicen las redes públicas o el Internet, alterando los sistemas de seguridad para obtener acceso a la información de los Usuarios.\n
+Las vulneraciones de seguridad ocurridas en cualquier fase del tratamiento que afecten de forma significativa los derechos patrimoniales o morales de los Titulares serán informadas de forma inmediata por la Empresa al Usuario, a fin de que este último pueda tomar las medidas correspondientes a la defensa de sus derechos.\n
+Para mayor información, sírvase consultar el Aviso de Privacidad que se encuentra en Sitio de la Empresa.\n
+Los datos personales y sensibles proporcionados por el paciente a través del portal www.fits-smile.com, derivado de las consultas o de su expediente clínico, se encuentran protegidos de acuerdo con la Ley Federal de Protección de Datos Personales en Posesión de Particulares y de conformidad con el Aviso de Privacidad disponible en el portal www.fits-smile.com, por lo que los mismos serán tratados, transferidos y usados para los fines establecidos en el mismo. Derivado de lo anterior, el paciente mediante la aceptación de estos Términos y Condiciones acepta a su vez dicho Aviso de Privacidad, disponible en la siguiente liga: www.fits-smile.com.</string>
+    <string name="term_policy_content_25">Tanto el Sitio como cualesquiera otros Sitios de cualquier otra forma disponibles en el Sitio (en lo sucesivo los “Micrositios”) son propiedad privada y cualesquiera interacciones deben realizarse de acuerdo con el presente documento y los Términos. Sin perjuicio de las demás obligaciones del Usuario establecidas según se establece en éstos Términos, el Usuario se obliga a (i) no utilizar los contenidos y productos del Sitio con la finalidad de faltar a la ley, la moral, las buenas costumbres, las reglas y derechos de propiedad intelectual, la dignidad, la vida privada, la imagen, la intimidad personal y familiar; (ii) observar los más elevados patrones éticos y morales vigentes en Internet y las leyes nacionales e internacionales aplicables: (iii) no utilizar el Registro de Usuario, contenidos y productos proporcionados conforme a éstos Términos  para transmitir o divulgar material ilegal, difamatorio, que viole, o sea abusivo, amenazador, obsceno, perjudicial, vulgar, injurioso, con fines de hostigamiento y acoso o de cualquier otra forma censurable; (iv) no enviar mensajes que no hubiesen sido solicitados, reconocidos como spam, junk mail o cadenas de correspondencia (chainletters); no utilizar los Servicios tipo contenidos y los productos proporcionados conforme éstos Términos para enviar/divulgar cualquier tipo de virus o archivos que contengan cualquier virus o que pudiesen causar daños a su destinatario o a terceros; (v) cumplir con todas las leyes aplicables con relación a la transmisión de datos desde México o del territorio en que el Usuario resida; (vi) no obtener o intentar obtener acceso a otros sistemas de redes o de computadoras conectados a los contenidos y productos del Sitio; (vii) responsabilizarse íntegramente del contenido de los correos electrónicos que se van a retransmitir así como del contenido e información que se pusieran a disposición en las Promociones del Sitio; (viii) no interferir o interrumpir los Servicios o los servidores o redes conectados a los Servicios, contenidos y productos abastecidos por medio del Sitio o de los Micrositios; y (ix) cumplir con los procedimientos, normas y reglamentos aplicables a los contenidos y productos del Sitio, divulgados en las páginas y enlaces de cada contenido de los Micrositios.\n
+El Usuario no deberá enviar o transmitir por medio del Sitio cualquier contenido o información que contenga cualquier propaganda o propuesta relacionada con cualesquiera productos y/o servicios. El Usuario no podrá divulgar o hacer cualquier oferta comercial, religiosa, política o cualquier otra oferta incluso sin fines comerciales, incluyendo, pero sin limitar las ofertas a los Usuarios para que se conviertan en Usuarios de otros servicios que de cualquier manera pudiesen competir con los Bienes y/o Productos ofertados por la Empresa.
+</string>
+    <string name="term_policy_content_26">1. Para solicitar su facturación deberá de hacerlo dentro de un plazo no mayor a 5 días hábiles a partir del momento en que recibe el correo electrónico que indica que su mercancía fue embarcada.\n
+2. Deberá enviar una solicitud de facturación al correo de soporte@fits-smile.com dentro del mes en curso en que se realizó la compra. No procederán solicitudes de factura para compras de meses anteriores.\n
+3. Al solicitar su factura será necesario que tenga a la mano y proporcione los siguientes requisitos Fiscales:\n
+RFC con Homoclave\n
+Nombre completo o razón social\n
+Domicilio Fiscal completo incluyendo calle, colonia, delegación o municipio, estado y código postal\n
+Forma en la que realizó el Pago ya sea efectivo, transferencias electrónicas de fondos, cheques nominativos o tarjetas de débito, de crédito, de servicio o las denominadas monederos electrónicos que autorice el Servicio de Administración Tributaria\n
+Indicar al menos los últimos 4 dígitos de su cuenta de pago\n
+4. Deberá proporcionar su e-mail donde le llegará su factura, en un plazo no mayor a 5 días hábiles contados a partir de su solicitud.
+</string>
+    <string name="term_policy_content_27">El Usuario declara bajo protesta de decir verdad que ha leído las características del producto y servicio, así como que ha resuelto sus dudas respecto del mismo.\n
+El Usuario declara bajo protesta de decir verdad que el uso del sitio web, implica que ha aceptado, leído y resuelto todas las dudas sobre el presente documento, habiendo tenido tiempo suficiente para leer el mismo.
+</string>
+    <string name="term_policy_content_28">fits Smile es titular de los derechos de propiedad industrial e intelectual del diseño, códigos, así como los contenidos que se establecen en el portal. Todos los contenidos que aparecen o puedan aparecer en dicho portal (textos, fotografías, gráficos, imágenes, íconos, software, links, diseño gráfico, código fuente, etc.) son por lo tanto titularidad de fits Smile, sus filiales y partes relacionadas o en su caso de terceros con los que tenga relación que haya autorizado expresamente a fits Smile, para incluirlos en este portal. La reproducción, distribución, comercialización, comunicación pública, cesión o transformación, no autorizada de todos ellos constituye una infracción de la propiedad industrial.\n
+Las marcas, nombres comerciales y signos distintivos de cualquier clase establecidos en el portal [•], están igualmente protegidos por la legislación vigente en materia de propiedad intelectual e industrial. El paciente carece de licencia o derecho de uso de ninguna marca, nombre comercial o distintivo que figure en este portal, sin el consentimiento previo y por escrito de sus respectivos titulares.
+</string>
+    <string name="term_policy_content_29">Cualquier consulta, recomendación y/o queja relacionada con el portal www.fits-smile.com y los servicios o productos de “fits Smile” favor de mandar un correo con la descripción detallada de la situación y datos completos de identificación y contacto al correo ayuda@fits-smile.com.\n
+Aceptación De Los Términos Y Condiciones \n
+Al utilizar el portal www.fits-smile.com de cualquier modo, el paciente acepta cumplir y queda obligado por los términos y condiciones. Asimismo, el paciente declara que es mayor de 18 años y puede celebrar todo tipo de contratos legalmente vinculantes.</string>
+
+
+    <string name="sun">DOM</string>
+    <string name="mon">LUN</string>
+    <string name="tue">MAR</string>
+    <string name="wed">MIE</string>
+    <string name="thu">JUE</string>
+    <string name="fri">VIE</string>
+    <string name="sat">SAB</string>
+    <string name="no_timing_available">No hay horarios disponibles</string>
+    <string name="lbl_no_doctor_connected">Ningún dentista conectado a su cuenta.</string>
+    <string name="sunday">Domingo</string>
+    <string name="monday">Lunes</string>
+    <string name="tuesday">Martes</string>
+    <string name="wednesday">Miércoles</string>
+    <string name="thursday">Jueves</string>
+    <string name="friday">Viernes</string>
+    <string name="saturday">Sábado</string>
+    <string name="accept">Aceptar</string>
+    <string name="reject">Rechazar</string>
+    <string name="info_updated_success_message">La información del paciente se actualizó correctamente.</string>
+    <string name="only_mp4_video_allowd">Solo se permiten videos mp4</string>
+    <string name="lbl_photo_send_instruction">Envía una fotografía de tu sonrisa como se muestra en la imagen, no olvides morder siempre con las muelas como normalmente lo haces. \n \n IMPORTANTE: Utiliza el abrebocas de tu caja y tómate una “selfie”</string>
+    <string name="video_limit_alert">Sube el tamaño del video menos de 100 MB.</string>
+</resources>

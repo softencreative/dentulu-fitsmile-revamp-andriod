@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/textQuestionTitle"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/commonLabelTextViewBold"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:inputType="textCapSentences"
+        android:text="@string/question1" />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/textPatientInfo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textQuestionTitle"
+        style="@style/commonLabelTextViewLight"
+        android:layout_marginTop="@dimen/_7sdp"
+        android:text="@string/answer2" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        app:layout_constraintTop_toBottomOf="@+id/textPatientInfo"
+        android:id="@+id/recyclerAnswer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

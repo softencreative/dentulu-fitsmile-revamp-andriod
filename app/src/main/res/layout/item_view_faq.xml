@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cvTreatmentPlan"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:layout_marginTop="@dimen/_5sdp"
+    android:layout_marginBottom="@dimen/_5sdp"
+    android:layout_marginEnd="@dimen/_10sdp"
+    android:layout_marginStart="@dimen/_10sdp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="@dimen/_5sdp">
+    <LinearLayout
+        android:foreground="?android:attr/selectableItemBackground"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/text1"
+                android:padding="5dp"
+                android:textSize="@dimen/fab_margin"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginEnd="@dimen/_30sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_alignParentEnd="true"
+                android:id="@+id/downarrow1"
+                android:visibility="visible"
+                android:padding="@dimen/_10sdp"
+                app:tint="@color/black_translucent"
+                app:srcCompat="@drawable/ic_expand_button"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp" />
+            <ImageView
+                android:visibility="gone"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/uparrow1"
+                app:srcCompat="@drawable/ic_up_arrow_key"
+                android:padding="@dimen/_10sdp"
+                app:tint="@color/black_translucent"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp" />
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/text2"
+                android:padding="5dp"
+                android:textSize="@dimen/_16sp"
+                android:layout_below="@+id/text1"
+                android:textColor="@color/black_translucent"
+                android:layout_marginEnd="@dimen/_34sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

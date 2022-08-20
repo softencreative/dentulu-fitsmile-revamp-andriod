@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_select_language"
+        android:background="@drawable/bg_btn_white_stroke"
+        android:text="@string/language"
+        android:layout_margin="@dimen/_10sdp"
+        android:paddingHorizontal="@dimen/_5sdp"
+        android:layout_gravity="end"
+        android:textColor="@color/white"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:layout_weight="0.4"
+        android:padding="@dimen/_20sdp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_28sdp"
+        android:layout_marginEnd="@dimen/_28sdp"
+        android:src="@drawable/ic_logo_white" />
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:id="@+id/ll_login"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/_24sdp"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/commonTextView"
+            android:id="@+id/txt_login"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:fontFamily="@font/proxima_nova_bold"
+            android:text="@string/title_login"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_24sdp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/TextInputLayoutStyleLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:boxCornerRadiusBottomEnd="0dp"
+            app:boxCornerRadiusBottomStart="0dp"
+            app:boxCornerRadiusTopEnd="0dp"
+            app:hintTextColor="@color/white"
+            app:boxCornerRadiusTopStart="0dp">
+
+            <EditText
+                android:id="@+id/email"
+                style="@style/commonEditTextLogin"
+                android:hint="@string/hint_email"
+                android:textColorHint="@color/white"
+                android:inputType="textEmailAddress" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/TextInputLayoutStyleLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_6sdp"
+            app:boxCornerRadiusBottomEnd="0dp"
+            app:boxCornerRadiusBottomStart="0dp"
+            app:boxCornerRadiusTopEnd="0dp"
+            android:textColorHint="@color/white"
+            app:hintTextColor="@color/white"
+            app:boxCornerRadiusTopStart="0dp"
+            app:passwordToggleTint="@color/white"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:id="@+id/password"
+                style="@style/commonEditTextLogin"
+                android:hint="@string/hint_pwd"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/checkTouch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:button="@drawable/bg_check_bok_selector"
+                android:checked="false"
+                android:padding="@dimen/_5sdp"
+                android:gravity="center"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:layout_marginStart="@dimen/_10sdp"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:text="@string/login_with_touch_id"
+                android:fontFamily="@font/proxima_nova_bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_login"
+            style="@style/commonButtonStrokeLogin"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="@string/login" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginBottom="@dimen/_38sdp"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_new_user"
+                style="@style/commonTextViewLogin"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:visibility="gone"
+                android:text="@string/new_user" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_forget_pwd"
+                style="@style/commonTextViewLogin"
+                 android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:gravity="end"
+                android:text="@string/forget_pwd" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </LinearLayout>
+</LinearLayout>

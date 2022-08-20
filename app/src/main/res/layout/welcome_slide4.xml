@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/fab_margin"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/slide_4_title"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_30sdp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvQuestion3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:padding="@dimen/_10sdp"
+            android:background="@drawable/bg_btn_white_stroke"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_20sdp"
+            android:drawableEnd="@drawable/ic_edit"
+            android:drawableTint="@color/white"
+            android:text="@string/slide_4_desc"
+             />
+
+    </LinearLayout>
+
+</RelativeLayout>

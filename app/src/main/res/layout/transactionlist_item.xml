@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bookingdetails"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="1dp"
+    android:layout_marginTop="1dp"
+    android:layout_marginRight="1dp"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="3dp"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="@string/text_date"
+        android:layout_marginStart="@dimen/_5sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:fontFamily="@font/proxima_nova_bold"
+        android:textColor="@color/colorPrimary"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_marginStart="@dimen/_10sdp"
+        app:layout_constraintStart_toEndOf="@+id/date"
+        android:id="@+id/name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:text="@string/name"
+        android:textColor="@color/colorPrimary"
+        android:fontFamily="@font/proxima_nova_regular"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/amountgained"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_centerHorizontal="true"
+        android:padding="@dimen/_5sdp"
+        android:fontFamily="@font/proxima_nova_bold"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="$40"
+        android:textColor="@color/colorPrimary"
+        android:textSize="15sp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

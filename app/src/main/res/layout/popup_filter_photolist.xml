@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_layoutFilterPopup"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="0dp"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:focusable="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/_2sdp"
+            android:layout_marginEnd="@dimen/_2sdp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_stroke_top_cornor"
+                android:orientation="vertical"
+                android:padding="@dimen/_12sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/textFirstFilter"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:layout_width="0dp"
+                        android:padding="@dimen/_10sdp"
+                        android:singleLine="true"
+                        android:ellipsize="end"
+                        android:text="@string/awaiting_consultant"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textSize="@dimen/_14sp"
+                        android:fontFamily="@font/proxima_nova_bold"
+                        android:background="@drawable/bg_grey_filter"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/textSecFilter"
+                        android:layout_width="0dp"
+                        android:padding="@dimen/_10sdp"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:ellipsize="end"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:textColor="@color/colorPrimary"
+                        android:text="@string/consultation_send"
+                        android:textAllCaps="false"
+                        android:textSize="@dimen/_14sp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/proxima_nova_bold"
+                        android:background="@drawable/bg_grey_filter"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView android:id="@+id/textThirdFilter"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:layout_width="0dp"
+                        android:padding="@dimen/_10sdp"
+                        android:text="@string/confirmed"
+                        android:gravity="center"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/_14sp"
+                        android:fontFamily="@font/proxima_nova_bold"
+                        android:background="@drawable/bg_grey_filter"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/textFourthFilter"
+                        android:layout_width="0dp"
+                        android:padding="@dimen/_10sdp"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:textColor="@color/colorPrimary"
+                        android:text="@string/completed"
+                        android:gravity="center"
+                        android:textAllCaps="false"
+                        android:textSize="@dimen/_14sp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/proxima_nova_bold"
+                        android:background="@drawable/bg_grey_filter"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_apply"
+                    style="@style/commonButtonSolid"
+                    android:layout_marginTop="@dimen/_14sdp"
+                    android:text="@string/apply" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

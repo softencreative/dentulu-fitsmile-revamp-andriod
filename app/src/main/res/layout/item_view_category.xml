@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_margin="@dimen/_5sdp"
+    android:id="@+id/cardCategory"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/profile_grey">
+
+    <TextView
+        android:id="@+id/textCategoryName"
+        android:padding="@dimen/_10sdp"
+        android:text="@string/category"
+        android:fontFamily="@font/proxima_nova_light"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/_2sdp"
+        android:layout_marginBottom="@dimen/_2sdp"
+        android:padding="@dimen/_3sdp"
+        android:id="@+id/layoutDayCalendar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_marginStart="@dimen/_2sdp"
+            android:layout_marginEnd="@dimen/_2sdp"
+            android:paddingTop="@dimen/_2sdp"
+            android:paddingBottom="@dimen/_2sdp"
+            android:id="@+id/layoutCircleToday"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/textCalenderItemVerticalDay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_18sp"
+            android:gravity="center"
+            android:fontFamily="@font/proxima_nova_bold"
+            tools:text="Mon" />
+
+        <TextView
+            android:id="@+id/textCalenderItemVerticalDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="@dimen/_14sp"
+            android:fontFamily="@font/proxima_nova_regular"
+            tools:text="23" />
+
+        <RelativeLayout
+            android:layout_margin="@dimen/_1sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_marginTop="@dimen/_1sdp"
+            android:id="@+id/circleGoalIndicator"
+            android:layout_centerHorizontal="true"
+            android:src="@color/title_text_color_light"
+            android:layout_width="@dimen/_13sdp"
+            android:layout_height="@dimen/_13sdp"/>
+
+        <ImageView
+            android:id="@+id/imageGoalIndicator"
+            android:layout_alignTop="@+id/circleGoalIndicator"
+            android:layout_alignBottom="@+id/circleGoalIndicator"
+            android:layout_centerHorizontal="true"
+            android:layout_width="@dimen/_8sdp"
+            android:layout_height="@dimen/_8sdp"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

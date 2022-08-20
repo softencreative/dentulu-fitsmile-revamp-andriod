@@ -1,0 +1,198 @@
+apply plugin: 'com.onesignal.androidsdk.onesignal-gradle-plugin'
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    compileSdkVersion 30
+    buildToolsVersion "30.0.2"
+
+    bundle {
+
+        language {
+            enableSplit = false
+        }
+    }
+
+    defaultConfig {
+       applicationId "com.app.fitsmile"
+        multiDexEnabled true
+        minSdkVersion 21
+        targetSdkVersion 30
+        versionCode 14
+        versionName "2.3"
+
+        manifestPlaceholders = [
+                onesignal_app_id: '47191576-f28f-4501-adc8-37a1ce80b6bf',
+                onesignal_google_project_number: 'REMOTE'
+        ]
+        testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
+        vectorDrawables.useSupportLibrary = true
+    }
+
+    buildTypes {
+        debug {
+            minifyEnabled false
+            debuggable true
+            jniDebuggable true
+        }
+        release {
+            initWith debug
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            debuggable false
+            jniDebuggable false
+        }
+    }
+
+    flavorDimensions "version"
+    productFlavors {
+        development {
+            dimension "version"
+            //buildConfigField "String", "BASE_URL", '\"https://fitsmile.dentuluprojects.com/api/v2/Webservice/\"'
+            buildConfigField "String", "BASE_URL", '\"https://app.fits-smile.com/api/v2/Webservice/\"'
+           // buildConfigField "String", "BASE_IMAGEURL", '\"https://fitsmile.dentuluprojects.com/uploads/\"'
+            buildConfigField "String", "BASE_IMAGEURL", '\"https://app.fits-smile.com/uploads/\"'
+            buildConfigField "String", "PUBLISHABLE_KEY", '\"pk_test_4kJZ0tjT7MFaABKyBAGiEY9s\"'
+            buildConfigField "String", "STRIPE_SECRET_KEY", '\"sk_test_wLgAvvDkZ4UjgReBRkIEGqN6\"'
+            buildConfigField "String", "SANDBOX", '\"1\"'
+        }
+        production {
+            dimension "version"
+          //  buildConfigField "String", "BASE_URL", "\"https://fitsmile.dentuluprojects.com/api/v2/Webservice/\""
+            buildConfigField "String", "BASE_URL", '\"https://app.fits-smile.com/api/v2/Webservice/\"'
+           // buildConfigField "String", "BASE_IMAGEURL", '\"https://fitsmile.dentuluprojects.com/uploads/\"'
+            buildConfigField "String", "BASE_IMAGEURL", '\"https://app.fits-smile.com/uploads/\"'
+            buildConfigField "String", "PUBLISHABLE_KEY", "\"pk_live_thLdICQdrjiaQFdh93xZWvFq\""
+            buildConfigField "String", "STRIPE_SECRET_KEY", "\"sk_live_Rqj8JCyb7aMcitG6U12XGQVi\""
+            buildConfigField "String", "SANDBOX", '\"0\"'
+        }
+    }
+
+    allprojects {
+        repositories {
+            jcenter()
+            maven {
+                url 'https://maven.google.com/'
+                name 'Google'
+            }
+        }
+    }
+
+    useLibrary 'org.apache.http.legacy'
+}
+
+buildscript {
+    ext.kotlin_version = '1.4.10'
+    repositories {
+        maven { url 'https://plugins.gradle.org/m2/' }
+    }
+    dependencies {
+        classpath 'gradle.plugin.com.onesignal:onesignal-gradle-plugin:0.12.8'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
+buildscript {
+    repositories {
+        maven { url 'https://plugins.gradle.org/m2/' }
+    }
+    dependencies {
+        classpath 'gradle.plugin.com.onesignal:onesignal-gradle-plugin:0.12.8'
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'com.android.support:multidex:2.0.1'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.2'
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.3.1'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.3.1'
+    implementation 'com.google.firebase:firebase-messaging:20.3.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    testImplementation 'junit:junit:4.13'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    implementation 'android.arch.lifecycle:extensions:1.1.0'
+
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    // for dimen
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'
+
+    //country code picker
+    //implementation 'com.hbb20:ccp:1.7.1'
+    implementation 'com.hbb20:ccp:2.5.0'
+
+    //signature
+    implementation 'com.kyanogen.signatureview:signature-view:1.0'
+
+    //map
+    implementation 'com.google.android.gms:play-services-maps:17.0.0'
+
+    //retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.8.1'
+    implementation 'com.squareup.retrofit2:converter-gson:2.8.1'
+    //print log
+    implementation "com.squareup.okhttp3:okhttp:4.5.0"
+    implementation "com.squareup.okhttp3:logging-interceptor:4.5.0"
+
+    //image
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'com.github.yalantis:ucrop:2.2.2'
+    implementation "com.karumi:dexter:6.0.2"
+    implementation 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+    implementation 'com.github.andhikayuana:simple-pie-chart-android:e7d9622aa9'
+
+    //stripe
+    implementation 'com.stripe:stripe-android:8.1.0'
+    implementation 'io.card:android-sdk:5.5.1'
+
+    //volley
+    implementation 'com.android.volley:volley:1.1.1'
+
+    implementation 'com.google.android.libraries.places:places:2.4.0'
+    //shimmer
+    implementation 'com.facebook.shimmer:shimmer:0.1.0@aar'
+
+    implementation platform('com.google.firebase:firebase-bom:25.12.0')
+
+    implementation 'com.google.firebase:firebase-database'
+    implementation 'com.google.firebase:firebase-auth'
+
+    implementation 'com.virgilsecurity:ethree:2.0.5'
+    implementation 'com.droidninja:filepicker:2.2.5'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.0'
+    implementation 'com.fxn769:pix:1.5.6'
+    implementation 'life.knowledge4:k4l-video-trimmer:1.0'
+    implementation 'com.google.android.exoplayer:exoplayer-core:2.10.6'
+    implementation 'com.google.android.exoplayer:exoplayer-dash:2.10.6'
+    implementation 'com.google.android.exoplayer:exoplayer-ui:2.10.6'
+    implementation 'com.google.android.exoplayer:exoplayer-hls:2.10.6'
+
+
+   // implementation 'com.github.jlmd:AnimatedCircleLoadingView:1.1.5@aar'
+    implementation 'com.google.android.gms:play-services-auth:18.1.0'
+    implementation 'com.google.android.gms:play-services-maps:17.0.0'
+    implementation 'com.google.android.gms:play-services-places:17.0.0'
+    implementation 'com.shawnlin:number-picker:2.4.11'
+    implementation 'com.wang.avi:library:2.1.3'
+    //one signal push notification
+    implementation 'com.onesignal:OneSignal:3.14.1'
+    implementation 'com.yarolegovich:discrete-scrollview:1.5.1'
+    implementation 'jp.wasabeef:picasso-transformations:2.4.0'
+    implementation 'com.github.HamidrezaAmz:MagicalExoPlayer:1.0.16'
+    //agora video call
+    implementation 'io.agora.rtc:full-sdk:2.9.2'
+    api 'com.weigan:loopView:0.2.2'
+    implementation 'com.github.tejpratap46:RecyclerCalendarAndroid:1.8'
+}

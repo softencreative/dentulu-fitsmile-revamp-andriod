@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <View
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/grey_light"/>
+
+    <com.weigan.loopview.LoopView
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="50dp"
+        android:id="@+id/loopHour"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp"
+        app:awv_textsize="18"
+        app:awv_isLoop="false"
+        />
+
+    <com.weigan.loopview.LoopView
+       android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_marginTop="50dp"
+        android:id="@+id/loopMin"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp"
+        app:awv_textsize="18"
+        app:awv_isLoop="false"
+        />
+    <LinearLayout
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:id="@+id/layoutStaticTime"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:layout_below="@id/loopHour"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:gravity="center"
+            android:layout_weight="1"
+            android:id="@+id/text15Min"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="15 min"
+            android:fontFamily="@font/proxima_nova_bold"
+            android:textSize="@dimen/selected_text_size"
+            android:textColor="@color/black_light"/>
+        <TextView
+            android:gravity="center"
+            android:layout_weight="1"
+            android:id="@+id/text30Min"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="30 min"
+            android:padding="@dimen/_5sdp"
+            android:fontFamily="@font/proxima_nova_bold"
+            android:textSize="@dimen/selected_text_size"
+            android:textColor="@color/black_light"/>
+        <TextView
+            android:gravity="center"
+            android:layout_weight="1"
+            android:id="@+id/text45Min"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="45 min"
+            android:padding="@dimen/_5sdp"
+            android:fontFamily="@font/proxima_nova_bold"
+            android:textSize="@dimen/selected_text_size"
+            android:textColor="@color/black_light"/>
+        <TextView
+            android:gravity="center"
+            android:layout_weight="1"
+            android:id="@+id/text1hr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1 hr"
+            android:padding="@dimen/_5sdp"
+            android:fontFamily="@font/proxima_nova_bold"
+            android:textSize="@dimen/selected_text_size"
+            android:textColor="@color/black_light"/>
+        <TextView
+            android:gravity="center"
+            android:layout_weight="1"
+            android:id="@+id/text2hr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2 hr"
+            android:padding="@dimen/_5sdp"
+            android:fontFamily="@font/proxima_nova_bold"
+            android:textSize="@dimen/selected_text_size"
+            android:textColor="@color/black_light"/>
+    </LinearLayout>
+    <View
+        android:id="@+id/divider"
+        android:layout_below="@+id/layoutStaticTime"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/grey_light"/>
+
+
+</RelativeLayout>

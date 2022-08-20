@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <GridView
+        android:layout_above="@+id/rel_menu"
+        android:id="@+id/gd_Videos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@android:color/transparent"
+        android:columnWidth="100dip"
+        android:gravity="center"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="1"
+        android:scrollbars="none"
+        android:stretchMode="columnWidth">
+    </GridView>
+
+    <RelativeLayout
+        android:padding="@dimen/_5sdp"
+        android:background="@color/white"
+        android:id="@+id/rel_menu"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvVideoSelect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/select"
+            android:fontFamily="@font/proxima_nova_bold"
+            android:textSize="@dimen/_16sdp"
+            android:layout_centerInParent="true"
+            android:layout_margin="@dimen/_10sdp"
+            android:textColor="@color/colorPrimary"
+            android:layout_alignParentEnd="true"/>
+
+        <View
+            android:id="@+id/view1"
+            android:layout_toStartOf="@+id/tvVideoSelect"
+            android:layout_centerInParent="true"
+            android:layout_width="1sp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:background="@color/colorPrimary"/>
+
+        <ImageView
+            android:id="@+id/ivVideoDelete"
+            android:layout_toStartOf="@+id/view1"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_centerInParent="true"
+            android:layout_height="@dimen/_40sdp"
+            android:padding="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:src="@drawable/ic_delete"/>
+        <ImageView
+            android:id="@+id/ivVideoShare"
+            android:layout_toStartOf="@+id/ivVideoDelete"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_centerInParent="true"
+            android:layout_height="@dimen/_40sdp"
+            android:padding="@dimen/_10sdp"
+            android:src="@drawable/ic_share"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>
