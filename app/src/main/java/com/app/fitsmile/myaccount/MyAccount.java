@@ -13,6 +13,7 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.provider.MediaStore;
+import android.util.Log;
 import android.view.View;
 import android.view.Window;
 import android.widget.Button;
@@ -35,17 +36,22 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.app.fitsmile.MainActivity;
 import com.app.fitsmile.R;
 import com.app.fitsmile.app.ApiInterface;
+import com.app.fitsmile.app.AppController;
 import com.app.fitsmile.base.BaseActivity;
 import com.app.fitsmile.common.Utils;
+import com.app.fitsmile.firebase_chat.InitializeListener;
 import com.app.fitsmile.insurance.InsuranceActivity;
 import com.app.fitsmile.my_address.MyAddressActivity;
 import com.app.fitsmile.response.addpatient.AddPatientResponse;
 import com.app.fitsmile.response.common.CommonResponse;
+import com.app.fitsmile.response.login.LanguageUpdateResponse;
+import com.app.fitsmile.response.login.LoginResponse;
 import com.app.fitsmile.response.myaccount.MyAccountResponse;
 import com.app.fitsmile.response.patientlist.PatientListData;
 import com.app.fitsmile.response.patientlist.PatientListResponse;
 import com.app.fitsmile.response.profile.ProfileResponse;
 import com.app.fitsmile.shop.ui.MyOrderActivity;
+import com.app.fitsmile.splash.LoginActivity;
 import com.app.fitsmile.utils.ImagePickerActivity;
 import com.app.fitsmile.utils.LocaleManager;
 import com.google.android.material.bottomsheet.BottomSheetBehavior;
@@ -56,6 +62,8 @@ import com.karumi.dexter.MultiplePermissionsReport;
 import com.karumi.dexter.PermissionToken;
 import com.karumi.dexter.listener.PermissionRequest;
 import com.karumi.dexter.listener.multi.MultiplePermissionsListener;
+import com.onesignal.OSPermissionSubscriptionState;
+import com.onesignal.OneSignal;
 import com.squareup.picasso.Picasso;
 
 import java.io.ByteArrayOutputStream;
@@ -67,6 +75,7 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 import java.util.Locale;
+import java.util.TimeZone;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 import okhttp3.MediaType;
@@ -80,6 +89,9 @@ import static com.app.fitsmile.BuildConfig.BASE_IMAGEURL;
 import static com.app.fitsmile.BuildConfig.BASE_URL;
 import static com.app.fitsmile.app.AppConstants.FOUR_ZERO_ONE;
 import static com.app.fitsmile.app.AppConstants.ONE;
+import static com.app.fitsmile.app.AppConstants.ZERO;
+import static com.app.fitsmile.common.Utils.closeProgressDialog;
+import static com.app.fitsmile.common.Utils.showToast;
 
 public class MyAccount extends BaseActivity implements MyAccountMemberListAdapter.ItemClickMemberList, View.OnClickListener {
 
@@ -243,13 +255,13 @@ public class MyAccount extends BaseActivity implements MyAccountMemberListAdapte
         btnEnglish.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                LocaleManager.setNewLocale(MyAccount.this, LocaleManager.ENGLISH);
-                LocaleManager.setNewLocale(MyAccount.this, LocaleManager.SPANISH);
-                dialog.dismiss();
-                Intent intent = new Intent(MyAccount.this, MainActivity.class);
-                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
-                startActivity(intent);
-                finish();
+                invokeupdateLanguageApi(LocaleManager.ENGLISH, dialog);
+//               LocaleManager.setNewLocale(MyAccount.this, LocaleManager.ENGLISH);
+//                dialog.dismiss();
+//                Intent intent = new Intent(MyAccount.this, MainActivity.class);
+//                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+//                startActivity(intent);
+//                finish();
             }
         });
 
@@ -257,12 +269,13 @@ public class MyAccount extends BaseActivity implements MyAccountMemberListAdapte
         btnSpanish.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                LocaleManager.setNewLocale(MyAccount.this, LocaleManager.SPANISH);
-                dialog.dismiss();
-                Intent intent = new Intent(MyAccount.this, MainActivity.class);
-                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
-                startActivity(intent);
-                finish();
+                invokeupdateLanguageApi(LocaleManager.SPANISH, dialog);
+//                LocaleManager.setNewLocale(MyAccount.this, LocaleManager.SPANISH);
+//                dialog.dismiss();
+//                Intent intent = new Intent(MyAccount.this, MainActivity.class);
+//                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+//                startActivity(intent);
+//                finish();
 
             }
         });
@@ -292,6 +305,52 @@ public class MyAccount extends BaseActivity implements MyAccountMemberListAdapte
         });
         android.app.AlertDialog alertDialogObject = dialogBuilder.create();
         alertDialogObject.show();
+    }
+
+    private void invokeupdateLanguageApi(String language, Dialog dialog) {
+        Utils.openProgressDialog(actCon);
+        JsonObject jsonObj = new JsonObject();
+        if (language.equalsIgnoreCase("en")) {
+            jsonObj.addProperty("language", "english");
+        } else {
+            jsonObj.addProperty("language", "spanish");
+        }
+        jsonObj.addProperty("user_id", appPreference.getUserId());
+
+
+        ApiInterface apiInterface = retrofit.create(ApiInterface.class);
+        Call<LanguageUpdateResponse> service = apiInterface.updateLanguage(jsonObj);
+        service.enqueue(new Callback<LanguageUpdateResponse>() {
+            @Override
+            public void onResponse(Call<LanguageUpdateResponse> call, Response<LanguageUpdateResponse> response) {
+                Utils.closeProgressDialog();
+                if (response.body() != null) {
+                    LanguageUpdateResponse languageUpdateResponse = response.body();
+                    if (Utils.getStr(languageUpdateResponse.getStatus()).equals(ONE)) {
+                        if (language.equalsIgnoreCase("en")) {
+                            LocaleManager.setNewLocale(MyAccount.this, LocaleManager.ENGLISH);
+                        }
+                        else
+                        {
+                            LocaleManager.setNewLocale(MyAccount.this, LocaleManager.SPANISH);
+                        }
+                        dialog.dismiss();
+                        Intent intent = new Intent(MyAccount.this, MainActivity.class);
+                        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+                        startActivity(intent);
+                        finish();
+                    } else {
+                        showToast(actCon, "" + Utils.getStr(languageUpdateResponse.getMessage()));
+                    }
+                }
+            }
+
+            @Override
+            public void onFailure(Call<LanguageUpdateResponse> call, Throwable t) {
+                closeProgressDialog();
+                call.cancel();
+            }
+        });
     }
 
 

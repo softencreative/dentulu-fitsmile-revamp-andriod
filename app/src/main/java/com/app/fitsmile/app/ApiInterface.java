@@ -25,6 +25,7 @@ import com.app.fitsmile.response.doctime.DocAvailableTimeResponse;
 import com.app.fitsmile.response.healthrec.ResponseViewHealthRecord;
 import com.app.fitsmile.response.insurance.InsuranceResponse;
 import com.app.fitsmile.response.login.DentalOfficeResponse;
+import com.app.fitsmile.response.login.LanguageUpdateResponse;
 import com.app.fitsmile.response.myaccount.FAQResponse;
 import com.app.fitsmile.response.myaccount.Updateprofile;
 import com.app.fitsmile.response.photoConsultancy.AddPhotoConsultancy.DynamicViewResponse;
@@ -87,6 +88,8 @@ public interface ApiInterface {
     @POST("Login")
     Call<LoginResponse> login(@Body JsonObject body);
 
+    @POST("updateDefaultLanguage")
+    Call<LanguageUpdateResponse> updateLanguage(@Body JsonObject body);
 
     @POST("SessionLogin")
     Call<LoginResponse> sessionLogin(@Body JsonObject body);

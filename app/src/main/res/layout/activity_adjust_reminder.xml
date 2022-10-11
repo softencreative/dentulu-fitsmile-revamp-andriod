@@ -62,7 +62,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_1sdp"
-                    android:fontFamily="@font/proxima_nova_regular"
+                    android:fontFamily="@font/sofia_pro_regular"
                     android:text="76 Hours worn"
                     android:textColor="@color/white"
                     android:textSize="@dimen/_12sp"

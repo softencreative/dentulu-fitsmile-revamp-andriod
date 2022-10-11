@@ -33,8 +33,8 @@ public class LocaleManager {
     public static void setLocale(Context mContext) {
         //updateLanguageResources(mContext, getLanguagePref(mContext));
        // return mContext;
-         //updateLanguageResources(mContext, getLanguagePref(mContext));
-        updateLanguageResources(mContext, SPANISH);
+         updateLanguageResources(mContext, getLanguagePref(mContext));
+//        updateLanguageResources(mContext, SPANISH);
     }
 
 
@@ -71,7 +71,7 @@ public class LocaleManager {
      */
     public static String getLanguagePref(Context mContext) {
         SharedPreferences mPreferences = PreferenceManager.getDefaultSharedPreferences(mContext);
-        return mPreferences.getString(LANGUAGE_KEY, SPANISH);
+        return mPreferences.getString(LANGUAGE_KEY, ENGLISH);
     }
 
     /**

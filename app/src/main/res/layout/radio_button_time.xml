@@ -4,7 +4,7 @@
     android:gravity="center"
     android:text=""
     android:id="@+id/rb_time"
-    android:fontFamily="@font/proxima_nova_regular"
+    android:fontFamily="@font/sofia_pro_regular"
     android:padding="@dimen/_14sdp"
     android:button="@color/white"
     android:background="@drawable/bg_radio_btn_three_selector"

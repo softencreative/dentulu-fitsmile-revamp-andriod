@@ -30,8 +30,8 @@ public class CommanClass {
         btnEnglish.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                LocaleManager.setNewLocale(context, LocaleManager.ENGLISH);
-                LocaleManager.setNewLocale(context, LocaleManager.SPANISH);
+              LocaleManager.setNewLocale(context, LocaleManager.ENGLISH);
+//                LocaleManager.setNewLocale(context, LocaleManager.SPANISH);
                 dialog.dismiss();
                 Intent intent = null;
                 if (isFrom.equals("biometric")) {

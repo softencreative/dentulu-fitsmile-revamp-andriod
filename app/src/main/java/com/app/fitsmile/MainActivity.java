@@ -462,7 +462,8 @@ public class MainActivity extends BaseActivity implements IGetUnreadMessagesCoun
                 assert mResponse != null;
                 if (mResponse.getStatus().equals("1")) {
                     setNotificationSettings(mResponse.getData());
-                } else if (mResponse.getStatus().equals(AppConstants.FOUR_ZERO_ONE)) {
+                }
+                else if (mResponse.getStatus().equals(AppConstants.FOUR_ZERO_ONE)) {
                     Utils.showSessionAlert(MainActivity.this);
                 }
 

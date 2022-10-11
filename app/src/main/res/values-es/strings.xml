@@ -1058,4 +1058,6 @@ Al utilizar el portal www.fits-smile.com de cualquier modo, el paciente acepta c
     <string name="only_mp4_video_allowd">Solo se permiten videos mp4</string>
     <string name="lbl_photo_send_instruction">Envía una fotografía de tu sonrisa como se muestra en la imagen, no olvides morder siempre con las muelas como normalmente lo haces. \n \n IMPORTANTE: Utiliza el abrebocas de tu caja y tómate una “selfie”</string>
     <string name="video_limit_alert">Sube el tamaño del video menos de 100 MB.</string>
+    <string name="select_required_field">Por favor seleccione los campos obligatorios</string>
+    <string name="something_wrong_error">Algo salió mal</string>
 </resources>

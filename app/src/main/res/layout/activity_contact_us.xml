@@ -116,6 +116,7 @@
                     android:fontFamily="@font/proxima_nova_bold"
                     android:gravity="end"
                     android:autoLink="web"
+                    android:textColor="@color/colorPrimary"
                     android:text="www.fits-smile.com" />
             </LinearLayout>
 

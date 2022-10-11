@@ -106,7 +106,7 @@ public class DentistQuestionsActivity extends BaseActivity {
                         if (dataList.get(i).getQuestions().get(j).getRequired().equalsIgnoreCase("1")) {
                             if (!dataList.get(i).getQuestions().get(j).isSelected()) {
                                 allowToProceed=false;
-                                Toast.makeText(actCon, "Por favor seleccione los campos obligatorios", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(actCon, R.string.select_required_field, Toast.LENGTH_SHORT).show();
                                 return;
                             }
                             else {
@@ -268,7 +268,7 @@ public class DentistQuestionsActivity extends BaseActivity {
                 if (insertWidgetResponse != null && insertWidgetResponse.getWidget_id() != null) {
                     insertWidgetQuestionData(insertWidgetResponse);
                 } else {
-                    Utils.showToast(DentistQuestionsActivity.this, "Something went wrong");
+                    Utils.showToast(DentistQuestionsActivity.this, String.valueOf(R.string.something_wrong_error));
                     Utils.closeProgressDialog();
                 }
             }

@@ -23,7 +23,7 @@ android {
     defaultConfig {
        applicationId "com.app.fitsmile"
         multiDexEnabled true
-        minSdkVersion 21
+        minSdkVersion 23
         targetSdkVersion 30
         versionCode 14
         versionName "2.3"
@@ -56,9 +56,12 @@ android {
         development {
             dimension "version"
             //buildConfigField "String", "BASE_URL", '\"https://fitsmile.dentuluprojects.com/api/v2/Webservice/\"'
-            buildConfigField "String", "BASE_URL", '\"https://app.fits-smile.com/api/v2/Webservice/\"'
+//            buildConfigField "String", "BASE_URL", '\"https://app.fits-smile.com/api/v2/Webservice/\"'
+//            buildConfigField "String", "BASE_URL", '\"http://smile.dentuluworksite.com/api/v2/Webservice/\"'
+            buildConfigField "String", "BASE_URL", '\"https://soften.testyourjob.com/fits-smile-clone/api/v2/Webservice/\"'
            // buildConfigField "String", "BASE_IMAGEURL", '\"https://fitsmile.dentuluprojects.com/uploads/\"'
-            buildConfigField "String", "BASE_IMAGEURL", '\"https://app.fits-smile.com/uploads/\"'
+//            buildConfigField "String", "BASE_IMAGEURL", '\"https://app.fits-smile.com/uploads/\"'
+            buildConfigField "String", "BASE_IMAGEURL", '\"https://soften.testyourjob.com/fits-smile-clone/uploads/\"'
             buildConfigField "String", "PUBLISHABLE_KEY", '\"pk_test_4kJZ0tjT7MFaABKyBAGiEY9s\"'
             buildConfigField "String", "STRIPE_SECRET_KEY", '\"sk_test_wLgAvvDkZ4UjgReBRkIEGqN6\"'
             buildConfigField "String", "SANDBOX", '\"1\"'
@@ -66,9 +69,11 @@ android {
         production {
             dimension "version"
           //  buildConfigField "String", "BASE_URL", "\"https://fitsmile.dentuluprojects.com/api/v2/Webservice/\""
-            buildConfigField "String", "BASE_URL", '\"https://app.fits-smile.com/api/v2/Webservice/\"'
+//            buildConfigField "String", "BASE_URL", '\"https://app.fits-smile.com/api/v2/Webservice/\"'
+            buildConfigField "String", "BASE_URL", '\"https://soften.testyourjob.com/fits-smile-clone/api/v2/Webservice/\"'
            // buildConfigField "String", "BASE_IMAGEURL", '\"https://fitsmile.dentuluprojects.com/uploads/\"'
-            buildConfigField "String", "BASE_IMAGEURL", '\"https://app.fits-smile.com/uploads/\"'
+//            buildConfigField "String", "BASE_IMAGEURL", '\"https://app.fits-smile.com/uploads/\"'
+            buildConfigField "String", "BASE_IMAGEURL", '\"https://soften.testyourjob.com/fits-smile-clone/uploads/\"'
             buildConfigField "String", "PUBLISHABLE_KEY", "\"pk_live_thLdICQdrjiaQFdh93xZWvFq\""
             buildConfigField "String", "STRIPE_SECRET_KEY", "\"sk_live_Rqj8JCyb7aMcitG6U12XGQVi\""
             buildConfigField "String", "SANDBOX", '\"0\"'

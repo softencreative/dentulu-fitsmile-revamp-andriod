@@ -38,7 +38,7 @@
       app:layout_constraintStart_toStartOf="parent"
       android:text="Remind Me To..."
       android:textColor="@color/title_text_color_light"
-      android:fontFamily="@font/proxima_nova_regular"
+      android:fontFamily="@font/sofia_pro_regular"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"/>
 
@@ -74,7 +74,7 @@
         android:textSize="@dimen/_16sp"
         android:text="Switch Aligner"
         android:textColor="@color/tick_color"
-        android:fontFamily="@font/proxima_nova_regular"
+        android:fontFamily="@font/sofia_pro_regular"
         android:layout_height="wrap_content"/>
 
     <TextView
@@ -87,7 +87,7 @@
         android:textSize="@dimen/_12sp"
         android:textColor="@color/title_text_color_light"
         android:text="No Reminder"
-        android:fontFamily="@font/proxima_nova_regular"
+        android:fontFamily="@font/sofia_pro_regular"
         android:layout_height="wrap_content"/>
   </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -119,7 +119,7 @@
         android:textSize="@dimen/_16sp"
         android:text="Take Teeth Selfies"
         android:textColor="@color/tick_color"
-        android:fontFamily="@font/proxima_nova_regular"
+        android:fontFamily="@font/sofia_pro_regular"
         android:layout_height="wrap_content"/>
 
     <TextView
@@ -132,7 +132,7 @@
         android:textSize="@dimen/_12sp"
         android:textColor="@color/title_text_color_light"
         android:text="No Reminder"
-        android:fontFamily="@font/proxima_nova_regular"
+        android:fontFamily="@font/sofia_pro_regular"
         android:layout_height="wrap_content"/>
   </androidx.constraintlayout.widget.ConstraintLayout>
     <View
@@ -150,7 +150,7 @@
         app:layout_constraintStart_toStartOf="parent"
         android:text="Calendar"
         android:textColor="@color/title_text_color_light"
-        android:fontFamily="@font/proxima_nova_regular"
+        android:fontFamily="@font/sofia_pro_regular"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 
@@ -182,7 +182,7 @@
         android:textSize="@dimen/_16sp"
         android:text="Adjust Reminder"
         android:textColor="@color/tick_color"
-        android:fontFamily="@font/proxima_nova_regular"
+        android:fontFamily="@font/sofia_pro_regular"
         android:layout_height="wrap_content"/>
   </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -216,7 +216,7 @@
         android:textSize="@dimen/_16sp"
         android:text="Start Week On"
         android:textColor="@color/tick_color"
-        android:fontFamily="@font/proxima_nova_regular"
+        android:fontFamily="@font/sofia_pro_regular"
         android:layout_height="wrap_content"/>
 
     <TextView
@@ -229,7 +229,7 @@
         android:textSize="@dimen/_12sp"
         android:textColor="@color/title_text_color_light"
         android:text="Sunday"
-        android:fontFamily="@font/proxima_nova_regular"
+        android:fontFamily="@font/sofia_pro_regular"
         android:layout_height="wrap_content"/>
 
   </androidx.constraintlayout.widget.ConstraintLayout>

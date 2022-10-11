@@ -43,7 +43,7 @@
         android:layout_gravity="center"
         android:gravity="center"
         android:text="@string/term_policy_header_title"
-        android:fontFamily="@font/proxima_nova_regular"
+        android:fontFamily="@font/sofia_pro_regular"
        />
 
     <!--<TextView
@@ -53,7 +53,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/term_policy_content_0"
-        android:fontFamily="@font/proxima_nova_regular"
+        android:fontFamily="@font/sofia_pro_regular"
        />-->
 
     <TextView
@@ -64,7 +64,7 @@
         android:layout_height="wrap_content"
         android:textSize="@dimen/_14sp"
         android:text="@string/term_policy_header_1"
-        android:fontFamily="@font/proxima_nova_regular"
+        android:fontFamily="@font/sofia_pro_regular"
         />
     <TextView
         android:textColor="@color/black_light"
@@ -74,7 +74,7 @@
         android:layout_height="wrap_content"
         android:justificationMode="inter_word"
         android:text="@string/term_policy_content_1"
-        android:fontFamily="@font/proxima_nova_regular"
+        android:fontFamily="@font/sofia_pro_regular"
         />
 
         <TextView
@@ -85,7 +85,7 @@
             android:layout_height="wrap_content"
             android:textSize="@dimen/_14sp"
             android:text="@string/term_policy_header_2"
-            android:fontFamily="@font/proxima_nova_regular"
+            android:fontFamily="@font/sofia_pro_regular"
             />
         <TextView
             android:textColor="@color/black_light"
@@ -95,7 +95,7 @@
             android:layout_height="wrap_content"
             android:justificationMode="inter_word"
             android:text="@string/term_policy_content_2"
-            android:fontFamily="@font/proxima_nova_regular"
+            android:fontFamily="@font/sofia_pro_regular"
             />
 
         <TextView
@@ -106,7 +106,7 @@
             android:layout_height="wrap_content"
             android:textSize="@dimen/_14sp"
             android:text="@string/term_policy_header_6"
-            android:fontFamily="@font/proxima_nova_regular"
+            android:fontFamily="@font/sofia_pro_regular"
             />
         <TextView
             android:textColor="@color/black_light"
@@ -116,7 +116,7 @@
             android:layout_height="wrap_content"
             android:justificationMode="inter_word"
             android:text="@string/term_policy_content_6"
-            android:fontFamily="@font/proxima_nova_regular"
+            android:fontFamily="@font/sofia_pro_regular"
             />
 
         <TextView
@@ -127,7 +127,7 @@
             android:layout_height="wrap_content"
             android:textSize="@dimen/_14sp"
             android:text="@string/term_policy_header_3"
-            android:fontFamily="@font/proxima_nova_regular"
+            android:fontFamily="@font/sofia_pro_regular"
             />
         <TextView
             android:textColor="@color/black_light"
@@ -137,7 +137,7 @@
             android:layout_height="wrap_content"
             android:justificationMode="inter_word"
             android:text="@string/term_policy_content_3"
-            android:fontFamily="@font/proxima_nova_regular"
+            android:fontFamily="@font/sofia_pro_regular"
             />
         <TextView
             android:textColor="@color/black"
@@ -147,7 +147,7 @@
             android:layout_height="wrap_content"
             android:textSize="@dimen/_14sp"
             android:text="@string/term_policy_header_4"
-            android:fontFamily="@font/proxima_nova_regular"
+            android:fontFamily="@font/sofia_pro_regular"
             />
         <TextView
             android:textColor="@color/black_light"
@@ -157,7 +157,7 @@
             android:layout_height="wrap_content"
             android:justificationMode="inter_word"
             android:text="@string/term_policy_content_4"
-            android:fontFamily="@font/proxima_nova_regular"
+            android:fontFamily="@font/sofia_pro_regular"
             />
 
         <TextView
@@ -168,7 +168,7 @@
             android:layout_height="wrap_content"
             android:textSize="@dimen/_14sp"
             android:text="@string/term_policy_header_5"
-            android:fontFamily="@font/proxima_nova_regular"
+            android:fontFamily="@font/sofia_pro_regular"
             />
         <TextView
             android:textColor="@color/black_light"
@@ -178,7 +178,7 @@
             android:layout_height="wrap_content"
             android:justificationMode="inter_word"
             android:text="@string/term_policy_content_5"
-            android:fontFamily="@font/proxima_nova_regular"
+            android:fontFamily="@font/sofia_pro_regular"
             />
         
 
@@ -190,7 +190,7 @@
             android:layout_height="wrap_content"
             android:textSize="@dimen/_14sp"
             android:text="@string/term_policy_header_7"
-            android:fontFamily="@font/proxima_nova_regular"
+            android:fontFamily="@font/sofia_pro_regular"
             />
         <TextView
             android:textColor="@color/black_light"
@@ -200,7 +200,7 @@
             android:layout_height="wrap_content"
             android:justificationMode="inter_word"
             android:text="@string/term_policy_content_7"
-            android:fontFamily="@font/proxima_nova_regular"
+            android:fontFamily="@font/sofia_pro_regular"
             />
 
         <TextView
@@ -211,7 +211,7 @@
             android:layout_height="wrap_content"
             android:textSize="@dimen/_14sp"
             android:text="@string/term_policy_header_8"
-            android:fontFamily="@font/proxima_nova_regular"
+            android:fontFamily="@font/sofia_pro_regular"
             />
         <TextView
             android:textColor="@color/black_light"
@@ -221,7 +221,7 @@
             android:layout_height="wrap_content"
             android:justificationMode="inter_word"
             android:text="@string/term_policy_content_8"
-            android:fontFamily="@font/proxima_nova_regular"
+            android:fontFamily="@font/sofia_pro_regular"
             />
 
         <TextView
@@ -232,7 +232,7 @@
             android:layout_height="wrap_content"
             android:textSize="@dimen/_14sp"
             android:text="@string/term_policy_header_9"
-            android:fontFamily="@font/proxima_nova_regular"
+            android:fontFamily="@font/sofia_pro_regular"
             />
         <TextView
             android:textColor="@color/black_light"
@@ -242,7 +242,7 @@
             android:layout_height="wrap_content"
             android:justificationMode="inter_word"
             android:text="@string/term_policy_content_9"
-            android:fontFamily="@font/proxima_nova_regular"
+            android:fontFamily="@font/sofia_pro_regular"
             />
 
         <TextView
@@ -253,7 +253,7 @@
             android:layout_height="wrap_content"
             android:textSize="@dimen/_14sp"
             android:text="@string/term_policy_header_10"
-            android:fontFamily="@font/proxima_nova_regular"
+            android:fontFamily="@font/sofia_pro_regular"
             />
         <TextView
             android:textColor="@color/black_light"
@@ -263,7 +263,7 @@
             android:layout_height="wrap_content"
             android:justificationMode="inter_word"
             android:text="@string/term_policy_content_10"
-            android:fontFamily="@font/proxima_nova_regular"
+            android:fontFamily="@font/sofia_pro_regular"
             />
 
         <TextView
@@ -274,7 +274,7 @@
             android:layout_height="wrap_content"
             android:textSize="@dimen/_14sp"
             android:text="@string/term_policy_header_11"
-            android:fontFamily="@font/proxima_nova_regular"
+            android:fontFamily="@font/sofia_pro_regular"
             />
         <TextView
             android:textColor="@color/black_light"
@@ -284,7 +284,7 @@
             android:layout_height="wrap_content"
             android:justificationMode="inter_word"
             android:text="@string/term_policy_content_11"
-            android:fontFamily="@font/proxima_nova_regular"
+            android:fontFamily="@font/sofia_pro_regular"
             />
 
         <TextView
@@ -295,7 +295,7 @@
             android:layout_height="wrap_content"
             android:textSize="@dimen/_14sp"
             android:text="@string/term_policy_header_12"
-            android:fontFamily="@font/proxima_nova_regular"
+            android:fontFamily="@font/sofia_pro_regular"
             />
         <TextView
             android:textColor="@color/black_light"
@@ -305,7 +305,7 @@
             android:layout_height="wrap_content"
             android:justificationMode="inter_word"
             android:text="@string/term_policy_content_12"
-            android:fontFamily="@font/proxima_nova_regular"
+            android:fontFamily="@font/sofia_pro_regular"
             />
 
         <TextView
@@ -316,7 +316,7 @@
             android:layout_height="wrap_content"
             android:textSize="@dimen/_14sp"
             android:text="@string/term_policy_header_13"
-            android:fontFamily="@font/proxima_nova_regular"
+            android:fontFamily="@font/sofia_pro_regular"
             />
         <TextView
             android:textColor="@color/black_light"
@@ -326,7 +326,7 @@
             android:layout_height="wrap_content"
             android:justificationMode="inter_word"
             android:text="@string/term_policy_content_13"
-            android:fontFamily="@font/proxima_nova_regular"
+            android:fontFamily="@font/sofia_pro_regular"
             />
 
         <TextView
@@ -337,7 +337,7 @@
             android:layout_height="wrap_content"
             android:textSize="@dimen/_14sp"
             android:text="@string/term_policy_header_14"
-            android:fontFamily="@font/proxima_nova_regular"
+            android:fontFamily="@font/sofia_pro_regular"
             />
         <TextView
             android:textColor="@color/black_light"
@@ -347,7 +347,7 @@
             android:layout_height="wrap_content"
             android:justificationMode="inter_word"
             android:text="@string/term_policy_content_14"
-            android:fontFamily="@font/proxima_nova_regular"
+            android:fontFamily="@font/sofia_pro_regular"
             />
 
         <TextView
@@ -358,7 +358,7 @@
             android:layout_height="wrap_content"
             android:textSize="@dimen/_14sp"
             android:text="@string/term_policy_header_15"
-            android:fontFamily="@font/proxima_nova_regular"
+            android:fontFamily="@font/sofia_pro_regular"
             />
         <TextView
             android:textColor="@color/black_light"
@@ -368,7 +368,7 @@
             android:layout_height="wrap_content"
             android:justificationMode="inter_word"
             android:text="@string/term_policy_content_15"
-            android:fontFamily="@font/proxima_nova_regular"
+            android:fontFamily="@font/sofia_pro_regular"
             />
 
         <TextView
@@ -379,7 +379,7 @@
             android:layout_height="wrap_content"
             android:textSize="@dimen/_14sp"
             android:text="@string/term_policy_header_16"
-            android:fontFamily="@font/proxima_nova_regular"
+            android:fontFamily="@font/sofia_pro_regular"
             />
         <TextView
             android:textColor="@color/black_light"
@@ -389,7 +389,7 @@
             android:layout_height="wrap_content"
             android:justificationMode="inter_word"
             android:text="@string/term_policy_content_16"
-            android:fontFamily="@font/proxima_nova_regular"
+            android:fontFamily="@font/sofia_pro_regular"
             />
 
         <TextView
@@ -400,7 +400,7 @@
             android:layout_height="wrap_content"
             android:textSize="@dimen/_14sp"
             android:text="@string/term_policy_header_17"
-            android:fontFamily="@font/proxima_nova_regular"
+            android:fontFamily="@font/sofia_pro_regular"
             />
         <TextView
             android:textColor="@color/black_light"
@@ -410,7 +410,7 @@
             android:layout_height="wrap_content"
             android:justificationMode="inter_word"
             android:text="@string/term_policy_content_17"
-            android:fontFamily="@font/proxima_nova_regular"
+            android:fontFamily="@font/sofia_pro_regular"
             />
 
         <TextView
@@ -421,7 +421,7 @@
             android:layout_height="wrap_content"
             android:textSize="@dimen/_14sp"
             android:text="@string/term_policy_header_18"
-            android:fontFamily="@font/proxima_nova_regular"
+            android:fontFamily="@font/sofia_pro_regular"
             />
         <TextView
             android:textColor="@color/black_light"
@@ -431,7 +431,7 @@
             android:layout_height="wrap_content"
             android:justificationMode="inter_word"
             android:text="@string/term_policy_content_18"
-            android:fontFamily="@font/proxima_nova_regular"
+            android:fontFamily="@font/sofia_pro_regular"
             />
 
         <TextView
@@ -442,7 +442,7 @@
             android:layout_height="wrap_content"
             android:textSize="@dimen/_14sp"
             android:text="@string/term_policy_header_19"
-            android:fontFamily="@font/proxima_nova_regular"
+            android:fontFamily="@font/sofia_pro_regular"
             />
         <TextView
             android:textColor="@color/black_light"
@@ -452,7 +452,7 @@
             android:layout_height="wrap_content"
             android:justificationMode="inter_word"
             android:text="@string/term_policy_content_19"
-            android:fontFamily="@font/proxima_nova_regular"
+            android:fontFamily="@font/sofia_pro_regular"
             />
 
         <TextView
@@ -463,7 +463,7 @@
             android:layout_height="wrap_content"
             android:textSize="@dimen/_14sp"
             android:text="@string/term_policy_header_20"
-            android:fontFamily="@font/proxima_nova_regular"
+            android:fontFamily="@font/sofia_pro_regular"
             />
         <TextView
             android:textColor="@color/black_light"
@@ -473,7 +473,7 @@
             android:layout_height="wrap_content"
             android:justificationMode="inter_word"
             android:text="@string/term_policy_content_20"
-            android:fontFamily="@font/proxima_nova_regular"
+            android:fontFamily="@font/sofia_pro_regular"
             />
 
         <TextView
@@ -484,7 +484,7 @@
             android:layout_height="wrap_content"
             android:textSize="@dimen/_14sp"
             android:text="@string/term_policy_header_21"
-            android:fontFamily="@font/proxima_nova_regular"
+            android:fontFamily="@font/sofia_pro_regular"
             />
         <TextView
             android:textColor="@color/black_light"
@@ -494,7 +494,7 @@
             android:layout_height="wrap_content"
             android:justificationMode="inter_word"
             android:text="@string/term_policy_content_21"
-            android:fontFamily="@font/proxima_nova_regular"
+            android:fontFamily="@font/sofia_pro_regular"
             />
 
         <TextView
@@ -505,7 +505,7 @@
             android:layout_height="wrap_content"
             android:textSize="@dimen/_14sp"
             android:text="@string/term_policy_header_22"
-            android:fontFamily="@font/proxima_nova_regular"
+            android:fontFamily="@font/sofia_pro_regular"
             />
         <TextView
             android:textColor="@color/black_light"
@@ -515,7 +515,7 @@
             android:layout_height="wrap_content"
             android:justificationMode="inter_word"
             android:text="@string/term_policy_content_22"
-            android:fontFamily="@font/proxima_nova_regular"
+            android:fontFamily="@font/sofia_pro_regular"
             />
 
         <TextView
@@ -526,7 +526,7 @@
             android:layout_height="wrap_content"
             android:textSize="@dimen/_14sp"
             android:text="@string/term_policy_header_23"
-            android:fontFamily="@font/proxima_nova_regular"
+            android:fontFamily="@font/sofia_pro_regular"
             />
         <TextView
             android:textColor="@color/black_light"
@@ -536,7 +536,7 @@
             android:layout_height="wrap_content"
             android:justificationMode="inter_word"
             android:text="@string/term_policy_content_23"
-            android:fontFamily="@font/proxima_nova_regular"
+            android:fontFamily="@font/sofia_pro_regular"
             />
 
         <TextView
@@ -547,7 +547,7 @@
             android:layout_height="wrap_content"
             android:textSize="@dimen/_14sp"
             android:text="@string/term_policy_header_24"
-            android:fontFamily="@font/proxima_nova_regular"
+            android:fontFamily="@font/sofia_pro_regular"
             />
         <TextView
             android:textColor="@color/black_light"
@@ -557,7 +557,7 @@
             android:layout_height="wrap_content"
             android:justificationMode="inter_word"
             android:text="@string/term_policy_content_24"
-            android:fontFamily="@font/proxima_nova_regular"
+            android:fontFamily="@font/sofia_pro_regular"
             />
 
         <TextView
@@ -568,7 +568,7 @@
             android:layout_height="wrap_content"
             android:textSize="@dimen/_14sp"
             android:text="@string/term_policy_header_25"
-            android:fontFamily="@font/proxima_nova_regular"
+            android:fontFamily="@font/sofia_pro_regular"
             />
         <TextView
             android:textColor="@color/black_light"
@@ -578,7 +578,7 @@
             android:layout_height="wrap_content"
             android:justificationMode="inter_word"
             android:text="@string/term_policy_content_25"
-            android:fontFamily="@font/proxima_nova_regular"
+            android:fontFamily="@font/sofia_pro_regular"
             />
 
         <TextView
@@ -589,7 +589,7 @@
             android:layout_height="wrap_content"
             android:textSize="@dimen/_14sp"
             android:text="@string/term_policy_header_26"
-            android:fontFamily="@font/proxima_nova_regular"
+            android:fontFamily="@font/sofia_pro_regular"
             />
         <TextView
             android:textColor="@color/black_light"
@@ -599,7 +599,7 @@
             android:layout_height="wrap_content"
             android:justificationMode="inter_word"
             android:text="@string/term_policy_content_26"
-            android:fontFamily="@font/proxima_nova_regular"
+            android:fontFamily="@font/sofia_pro_regular"
             />
 
         <TextView
@@ -610,7 +610,7 @@
             android:layout_height="wrap_content"
             android:textSize="@dimen/_14sp"
             android:text="@string/term_policy_header_27"
-            android:fontFamily="@font/proxima_nova_regular"
+            android:fontFamily="@font/sofia_pro_regular"
             />
         <TextView
             android:textColor="@color/black_light"
@@ -620,7 +620,7 @@
             android:layout_height="wrap_content"
             android:justificationMode="inter_word"
             android:text="@string/term_policy_content_27"
-            android:fontFamily="@font/proxima_nova_regular"
+            android:fontFamily="@font/sofia_pro_regular"
             />
 
         <TextView
@@ -631,7 +631,7 @@
             android:layout_height="wrap_content"
             android:textSize="@dimen/_14sp"
             android:text="@string/term_policy_header_28"
-            android:fontFamily="@font/proxima_nova_regular"
+            android:fontFamily="@font/sofia_pro_regular"
             />
         <TextView
             android:textColor="@color/black_light"
@@ -641,7 +641,7 @@
             android:layout_height="wrap_content"
             android:justificationMode="inter_word"
             android:text="@string/term_policy_content_28"
-            android:fontFamily="@font/proxima_nova_regular"
+            android:fontFamily="@font/sofia_pro_regular"
             />
 
         <TextView
@@ -652,7 +652,7 @@
             android:layout_height="wrap_content"
             android:textSize="@dimen/_14sp"
             android:text="@string/term_policy_header_29"
-            android:fontFamily="@font/proxima_nova_regular"
+            android:fontFamily="@font/sofia_pro_regular"
             />
         <TextView
             android:textColor="@color/black_light"
@@ -662,7 +662,7 @@
             android:layout_height="wrap_content"
             android:justificationMode="inter_word"
             android:text="@string/term_policy_content_29"
-            android:fontFamily="@font/proxima_nova_regular"
+            android:fontFamily="@font/sofia_pro_regular"
             />
 
     </LinearLayout>
