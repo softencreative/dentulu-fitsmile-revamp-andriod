@@ -63,7 +63,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_10sdp"
-            android:fontFamily="@font/proxima_nova_regular"
+            android:fontFamily="@font/sofia_pro_regular"
             android:text="Dec"
             android:textColor="@color/title_text_color_light"
             android:textSize="@dimen/_12sp" />
@@ -84,7 +84,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/textDate"
-            android:fontFamily="@font/proxima_nova_regular"
+            android:fontFamily="@font/sofia_pro_regular"
             android:paddingBottom="@dimen/_15sdp"
             android:text="Thu"
             android:textColor="@color/title_text_color_light"

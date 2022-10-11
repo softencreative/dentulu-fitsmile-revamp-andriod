@@ -39,7 +39,7 @@
             android:layout_height="wrap_content"
             android:text="30 mins"
             android:textSize="@dimen/_14sp"
-            android:fontFamily="@font/proxima_nova_regular"
+            android:fontFamily="@font/sofia_pro_regular"
             android:textColor="@color/black_light"
             android:layout_toEndOf="@+id/imagePlay"/>
     </RelativeLayout>

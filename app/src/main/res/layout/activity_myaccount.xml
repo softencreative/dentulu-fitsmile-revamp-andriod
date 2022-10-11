@@ -156,7 +156,7 @@
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/card_language"
-                    android:visibility="gone"
+                    android:visibility="visible"
                     android:layout_marginTop="@dimen/_12sdp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

@@ -31,7 +31,7 @@
             android:id="@+id/tv_error"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/proxima_nova_regular"
+            android:fontFamily="@font/sofia_pro_regular"
             android:text="@string/please_select_atleast_one_option_to_proceed"
             android:textAlignment="center"
             android:textColor="@color/red"

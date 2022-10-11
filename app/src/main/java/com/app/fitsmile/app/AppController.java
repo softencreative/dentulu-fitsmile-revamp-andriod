@@ -267,7 +267,7 @@ public class AppController extends Application implements LifecycleObserver {
                         Request original = chain.request();
                         Request request = original.newBuilder()
                                 .header("Authorization", appPreference.getToken())
-                                .header("Dentulu-Userid", appPreference.getUserId())
+                                .header("Dentulu-Userid",appPreference.getUserId())
                                 .header("Sessiontoken", appPreference.getIsAuthentication())
                                 .header("Content-Type", "application/json")
                                 .method(original.method(), original.body())

@@ -51,7 +51,7 @@ public class ReminderProgressActivity extends BaseActivity {
         setupViewPager(viewPager);
         TabLayout tabs = findViewById(R.id.result_tabs);
         tabs.setupWithViewPager(viewPager);
-        tabs.setTabTextColors(Color.parseColor("#545454"), Color.parseColor("#545454"));
+        tabs.setTabTextColors(Color.parseColor("#141B5D"), Color.parseColor("#141B5D"));
 
     }
 

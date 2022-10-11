@@ -1103,4 +1103,6 @@ Al utilizar el portal www.fits-smile.com de cualquier modo, el paciente acepta c
     <string name="lbl_photo_send_instruction">Send a photograph of your smile as shown in the image, do not forget to always bite with your teeth as you normally do. \n \n
 IMPORTANTE: Use the mouth opener on your box and take a “selfie”</string>
     <string name="video_limit_alert">Please upload video size less than 100 MB</string>
+    <string name="select_required_field">Please select the required fields</string>
+    <string name="something_wrong_error">Something went wrong</string>
 </resources>

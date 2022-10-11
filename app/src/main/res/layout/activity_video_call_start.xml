@@ -47,7 +47,7 @@
                 android:text="@string/calling_video"
                 android:gravity="center"
                 android:padding="5dp"
-                android:fontFamily="@font/proxima_nova_regular"
+                android:fontFamily="@font/sofia_pro_regular"
                 android:textSize="@dimen/_20sdp"
                 android:layout_marginTop="@dimen/_10sdp"
                 android:textColor="@color/black"

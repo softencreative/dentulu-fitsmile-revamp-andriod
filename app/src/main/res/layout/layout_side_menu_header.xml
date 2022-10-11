@@ -39,7 +39,7 @@
         android:ellipsize="end"
         android:text="@string/user_email_id"
         android:textColor="@color/white"
-        android:fontFamily="@font/proxima_nova_regular"
+        android:fontFamily="@font/sofia_pro_regular"
         android:textSize="@dimen/_12sdp" />
 
 </LinearLayout>

@@ -41,7 +41,7 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:textSize="@dimen/_14sp"
-            android:fontFamily="@font/proxima_nova_regular"
+            android:fontFamily="@font/sofia_pro_regular"
             tools:text="23" />
 
         <RelativeLayout
