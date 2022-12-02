@@ -43,6 +43,11 @@ public class SplashActivity extends BaseActivity {
             startActivity(intent);
             finish();
         }
+       else if (appPreference.getloginvalue().equals("")) {
+            Intent intent = new Intent(SplashActivity.this, SliderActivity.class);
+            startActivity(intent);
+            finish();
+        }
         else {
             Intent intent = new Intent(SplashActivity.this, SliderActivity.class);
             startActivity(intent);
